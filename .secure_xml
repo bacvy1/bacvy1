@@ -52,6 +52,7 @@
     <pincfg active="true" name="" symbol="">
       <configSetting altId="debug0.swclk.p300" configurationId="debug0.swclk" isUsedByDriver="true"/>
       <configSetting altId="debug0.swdio.p108" configurationId="debug0.swdio" isUsedByDriver="true"/>
+      <configSetting altId="p002.output.low" configurationId="p002"/>
       <configSetting altId="sci3.rxd.p408" configurationId="sci3.rxd" isUsedByDriver="true"/>
       <configSetting altId="sci3.txd.p409" configurationId="sci3.txd" isUsedByDriver="true"/>
       <configSetting altId="sci4.rxd.p206" configurationId="sci4.rxd" isUsedByDriver="true"/>

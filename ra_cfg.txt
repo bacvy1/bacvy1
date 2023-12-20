@@ -91,7 +91,7 @@ FSP Configuration
       AVSS0 43 ANALOG0_AVSS0 - - - - - - - - IO "Read only" - 
       P000 48 - - - - Disabled - - "ADC0: AN000; ICU0: IRQ06" - None - - 
       P001 47 - - - - Disabled - - "ADC0: AN001; ICU0: IRQ07" - None - - 
-      P002 46 - - - - Disabled - - "ADC0: AN002; ICU0: IRQ08" - None - - 
+      P002 46 GPIO - - None "Output mode (Initial Low)" CMOS - "ADC0: AN002; ICU0: IRQ08" - IO - - 
       P013 40 - - - - Disabled - - "ADC0: AN011; ANALOG0: VREFL" - None - - 
       P014 39 - - - - Disabled - - "ADC0: AN012; DAC0: DA0" - None - - 
       P015 38 - - - - Disabled - - "ADC0: AN013; DAC1: DA1; ICU0: IRQ13" - None - - 
@@ -146,7 +146,7 @@ FSP Configuration
   Module "FreeRTOS Port (rm_freertos_port)"
   Module "UART (r_sci_uart)"
     Parameter Checking: Default (BSP)
-    FIFO Support: Disable
+    FIFO Support: Enable
     DTC Support: Disable
     Flow Control Support: Disable
     RS-485 Support: Disable
@@ -238,7 +238,7 @@ FSP Configuration
       General: Stop Bits: 1bit
       Baud: Baud Rate: 115200
       Baud: Baud Rate Modulation: Disabled
-      Baud: Max Error (%): 5
+      Baud: Max Error (%): 1
       Flow Control: CTS/RTS Selection: Hardware RTS
       Flow Control: Software RTS Port: Disabled
       Flow Control: Software RTS Pin: Disabled

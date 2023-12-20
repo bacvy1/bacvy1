@@ -1,0 +1,3 @@
+[submodule "Long_fdk"]
+	path = Long_fdk
+	url = https://github.com/Long-RW/Long_fdk.git
