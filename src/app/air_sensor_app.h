@@ -12,6 +12,8 @@
 #include "task.h"
 #include "semphr.h"
 #include "board.h"
+#include "thingspeak_app.h"
+#include "display_app.h"
 #include <sm_ec200s.h>
 
 
@@ -19,6 +21,8 @@ typedef struct AIR_SENSOR_APP_t AIR_SENSOR_APP;
 struct AIR_SENSOR_APP_t{
     sm_ec200s_t       ec200s;
     sm_mqtt_client_t* mqtt_client;
+    THING_SPEAK_APP   thingspeak;
+    LCD               lcd;
 };
 
 extern AIR_SENSOR_APP air_sensor_app;

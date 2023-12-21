@@ -17,13 +17,17 @@ RM := rm -rf
 -include src/util/subdir.mk
 -include src/board/porting/src/subdir.mk
 -include src/board/subdir.mk
+-include src/app/thingspeak_app/subdir.mk
 -include src/app/mqtt_app/subdir.mk
+-include src/app/display_app/subdir.mk
 -include src/app/subdir.mk
 -include src/subdir.mk
 -include ra_gen/subdir.mk
 -include ra/fsp/src/rm_freertos_port/subdir.mk
 -include ra/fsp/src/r_sci_uart/subdir.mk
+-include ra/fsp/src/r_sci_spi/subdir.mk
 -include ra/fsp/src/r_ioport/subdir.mk
+-include ra/fsp/src/r_dtc/subdir.mk
 -include ra/fsp/src/bsp/mcu/all/subdir.mk
 -include ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/subdir.mk
 -include ra/aws/amazon-freertos/freertos_kernel/subdir.mk

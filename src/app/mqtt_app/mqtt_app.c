@@ -13,9 +13,9 @@
 #include "FreeRTOS.h"
 #include "air_sensor_app.h"
 #include "app_thingspeak_config.h"
+#define TEST_TOPIC  "dt/test"
 
-
-
+char topic[100];
 // Example MQTT Client using EC200N
 
 //	Create EVENT data Queue
@@ -38,7 +38,7 @@ sm_mqtt_client_error_t mqtt_data_iscomming(sm_mqtt_client_t *client,
 		char *topic, char *data);
 sm_mqtt_client_error_t mqtt_reconnect(sm_mqtt_client_t *client);
 /*end define mqtt client funtion*/
-
+static void mqtt_event(sm_mqtt_client_t *client, sm_mqtt_client_event_t event);
 /*define variable*/
 //sm_mqtt_client_t *mqtt_client;
 
@@ -83,16 +83,17 @@ void mqtt_client_init() {
 	client_proc.unsubscribes = mqtt_unsubscribes;
 	client_proc.data_iscomming = mqtt_data_iscomming;
 //	client_proc.reconnect = mqtt_reconnect;
-	air_sensor_app.mqtt_client = sm_mqtt_client_init_static(&client_proc, (void*) &air_sensor_app.ec200s, "hub-uat.selex.vn", 1883, NULL,
-	NULL);
+	sm_mqtt_client_register_handle(air_sensor_app.mqtt_client, mqtt_event);
+    air_sensor_app.mqtt_client = sm_mqtt_client_init_static (&client_proc, (void*) &air_sensor_app.ec200s,
+                                                             "mqtt3.thingspeak.com", 1883, USERNAME, PASSWORD);
 	air_sensor_app.mqtt_client->topic = topic_mqtt;
 	air_sensor_app.mqtt_client->data = data_mqtt;
 	air_sensor_app.mqtt_client->client_id = CLIENT_ID;
+	sprintf(topic, "%s", TEST_TOPIC);
 }
 
 void mqtt_client_process() {
 //	count = xTaskGetTickCount();
-    char data[20] = "HELLO";
 	sm_mqtt_client_process(air_sensor_app.mqtt_client);
 	if (sm_mqtt_client_get_state(air_sensor_app.mqtt_client) == MQTT_ST_CLOSED) {
 		sm_ec200s_init (&air_sensor_app.ec200s, lte_rs_pin, lte_uart);
@@ -100,10 +101,6 @@ void mqtt_client_process() {
 		sm_ec200s_get_ip(&air_sensor_app.ec200s);
 		sm_ec200s_config_mqtt(&air_sensor_app.ec200s);
 		sm_mqtt_client_set_state(air_sensor_app.mqtt_client, MQTT_ST_OPEN);
-	}
-	if (sm_mqtt_client_get_state(air_sensor_app.mqtt_client) == MQTT_ST_CONNECTED){
-	    mqtt_publics(air_sensor_app.mqtt_client, "test", data, strlen(data), 0, 0);
-	    vTaskDelay(100);
 	}
 
 //    count = xTaskGetTickCount();
@@ -157,6 +154,38 @@ sm_mqtt_client_error_t mqtt_reconnect(sm_mqtt_client_t *client)
     return sm_ec200s_set_apn (&air_sensor_app.ec200s, "m3-world", "mms", "mms");
 }
 
+
+static void mqtt_event(sm_mqtt_client_t *client, sm_mqtt_client_event_t event) {
+    switch (event) {
+    case MQTT_EVENT_NONE:
+        /* User code */
+        break;
+    case MQTT_EVENT_CLOSE:
+        /* User code */
+
+        break;
+    case MQTT_EVENT_CONNECTED:
+        /* User code */
+
+        break;
+    case MQTT_EVENT_DATA:
+        /* User code */
+//            printf("Topic: %s\r\n",client->topic);
+//            printf("Data: %s\r\n",client->data);
+        break;
+    case MQTT_EVENT_DISCONNECTED:
+        /* User code */
+        break;
+    case MQTT_EVENT_ERROR:
+        /* User code */
+        break;
+    case MQTT_EVENT_OPEN:
+        /* User code */
+        break;
+    default:
+        break;
+    }
+}
 
 
 #endif

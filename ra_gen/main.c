@@ -7,6 +7,8 @@ extern void process_lte_create(void);
 extern TaskHandle_t process_lte;
 extern void process_gps_create(void);
 extern TaskHandle_t process_gps;
+extern void process_display_create(void);
+extern TaskHandle_t process_display;
 uint32_t g_fsp_common_thread_count;
 bool g_fsp_common_initialized;
 SemaphoreHandle_t g_fsp_common_initialized_semaphore;
@@ -106,6 +108,7 @@ int main(void)
     /* Init RTOS tasks. */
     process_lte_create ();
     process_gps_create ();
+    process_display_create ();
 
     /* Start the scheduler. */
     vTaskStartScheduler ();

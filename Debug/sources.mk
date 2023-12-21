@@ -59,12 +59,16 @@ Long_fdk/utils/src \
 ra/aws/amazon-freertos/freertos_kernel \
 ra/fsp/src/bsp/cmsis/Device/RENESAS/Source \
 ra/fsp/src/bsp/mcu/all \
+ra/fsp/src/r_dtc \
 ra/fsp/src/r_ioport \
+ra/fsp/src/r_sci_spi \
 ra/fsp/src/r_sci_uart \
 ra/fsp/src/rm_freertos_port \
 ra_gen \
 src/app \
+src/app/display_app \
 src/app/mqtt_app \
+src/app/thingspeak_app \
 src/board \
 src/board/porting/src \
 src \

@@ -4,9 +4,9 @@
     <option key="#Board#" value="board.custom"/>
     <option key="CPU" value="RA4M2"/>
     <option key="Core" value="CM33"/>
-    <option key="#TargetName#" value="R7FA4M2AB3CFL"/>
+    <option key="#TargetName#" value="R7FA4M2AC3CFL"/>
     <option key="#TargetARCHITECTURE#" value="cortex-m33"/>
-    <option key="#DeviceCommand#" value="R7FA4M2AB"/>
+    <option key="#DeviceCommand#" value="R7FA4M2AC"/>
     <option key="#RTOS#" value="rtos.awsfreertos"/>
     <option key="#pinconfiguration#" value="R7FA4M2AB3CFL.pincfg"/>
     <option key="#FSPVersion#" value="3.6.0"/>
@@ -29,7 +29,7 @@
     <node id="board.clock.pll2.mul" option="board.clock.pll2.mul.200"/>
     <node id="board.clock.pll2.display" option="board.clock.pll2.display.value"/>
     <node id="board.clock.clock.source" option="board.clock.clock.source.pll"/>
-    <node id="board.clock.clkout.source" option="board.clock.clkout.source.disabled"/>
+    <node id="board.clock.clkout.source" option="board.clock.clkout.source.moco"/>
     <node id="board.clock.uclk.source" option="board.clock.uclk.source.disabled"/>
     <node id="board.clock.iclk.div" option="board.clock.iclk.div.1"/>
     <node id="board.clock.pclka.div" option="board.clock.pclka.div.1"/>
@@ -53,6 +53,15 @@
       <configSetting altId="debug0.swclk.p300" configurationId="debug0.swclk" isUsedByDriver="true"/>
       <configSetting altId="debug0.swdio.p108" configurationId="debug0.swdio" isUsedByDriver="true"/>
       <configSetting altId="p002.output.low" configurationId="p002"/>
+      <configSetting altId="p103.output.low" configurationId="p103"/>
+      <configSetting altId="p104.output.low" configurationId="p104"/>
+      <configSetting altId="p402.output.high" configurationId="p402"/>
+      <configSetting altId="sci1.rxd.p212" configurationId="sci1.rxd"/>
+      <configSetting altId="sci1.sck.p100" configurationId="sci1.sck"/>
+      <configSetting altId="sci1.txd.p213" configurationId="sci1.txd"/>
+      <configSetting altId="sci2.rxd.p301" configurationId="sci2.rxd" isUsedByDriver="true"/>
+      <configSetting altId="sci2.sck.p111" configurationId="sci2.sck" isUsedByDriver="true"/>
+      <configSetting altId="sci2.txd.p302" configurationId="sci2.txd" isUsedByDriver="true"/>
       <configSetting altId="sci3.rxd.p408" configurationId="sci3.rxd" isUsedByDriver="true"/>
       <configSetting altId="sci3.txd.p409" configurationId="sci3.txd" isUsedByDriver="true"/>
       <configSetting altId="sci4.rxd.p206" configurationId="sci4.rxd" isUsedByDriver="true"/>
