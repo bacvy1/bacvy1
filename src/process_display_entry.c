@@ -13,6 +13,7 @@ void process_display_entry(void *pvParameters)
     display_app_init();
     while (1)
     {
+        display_process();
         vTaskDelay (1);
     }
 }

@@ -9,7 +9,7 @@ void process_lte_entry(void *pvParameters)
 {
     FSP_PARAMETER_NOT_USED (pvParameters);
     /* TODO: add your own code here */
-//
+
 //    mqtt_client_init();
 //    thingspeak_app_init();
     while (1)

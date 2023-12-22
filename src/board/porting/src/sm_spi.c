@@ -26,8 +26,7 @@ static    int32_t spi_read(sm_bsp_spi_t *_this,uint8_t *buff,uint16_t len){
 }
 static    int32_t spi_write(sm_bsp_spi_t *_this,uint8_t *buff,uint16_t len){
     /*User code*/;
-    spi_instance_t *p_spi = (spi_instance_t*)_this->handle;
-    return R_SCI_SPI_Write(p_spi->p_ctrl, buff, len, SPI_BIT_WIDTH_8_BITS);
+    return 0;
 }
 static    int32_t spi_write_read(sm_bsp_spi_t *_this,uint8_t *src,uint8_t *dest,uint16_t len){
     /*User code*/
@@ -35,11 +34,9 @@ static    int32_t spi_write_read(sm_bsp_spi_t *_this,uint8_t *src,uint8_t *dest,
 }
 static    int32_t spi_open(sm_bsp_spi_t *_this){
     /*User code*/
-    spi_instance_t *p_spi = (spi_instance_t*)_this->handle;
-    return R_SCI_SPI_Open(p_spi->p_ctrl, p_spi->p_cfg);
+    return 0;
 }
 static    int32_t spi_close(sm_bsp_spi_t *_this){
     /*User code*/
-    spi_instance_t *p_spi = (spi_instance_t*)_this->handle;
-    return R_SCI_SPI_Close(p_spi->p_ctrl);
+    return 0;
 }

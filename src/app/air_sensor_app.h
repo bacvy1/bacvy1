@@ -14,6 +14,7 @@
 #include "board.h"
 #include "thingspeak_app.h"
 #include "display_app.h"
+#include "gps_app.h"
 #include <sm_ec200s.h>
 
 
@@ -23,6 +24,7 @@ struct AIR_SENSOR_APP_t{
     sm_mqtt_client_t* mqtt_client;
     THING_SPEAK_APP   thingspeak;
     LCD               lcd;
+    L76_LB            gps;
 };
 
 extern AIR_SENSOR_APP air_sensor_app;

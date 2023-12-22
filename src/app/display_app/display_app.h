@@ -10,5 +10,5 @@
 #include "sm_lcd5110.h"
 
 void display_app_init();
-
+void display_process();
 #endif /* APP_DISPLAY_APP_DISPLAY_APP_H_ */

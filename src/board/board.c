@@ -11,25 +11,24 @@
 sm_bsp_uart_t *lte_uart = NULL;
 sm_bsp_io_t *lte_rs_pin = NULL;
 
-sm_bsp_spi_t *lcd_spi = NULL;
-sm_bsp_io_t *lcd_rs_pin = NULL;
-sm_bsp_io_t *lcd_io_pin = NULL;
-sm_bsp_io_t *lcd_cs_pin = NULL;
-bool spi_tranfer_complete = false;
+
+sm_bsp_io_t *lcd_rs_pin  = NULL;
+sm_bsp_io_t *lcd_dc_pin  = NULL;
+sm_bsp_io_t *lcd_cs_pin  = NULL;
+sm_bsp_io_t *lcd_sck_pin = NULL;
+sm_bsp_io_t *lcd_din_pin = NULL;
+
 void board_init(void){
+    R_IOPORT_Open(&g_ioport_ctrl, &g_bsp_pin_cfg);
     lte_rs_pin = sm_bsp_io_init(&io_func, (void*)&g_ioport, BSP_IO_PORT_00_PIN_02);
-    sm_bsp_io_open(lte_rs_pin, SM_BSP_IO_OUTPUT);
     lte_uart = sm_bsp_uart_init(&uart_func, (void*)&g_uart0);
     lte_uart->proc->open(lte_uart);
 
-    lcd_rs_pin = sm_bsp_io_init(&io_func, (void*)&g_ioport, BSP_IO_PORT_01_PIN_03);
-    sm_bsp_io_open(lcd_rs_pin, SM_BSP_IO_OUTPUT);
-    lcd_io_pin = sm_bsp_io_init(&io_func, (void*)&g_ioport, BSP_IO_PORT_01_PIN_04);
-    sm_bsp_io_open(lcd_io_pin, SM_BSP_IO_OUTPUT);
-    lcd_cs_pin = sm_bsp_io_init(&io_func, (void*)&g_ioport, BSP_IO_PORT_04_PIN_02);
-    sm_bsp_io_open(lcd_cs_pin, SM_BSP_IO_OUTPUT);
-    lcd_spi = sm_bsp_spi_init(&spi_func, (void*)&g_spi0);
-    lcd_spi->proc->open(lcd_spi);
+    lcd_rs_pin  = sm_bsp_io_init(&io_func, (void*)&g_ioport, LCD_RST);
+    lcd_dc_pin  = sm_bsp_io_init(&io_func, (void*)&g_ioport, LCD_DC);
+    lcd_cs_pin  = sm_bsp_io_init(&io_func, (void*)&g_ioport, LCD_CS);
+    lcd_sck_pin = sm_bsp_io_init(&io_func, (void*)&g_ioport, LCD_SCK);
+    lcd_din_pin = sm_bsp_io_init(&io_func, (void*)&g_ioport, LCD_DIN);
 }
 
 void lte_callback(uart_callback_args_t *p_args) {
@@ -45,11 +44,4 @@ void lte_callback(uart_callback_args_t *p_args) {
     }
 }
 
-/* Callback function */
-void sci_spi_callback(spi_callback_args_t *p_args)
-{
-    /* TODO: add your own code here */
-    if (p_args->event == SPI_EVENT_TRANSFER_COMPLETE){
-        spi_tranfer_complete = true;
-    }
-}
+
