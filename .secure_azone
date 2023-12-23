@@ -29,6 +29,7 @@
         </peripheral>
         <peripheral name="SCI3" group="SCI" security=""/>
         <peripheral name="SCI4" group="SCI" security=""/>
+        <peripheral name="RTC" security=""/>
         <peripheral name="ICU">
             <slot name="IRQ0" secure="false"/>
             <slot name="IRQ1" secure="false"/>
@@ -38,6 +39,7 @@
             <slot name="IRQ5" secure="false"/>
             <slot name="IRQ6" secure="false"/>
             <slot name="IRQ7" secure="false"/>
+            <slot name="IRQ8" secure="false"/>
         </peripheral>
     </partition>
 </azone>

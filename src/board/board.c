@@ -31,6 +31,19 @@ void board_init(void){
     lcd_din_pin = sm_bsp_io_init(&io_func, (void*)&g_ioport, LCD_DIN);
 }
 
+
+void set_time(struct tm *p_time){
+    R_RTC_CalendarTimeSet(&g_rtc0_ctrl, p_time);
+}
+
+struct tm p_time;
+
+struct tm* get_time(){
+    R_RTC_CalendarTimeGet(&g_rtc0_ctrl, &p_time);
+    return &p_time;
+}
+
+
 void lte_callback(uart_callback_args_t *p_args) {
     /* TODO: add your own code here */
 

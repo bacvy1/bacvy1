@@ -12,6 +12,7 @@
             [5] = sci_uart_txi_isr, /* SCI4 TXI (Transmit data empty) */
             [6] = sci_uart_tei_isr, /* SCI4 TEI (Transmit end) */
             [7] = sci_uart_eri_isr, /* SCI4 ERI (Receive error) */
+            [8] = rtc_carry_isr, /* RTC CARRY (Carry interrupt) */
         };
         const bsp_interrupt_event_t g_interrupt_event_link_select[BSP_ICU_VECTOR_MAX_ENTRIES] =
         {
@@ -23,5 +24,6 @@
             [5] = BSP_PRV_IELS_ENUM(EVENT_SCI4_TXI), /* SCI4 TXI (Transmit data empty) */
             [6] = BSP_PRV_IELS_ENUM(EVENT_SCI4_TEI), /* SCI4 TEI (Transmit end) */
             [7] = BSP_PRV_IELS_ENUM(EVENT_SCI4_ERI), /* SCI4 ERI (Receive error) */
+            [8] = BSP_PRV_IELS_ENUM(EVENT_RTC_CARRY), /* RTC CARRY (Carry interrupt) */
         };
         #endif
