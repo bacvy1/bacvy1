@@ -92,10 +92,10 @@ FSP Configuration
       P000 48 - - - - Disabled - - "ADC0: AN000; ICU0: IRQ06" - None - - 
       P001 47 - - - - Disabled - - "ADC0: AN001; ICU0: IRQ07" - None - - 
       P002 46 GPIO - - None "Output mode (Initial Low)" CMOS - "ADC0: AN002; ICU0: IRQ08" - IO - - 
-      P013 40 - - - - Disabled - - "ADC0: AN011; ANALOG0: VREFL" - None - - 
+      P013 40 ADC0_AN011 - - - "Analog mode" - None "ADC0: AN011; ANALOG0: VREFL" - IO - - 
       P014 39 - - - - Disabled - - "ADC0: AN012; DAC0: DA0" - None - - 
-      P015 38 - - - - Disabled - - "ADC0: AN013; DAC1: DA1; ICU0: IRQ13" - None - - 
-      P100 36 SCI1_SCK1 - Low None "Peripheral mode" CMOS None "AGT0: AGTIO0; GPT_POEG0: GTETRGA; GPT5: GTIOC5B; ICU0: IRQ02; QSPI0: QSPCLK; SCI0: RXD0; SCI0: SCL0; SCI1: SCK1" - IO - - 
+      P015 38 GPIO DHT_PIN - None "Output mode (Initial High)" CMOS - "ADC0: AN013; DAC1: DA1; ICU0: IRQ13" - IO - - 
+      P100 36 GPIO DUST_EN Low None "Output mode (Initial High)" CMOS - "AGT0: AGTIO0; GPT_POEG0: GTETRGA; GPT5: GTIOC5B; ICU0: IRQ02; QSPI0: QSPCLK; SCI0: RXD0; SCI0: SCL0; SCI1: SCK1" - IO - - 
       P101 35 - - - - Disabled - - "AGT0: AGTEE0; GPT_POEG1: GTETRGB; GPT5: GTIOC5A; ICU0: IRQ01; QSPI0: QIO1; SCI0: SDA0; SCI0: TXD0; SCI1: CTSRTS1" - None - - 
       P102 34 - - - - Disabled - - "ADC0: ADTRG0; AGT0: AGTO0; CAN0: CRX0; GPT_OPS0: GTOWLO; GPT2: GTIOC2B; QSPI0: QIO0; SCI0: SCK0" - None - - 
       P103 33 GPIO LCD_RST Low - "Output mode (Initial High)" CMOS - "AGT2: AGTIO2; CAN0: CTX0; GPT_OPS0: GTOWUP; GPT2: GTIOC2A; QSPI0: QIO3; SCI0: CTSRTS0" - IO - - 
@@ -109,8 +109,8 @@ FSP Configuration
       P201 20 - - - - Disabled - - "SYSTEM0: MD" - None - - 
       P206 18 SCI4_RXD4 - Low None "Peripheral mode" CMOS None "CTSU0: TS02; GPT_OPS0: GTIU; ICU0: IRQ00; IIC1: SDA1; SCI4: RXD4; SCI4: SCL4; SCI9: CTS9; SDHI0: SD0DAT2; SPI0: SSLA1; SSI0: SSIDATA0; USB_FS0: USB_VBUSEN" - IO - - 
       P207 17 SCI4_TXD4 - Low - "Peripheral mode" CMOS None "CTSU0: TSCAP; QSPI0: QSSL; SCI4: SDA4; SCI4: TXD4; SPI0: SSLA2" - IO - - 
-      P212 8 SCI1_RXD1 - Low None "Peripheral mode" CMOS None "AGT1: AGTEE1; CGC0: EXTAL; GPT_POEG3: GTETRGD; GPT0: GTIOC0B; ICU0: IRQ03; SCI1: RXD1; SCI1: SCL1" - IO - - 
-      P213 7 SCI1_TXD1 - Low None "Peripheral mode" CMOS None "AGT2: AGTEE2; CGC0: XTAL; GPT_POEG2: GTETRGC; GPT0: GTIOC0A; ICU0: IRQ02; SCI1: SDA1; SCI1: TXD1" - IO - - 
+      P212 8 - - - - Disabled - - "AGT1: AGTEE1; CGC0: EXTAL; GPT_POEG3: GTETRGD; GPT0: GTIOC0B; ICU0: IRQ03; SCI1: RXD1; SCI1: SCL1" - None - - 
+      P213 7 - - - - Disabled - - "AGT2: AGTEE2; CGC0: XTAL; GPT_POEG2: GTETRGC; GPT0: GTIOC0A; ICU0: IRQ02; SCI1: SDA1; SCI1: TXD1" - None - - 
       P300 24 DEBUG0_SWCLK - Low - "Peripheral mode" CMOS None "DEBUG0: SWCLK; DEBUG0: TCK; GPT_OPS0: GTOUUP; GPT0: GTIOC0A; SPI0: SSLA1" - IO - - 
       P301 23 - - - - Disabled - - "AGT0: AGTIO0; GPT_OPS0: GTOULO; GPT4: GTIOC4B; ICU0: IRQ06; SCI2: RXD2; SCI2: SCL2; SCI9: CTSRTS9; SPI0: SSLA2" - None - - 
       P302 22 GPIO LCD_DIN Low None "Output mode (Initial Low)" CMOS - "GPT_OPS0: GTOUUP; GPT4: GTIOC4A; ICU0: IRQ05; SCI2: SDA2; SCI2: TXD2; SPI0: SSLA3" - IO - - 
@@ -141,10 +141,10 @@ FSP Configuration
       P000 48 - - - - Disabled - - "ADC0: AN000; ICU0: IRQ06" - None - - 
       P001 47 - - - - Disabled - - "ADC0: AN001; ICU0: IRQ07" - None - - 
       P002 46 - - - None Disabled CMOS - "ADC0: AN002; ICU0: IRQ08" - IO - - 
-      P013 40 - - - - Disabled - - "ADC0: AN011; ANALOG0: VREFL" - None - - 
+      P013 40 - - - - Disabled - None "ADC0: AN011; ANALOG0: VREFL" - IO - - 
       P014 39 - - - - Disabled - - "ADC0: AN012; DAC0: DA0" - None - - 
-      P015 38 - - - - Disabled - - "ADC0: AN013; DAC1: DA1; ICU0: IRQ13" - None - - 
-      P100 36 - - Low None Disabled CMOS None "AGT0: AGTIO0; GPT_POEG0: GTETRGA; GPT5: GTIOC5B; ICU0: IRQ02; QSPI0: QSPCLK; SCI0: RXD0; SCI0: SCL0; SCI1: SCK1" - IO - - 
+      P015 38 - DHT_PIN - None Disabled CMOS - "ADC0: AN013; DAC1: DA1; ICU0: IRQ13" - IO - - 
+      P100 36 - DUST_EN Low None Disabled CMOS - "AGT0: AGTIO0; GPT_POEG0: GTETRGA; GPT5: GTIOC5B; ICU0: IRQ02; QSPI0: QSPCLK; SCI0: RXD0; SCI0: SCL0; SCI1: SCK1" - IO - - 
       P101 35 - - - - Disabled - - "AGT0: AGTEE0; GPT_POEG1: GTETRGB; GPT5: GTIOC5A; ICU0: IRQ01; QSPI0: QIO1; SCI0: SDA0; SCI0: TXD0; SCI1: CTSRTS1" - None - - 
       P102 34 - - - - Disabled - - "ADC0: ADTRG0; AGT0: AGTO0; CAN0: CRX0; GPT_OPS0: GTOWLO; GPT2: GTIOC2B; QSPI0: QIO0; SCI0: SCK0" - None - - 
       P103 33 - LCD_RST Low - Disabled CMOS - "AGT2: AGTIO2; CAN0: CTX0; GPT_OPS0: GTOWUP; GPT2: GTIOC2A; QSPI0: QIO3; SCI0: CTSRTS0" - IO - - 
@@ -158,8 +158,8 @@ FSP Configuration
       P201 20 - - - - Disabled - - "SYSTEM0: MD" - None - - 
       P206 18 - - Low None Disabled CMOS None "CTSU0: TS02; GPT_OPS0: GTIU; ICU0: IRQ00; IIC1: SDA1; SCI4: RXD4; SCI4: SCL4; SCI9: CTS9; SDHI0: SD0DAT2; SPI0: SSLA1; SSI0: SSIDATA0; USB_FS0: USB_VBUSEN" - IO - - 
       P207 17 - - Low - Disabled CMOS None "CTSU0: TSCAP; QSPI0: QSSL; SCI4: SDA4; SCI4: TXD4; SPI0: SSLA2" - IO - - 
-      P212 8 - - Low None Disabled CMOS None "AGT1: AGTEE1; CGC0: EXTAL; GPT_POEG3: GTETRGD; GPT0: GTIOC0B; ICU0: IRQ03; SCI1: RXD1; SCI1: SCL1" - IO - - 
-      P213 7 - - Low None Disabled CMOS None "AGT2: AGTEE2; CGC0: XTAL; GPT_POEG2: GTETRGC; GPT0: GTIOC0A; ICU0: IRQ02; SCI1: SDA1; SCI1: TXD1" - IO - - 
+      P212 8 - - - - Disabled - - "AGT1: AGTEE1; CGC0: EXTAL; GPT_POEG3: GTETRGD; GPT0: GTIOC0B; ICU0: IRQ03; SCI1: RXD1; SCI1: SCL1" - None - - 
+      P213 7 - - - - Disabled - - "AGT2: AGTEE2; CGC0: XTAL; GPT_POEG2: GTETRGC; GPT0: GTIOC0A; ICU0: IRQ02; SCI1: SDA1; SCI1: TXD1" - None - - 
       P300 24 DEBUG0_TCK - Low - "Peripheral mode" CMOS None "DEBUG0: SWCLK; DEBUG0: TCK; GPT_OPS0: GTOUUP; GPT0: GTIOC0A; SPI0: SSLA1" - IO - - 
       P301 23 - - - - Disabled - - "AGT0: AGTIO0; GPT_OPS0: GTOULO; GPT4: GTIOC4B; ICU0: IRQ06; SCI2: RXD2; SCI2: SCL2; SCI9: CTSRTS9; SPI0: SSLA2" - None - - 
       P302 22 - LCD_DIN Low None Disabled CMOS - "GPT_OPS0: GTOUUP; GPT4: GTIOC4A; ICU0: IRQ05; SCI2: SDA2; SCI2: TXD2; SPI0: SSLA3" - IO - - 
@@ -201,6 +201,9 @@ FSP Configuration
     RS-485 Support: Disable
     
   Module "Realtime Clock (r_rtc)"
+    Parameter Checking: Default (BSP)
+    
+  Module "ADC (r_adc)"
     Parameter Checking: Default (BSP)
     
   FreeRTOS
@@ -347,6 +350,43 @@ FSP Configuration
       Period Interrupt Priority: Disabled
       Carry Interrupt Priority: Priority 12
       
+    Instance "g_adc0 ADC (r_adc)"
+      General: Name: g_adc0
+      General: Unit: 0
+      General: Resolution: 12-Bit
+      General: Alignment: Right
+      General: Clear after read: On
+      General: Mode: Single Scan
+      General: Double-trigger: Disabled
+      Input: Channel Scan Mask (channel availability varies by MCU): 
+      Input: Group B Scan Mask (channel availability varies by MCU): 
+      Interrupts: Normal/Group A Trigger: Software
+      Interrupts: Group B Trigger: Disabled
+      Interrupts: Group Priority (Valid only in Group Scan Mode): Group A cannot interrupt Group B
+      Input: Add/Average Count: Disabled
+      Input: Reference Voltage control: VREFH0/VREFH
+      Input: Addition/Averaging Mask (channel availability varies by MCU and unit): 
+      Input: Sample and Hold: Sample and Hold Channels (Available only on selected MCUs): 
+      Input: Sample and Hold: Sample Hold States (Applies only to channels 0, 1, 2): 24
+      Input: Window Compare: Window Mode: Disabled
+      Input: Window Compare: Event Output: OR
+      Input: Window Compare: Window A: Enable: Disabled
+      Input: Window Compare: Window A: Channels to compare (channel availability varies by MCU and unit): 
+      Input: Window Compare: Window A: Channel comparison mode (channel availability varies by MCU and unit): 
+      Input: Window Compare: Window A: Lower Reference: 0
+      Input: Window Compare: Window A: Upper Reference: 0
+      Input: Window Compare: Window B: Enable: Disabled
+      Input: Window Compare: Window B: Channel to compare (channel availability varies by MCU and unit): Channel 0
+      Input: Window Compare: Window B: Comparison mode: Less Than or Outside Window
+      Input: Window Compare: Window B: Lower Reference: 0
+      Input: Window Compare: Window B: Upper Reference: 0
+      Interrupts: Callback: adc_callback
+      Interrupts: Scan End Interrupt Priority: Priority 6
+      Interrupts: Scan End Group B Interrupt Priority: Disabled
+      Interrupts: Window Compare A Interrupt Priority: Disabled
+      Interrupts: Window Compare B Interrupt Priority: Disabled
+      Extra: ADC Ring Buffer: Disabled
+      
   Thread "LTE"
     Symbol: process_lte
     Name: LTE
@@ -368,6 +408,15 @@ FSP Configuration
   Thread "LCD"
     Symbol: process_display
     Name: LCD
+    Stack size (bytes): 1024
+    Priority: 8
+    Thread Context: NULL
+    Memory Allocation: Static
+    Allocate Secure Context: Enable
+    
+  Thread "MEA"
+    Symbol: process_measure
+    Name: MEA
     Stack size (bytes): 1024
     Priority: 8
     Thread Context: NULL

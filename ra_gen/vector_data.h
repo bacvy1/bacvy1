@@ -6,7 +6,7 @@
         #endif
 /* Number of interrupts allocated */
 #ifndef VECTOR_DATA_IRQ_COUNT
-#define VECTOR_DATA_IRQ_COUNT    (9)
+#define VECTOR_DATA_IRQ_COUNT    (10)
 #endif
 /* ISR prototypes */
 void sci_uart_rxi_isr(void);
@@ -14,6 +14,7 @@ void sci_uart_txi_isr(void);
 void sci_uart_tei_isr(void);
 void sci_uart_eri_isr(void);
 void rtc_carry_isr(void);
+void adc_scan_end_isr(void);
 
 /* Vector table allocations */
 #define VECTOR_NUMBER_SCI3_RXI ((IRQn_Type) 0) /* SCI3 RXI (Received data full) */
@@ -34,6 +35,8 @@ void rtc_carry_isr(void);
 #define SCI4_ERI_IRQn          ((IRQn_Type) 7) /* SCI4 ERI (Receive error) */
 #define VECTOR_NUMBER_RTC_CARRY ((IRQn_Type) 8) /* RTC CARRY (Carry interrupt) */
 #define RTC_CARRY_IRQn          ((IRQn_Type) 8) /* RTC CARRY (Carry interrupt) */
+#define VECTOR_NUMBER_ADC0_SCAN_END ((IRQn_Type) 9) /* ADC0 SCAN END (A/D scan end interrupt) */
+#define ADC0_SCAN_END_IRQn          ((IRQn_Type) 9) /* ADC0 SCAN END (A/D scan end interrupt) */
 #ifdef __cplusplus
         }
         #endif

@@ -15,6 +15,7 @@
 #include "thingspeak_app.h"
 #include "display_app.h"
 #include "gps_app.h"
+#include "measure_app.h"
 #include "time.h"
 #include <sm_ec200s.h>
 
@@ -26,6 +27,8 @@ struct AIR_SENSOR_APP_t{
     THING_SPEAK_APP   thingspeak;
     LCD               lcd;
     L76_LB            gps;
+    DHT22             dht22;
+    DUST_SENSOR       dust_sensor;
     struct tm         time;
 };
 

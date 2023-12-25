@@ -1,1930 +1,983 @@
-T4D10 000:000.318   SEGGER J-Link V7.50 Log File
-T4D10 000:000.412   DLL Compiled: Jul  1 2021 17:37:28
-T4D10 000:000.417   Logging started @ 2023-12-23 06:58
-T4D10 000:000.421 - 0.423ms
-T4D10 000:000.429 JLINK_GetDLLVersion()
-T4D10 000:000.434 - 0.007ms returns 75000
-T4D10 000:001.049 JLINK_OpenEx(...)
-T4D10 000:006.853   Firmware: J-Link V9 compiled May  7 2021 16:26:12
-T4D10 000:007.172   Firmware: J-Link V9 compiled May  7 2021 16:26:12
-T4D10 000:007.407   Decompressing FW timestamp took 179 us
-T4D10 000:013.349   Hardware: V9.60
-T4D10 000:013.367   S/N: 69665566
-T4D10 000:013.374   OEM: SEGGER
-T4D10 000:013.380   Feature(s): RDI, GDB, FlashDL, FlashBP, JFlash
-T4D10 000:014.213   TELNET listener socket opened on port 19021
-T4D10 000:014.328   WEBSRV Starting webserver
-T4D10 000:014.448   WEBSRV Webserver running on local port 19080
-T4D10 000:014.457 - 13.410ms returns "O.K."
-T4D10 000:014.513 JLINK_ExecCommand("ProjectFile=D:\Soucre\Airsensor/Air_Sensor.elf.jlink", ...). 
-T4D10 000:024.919 - 10.425ms returns 0x00
-T4D10 000:025.449 JLINK_ExecCommand("device=R7FA4M2AC", ...). 
-T4D10 000:029.805   Device "R7FA4M2AC" selected.
-T4D10 000:030.051 - 4.597ms returns 0x00
-T4D10 000:030.070 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T4D10 000:030.230   ConfigTargetSettings() start
-T4D10 000:030.241    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 000:030.251   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 000:030.261   ConfigTargetSettings() end
-T4D10 000:030.917   InitTarget() start
-T4D10 000:030.929    J-Link Script File: Executing InitTarget()
-T4D10 000:030.934   Determining TrustZone configuration...
-T4D10 000:032.444     Secure Debug: Disabled (NSECSD)
-T4D10 000:032.456     Instruction set simulation: Disabled
-T4D10 000:032.466   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 000:033.212   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 000:033.699   InitTarget() end
-T4D10 000:035.195   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 000:187.340   ConfigTargetSettings() start
-T4D10 000:187.363    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 000:187.369   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 000:187.379   ConfigTargetSettings() end
-T4D10 000:187.386   InitTarget() start
-T4D10 000:187.392    J-Link Script File: Executing InitTarget()
-T4D10 000:187.396   Determining TrustZone configuration...
-T4D10 000:188.714     Secure Debug: Disabled (NSECSD)
-T4D10 000:188.726     Instruction set simulation: Disabled
-T4D10 000:188.734   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 000:189.673   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 000:190.369   InitTarget() end
-T4D10 000:191.871   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 000:192.322 - 162.260ms returns 1
-T4D10 000:192.451 JLINK_ReadMem(0x400E002C, 0x4 Bytes, ...)
-T4D10 000:192.578   ConfigTargetSettings() start
-T4D10 000:192.590    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 000:192.595   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 000:192.605   ConfigTargetSettings() end
-T4D10 000:192.611   InitTarget() start
-T4D10 000:192.617    J-Link Script File: Executing InitTarget()
-T4D10 000:192.621   Determining TrustZone configuration...
-T4D10 000:193.657     Secure Debug: Disabled (NSECSD)
-T4D10 000:193.667     Instruction set simulation: Disabled
-T4D10 000:193.675   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 000:194.356   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 000:194.861   InitTarget() end
-T4D10 000:196.315   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 000:348.693   ConfigTargetSettings() start
-T4D10 000:348.758    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 000:348.765   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 000:348.775   ConfigTargetSettings() end
-T4D10 000:348.782   InitTarget() start
-T4D10 000:348.788    J-Link Script File: Executing InitTarget()
-T4D10 000:348.792   Determining TrustZone configuration...
-T4D10 000:349.949     Secure Debug: Disabled (NSECSD)
-T4D10 000:349.961     Instruction set simulation: Disabled
-T4D10 000:349.970   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 000:350.761   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 000:351.278   InitTarget() end
-T4D10 000:352.845   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 000:353.271 - 160.826ms returns 1
-T4D10 000:353.323 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T4D10 000:353.516   ConfigTargetSettings() start
-T4D10 000:353.526    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 000:353.532   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 000:353.540   ConfigTargetSettings() end
-T4D10 000:353.546   InitTarget() start
-T4D10 000:353.552    J-Link Script File: Executing InitTarget()
-T4D10 000:353.556   Determining TrustZone configuration...
-T4D10 000:354.552     Secure Debug: Disabled (NSECSD)
-T4D10 000:354.563     Instruction set simulation: Disabled
-T4D10 000:354.571   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 000:355.265   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 000:355.789   InitTarget() end
-T4D10 000:357.251   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 000:509.426   ConfigTargetSettings() start
-T4D10 000:509.458    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 000:509.464   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 000:509.475   ConfigTargetSettings() end
-T4D10 000:509.482   InitTarget() start
-T4D10 000:509.488    J-Link Script File: Executing InitTarget()
-T4D10 000:509.492   Determining TrustZone configuration...
-T4D10 000:510.613     Secure Debug: Disabled (NSECSD)
-T4D10 000:510.626     Instruction set simulation: Disabled
-T4D10 000:510.635   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 000:511.445   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 000:511.916   InitTarget() end
-T4D10 000:513.401   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 000:513.810 - 160.490ms returns 1
-T4D10 000:513.843 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T4D10 000:513.941   ConfigTargetSettings() start
-T4D10 000:513.949    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 000:513.954   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 000:513.962   ConfigTargetSettings() end
-T4D10 000:513.968   InitTarget() start
-T4D10 000:513.974    J-Link Script File: Executing InitTarget()
-T4D10 000:513.978   Determining TrustZone configuration...
-T4D10 000:514.905     Secure Debug: Disabled (NSECSD)
-T4D10 000:514.913     Instruction set simulation: Disabled
-T4D10 000:514.921   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 000:515.657   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 000:516.123   InitTarget() end
-T4D10 000:517.558   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 000:669.038   ConfigTargetSettings() start
-T4D10 000:669.057    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 000:669.064   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 000:669.081   ConfigTargetSettings() end
-T4D10 000:669.088   InitTarget() start
-T4D10 000:669.094    J-Link Script File: Executing InitTarget()
-T4D10 000:669.098   Determining TrustZone configuration...
-T4D10 000:670.333     Secure Debug: Disabled (NSECSD)
-T4D10 000:670.345     Instruction set simulation: Disabled
-T4D10 000:670.353   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 000:671.244   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 000:671.822   InitTarget() end
-T4D10 000:673.427   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 000:673.894 - 160.057ms returns 1
-T4D10 000:673.982 JLINK_ReadMem(0x400E001C, 0x4 Bytes, ...)
-T4D10 000:674.124   ConfigTargetSettings() start
-T4D10 000:674.134    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 000:674.140   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 000:674.150   ConfigTargetSettings() end
-T4D10 000:674.158   InitTarget() start
-T4D10 000:674.163    J-Link Script File: Executing InitTarget()
-T4D10 000:674.168   Determining TrustZone configuration...
-T4D10 000:675.245     Secure Debug: Disabled (NSECSD)
-T4D10 000:675.254     Instruction set simulation: Disabled
-T4D10 000:675.262   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 000:676.013   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 000:676.527   InitTarget() end
-T4D10 000:677.975   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 000:829.495   ConfigTargetSettings() start
-T4D10 000:829.519    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 000:829.528   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 000:829.538   ConfigTargetSettings() end
-T4D10 000:829.546   InitTarget() start
-T4D10 000:829.552    J-Link Script File: Executing InitTarget()
-T4D10 000:829.556   Determining TrustZone configuration...
-T4D10 000:830.663     Secure Debug: Disabled (NSECSD)
-T4D10 000:830.675     Instruction set simulation: Disabled
-T4D10 000:830.683   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 000:831.530   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 000:832.006   InitTarget() end
-T4D10 000:833.473   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 000:833.883 - 159.904ms returns 1
-T4D10 000:833.906 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T4D10 000:834.000   ConfigTargetSettings() start
-T4D10 000:834.007    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 000:834.012   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 000:834.020   ConfigTargetSettings() end
-T4D10 000:834.027   InitTarget() start
-T4D10 000:834.032    J-Link Script File: Executing InitTarget()
-T4D10 000:834.037   Determining TrustZone configuration...
-T4D10 000:834.967     Secure Debug: Disabled (NSECSD)
-T4D10 000:834.979     Instruction set simulation: Disabled
-T4D10 000:834.987   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 000:835.756   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 000:836.286   InitTarget() end
-T4D10 000:837.762   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 000:989.458   ConfigTargetSettings() start
-T4D10 000:989.486    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 000:989.501   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 000:989.527   ConfigTargetSettings() end
-T4D10 000:989.540   InitTarget() start
-T4D10 000:989.547    J-Link Script File: Executing InitTarget()
-T4D10 000:989.553   Determining TrustZone configuration...
-T4D10 000:990.750     Secure Debug: Disabled (NSECSD)
-T4D10 000:990.782     Instruction set simulation: Disabled
-T4D10 000:990.792   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 000:991.658   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 000:992.162   InitTarget() end
-T4D10 000:993.658   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 000:994.060 - 160.158ms returns 1
-T4D10 000:994.138 JLINK_ReadMem(0x400E0018, 0x4 Bytes, ...)
-T4D10 000:994.304   ConfigTargetSettings() start
-T4D10 000:994.314    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 000:994.320   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 000:994.328   ConfigTargetSettings() end
-T4D10 000:994.335   InitTarget() start
-T4D10 000:994.341    J-Link Script File: Executing InitTarget()
-T4D10 000:994.345   Determining TrustZone configuration...
-T4D10 000:995.467     Secure Debug: Disabled (NSECSD)
-T4D10 000:995.478     Instruction set simulation: Disabled
-T4D10 000:995.487   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 000:996.217   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 000:996.745   InitTarget() end
-T4D10 000:998.210   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 001:150.890   ConfigTargetSettings() start
-T4D10 001:150.917    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 001:150.923   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 001:150.934   ConfigTargetSettings() end
-T4D10 001:150.941   InitTarget() start
-T4D10 001:150.947    J-Link Script File: Executing InitTarget()
-T4D10 001:150.951   Determining TrustZone configuration...
-T4D10 001:152.182     Secure Debug: Disabled (NSECSD)
-T4D10 001:152.194     Instruction set simulation: Disabled
-T4D10 001:152.203   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 001:153.051   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 001:153.681   InitTarget() end
-T4D10 001:155.078   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 001:155.486 - 161.352ms returns 1
-T4D10 001:155.512 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T4D10 001:155.642   ConfigTargetSettings() start
-T4D10 001:155.649    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 001:155.654   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 001:155.663   ConfigTargetSettings() end
-T4D10 001:155.669   InitTarget() start
-T4D10 001:155.675    J-Link Script File: Executing InitTarget()
-T4D10 001:155.679   Determining TrustZone configuration...
-T4D10 001:156.778     Secure Debug: Disabled (NSECSD)
-T4D10 001:156.819     Instruction set simulation: Disabled
-T4D10 001:156.831   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 001:157.602   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 001:158.151   InitTarget() end
-T4D10 001:159.584   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 001:310.718   ConfigTargetSettings() start
-T4D10 001:310.743    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 001:310.749   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 001:310.759   ConfigTargetSettings() end
-T4D10 001:310.766   InitTarget() start
-T4D10 001:310.772    J-Link Script File: Executing InitTarget()
-T4D10 001:310.776   Determining TrustZone configuration...
-T4D10 001:311.698     Secure Debug: Disabled (NSECSD)
-T4D10 001:311.712     Instruction set simulation: Disabled
-T4D10 001:311.720   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 001:312.444   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 001:312.963   InitTarget() end
-T4D10 001:314.391   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 001:314.778 - 159.271ms returns 1
-T4D10 001:315.083 JLINK_ReadMem(0x400E0020, 0x4 Bytes, ...)
-T4D10 001:315.189   ConfigTargetSettings() start
-T4D10 001:315.197    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 001:315.202   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 001:315.211   ConfigTargetSettings() end
-T4D10 001:315.217   InitTarget() start
-T4D10 001:315.223    J-Link Script File: Executing InitTarget()
-T4D10 001:315.227   Determining TrustZone configuration...
-T4D10 001:316.109     Secure Debug: Disabled (NSECSD)
-T4D10 001:316.117     Instruction set simulation: Disabled
-T4D10 001:316.125   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 001:316.862   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 001:317.366   InitTarget() end
-T4D10 001:318.853   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 001:470.667   ConfigTargetSettings() start
-T4D10 001:470.690    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 001:470.697   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 001:470.707   ConfigTargetSettings() end
-T4D10 001:470.714   InitTarget() start
-T4D10 001:470.719    J-Link Script File: Executing InitTarget()
-T4D10 001:470.724   Determining TrustZone configuration...
-T4D10 001:472.011     Secure Debug: Disabled (NSECSD)
-T4D10 001:472.023     Instruction set simulation: Disabled
-T4D10 001:472.032   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 001:472.789   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 001:473.285   InitTarget() end
-T4D10 001:474.806   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 001:475.232 - 160.155ms returns 1
-T4D10 001:475.264 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T4D10 001:475.446   ConfigTargetSettings() start
-T4D10 001:475.454    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 001:475.460   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 001:475.469   ConfigTargetSettings() end
-T4D10 001:475.476   InitTarget() start
-T4D10 001:475.482    J-Link Script File: Executing InitTarget()
-T4D10 001:475.486   Determining TrustZone configuration...
-T4D10 001:476.473     Secure Debug: Disabled (NSECSD)
-T4D10 001:476.481     Instruction set simulation: Disabled
-T4D10 001:476.489   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 001:477.214   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 001:477.756   InitTarget() end
-T4D10 001:479.129   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 001:630.104   ConfigTargetSettings() start
-T4D10 001:630.130    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 001:630.136   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 001:630.146   ConfigTargetSettings() end
-T4D10 001:630.153   InitTarget() start
-T4D10 001:630.159    J-Link Script File: Executing InitTarget()
-T4D10 001:630.163   Determining TrustZone configuration...
-T4D10 001:631.335     Secure Debug: Disabled (NSECSD)
-T4D10 001:631.348     Instruction set simulation: Disabled
-T4D10 001:631.358   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 001:632.129   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 001:632.871   InitTarget() end
-T4D10 001:634.339   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 001:634.812 - 159.552ms returns 1
-T4D10 001:634.858 JLINK_ReadMem(0x400E0028, 0x4 Bytes, ...)
-T4D10 001:634.970   ConfigTargetSettings() start
-T4D10 001:634.985    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 001:634.991   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 001:635.000   ConfigTargetSettings() end
-T4D10 001:635.006   InitTarget() start
-T4D10 001:635.012    J-Link Script File: Executing InitTarget()
-T4D10 001:635.017   Determining TrustZone configuration...
-T4D10 001:635.898     Secure Debug: Disabled (NSECSD)
-T4D10 001:635.907     Instruction set simulation: Disabled
-T4D10 001:635.914   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 001:636.577   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 001:637.036   InitTarget() end
-T4D10 001:638.471   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 001:790.406   ConfigTargetSettings() start
-T4D10 001:790.468    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 001:790.481   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 001:790.497   ConfigTargetSettings() end
-T4D10 001:790.510   InitTarget() start
-T4D10 001:790.521    J-Link Script File: Executing InitTarget()
-T4D10 001:790.527   Determining TrustZone configuration...
-T4D10 001:791.844     Secure Debug: Disabled (NSECSD)
-T4D10 001:791.865     Instruction set simulation: Disabled
-T4D10 001:791.875   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 001:792.786   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 001:793.376   InitTarget() end
-T4D10 001:794.814   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 001:795.218 - 160.366ms returns 1
-T4D10 001:795.249 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T4D10 001:795.381   ConfigTargetSettings() start
-T4D10 001:795.391    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 001:795.397   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 001:795.406   ConfigTargetSettings() end
-T4D10 001:795.412   InitTarget() start
-T4D10 001:795.418    J-Link Script File: Executing InitTarget()
-T4D10 001:795.423   Determining TrustZone configuration...
-T4D10 001:796.339     Secure Debug: Disabled (NSECSD)
-T4D10 001:796.350     Instruction set simulation: Disabled
-T4D10 001:796.358   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 001:797.059   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 001:797.525   InitTarget() end
-T4D10 001:798.971   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 001:950.804   ConfigTargetSettings() start
-T4D10 001:950.862    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 001:950.869   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 001:950.879   ConfigTargetSettings() end
-T4D10 001:950.886   InitTarget() start
-T4D10 001:950.892    J-Link Script File: Executing InitTarget()
-T4D10 001:950.896   Determining TrustZone configuration...
-T4D10 001:952.041     Secure Debug: Disabled (NSECSD)
-T4D10 001:952.053     Instruction set simulation: Disabled
-T4D10 001:952.061   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 001:952.877   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 001:953.361   InitTarget() end
-T4D10 001:954.866   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 001:955.239 - 159.994ms returns 1
-T4D10 001:955.284 JLINK_ReadMem(0x400E0024, 0x4 Bytes, ...)
-T4D10 001:955.442   ConfigTargetSettings() start
-T4D10 001:955.449    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 001:955.454   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 001:955.462   ConfigTargetSettings() end
-T4D10 001:955.475   InitTarget() start
-T4D10 001:955.481    J-Link Script File: Executing InitTarget()
-T4D10 001:955.485   Determining TrustZone configuration...
-T4D10 001:956.445     Secure Debug: Disabled (NSECSD)
-T4D10 001:956.472     Instruction set simulation: Disabled
-T4D10 001:956.486   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 001:957.184   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 001:957.703   InitTarget() end
-T4D10 001:959.076   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 002:111.109   ConfigTargetSettings() start
-T4D10 002:111.133    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 002:111.140   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 002:111.149   ConfigTargetSettings() end
-T4D10 002:111.156   InitTarget() start
-T4D10 002:111.162    J-Link Script File: Executing InitTarget()
-T4D10 002:111.166   Determining TrustZone configuration...
-T4D10 002:112.384     Secure Debug: Disabled (NSECSD)
-T4D10 002:112.396     Instruction set simulation: Disabled
-T4D10 002:112.404   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 002:113.244   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 002:113.779   InitTarget() end
-T4D10 002:115.218   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 002:115.614 - 160.336ms returns 1
-T4D10 002:115.643 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T4D10 002:115.774   ConfigTargetSettings() start
-T4D10 002:115.785    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 002:115.790   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 002:115.798   ConfigTargetSettings() end
-T4D10 002:115.804   InitTarget() start
-T4D10 002:115.810    J-Link Script File: Executing InitTarget()
-T4D10 002:115.815   Determining TrustZone configuration...
-T4D10 002:116.733     Secure Debug: Disabled (NSECSD)
-T4D10 002:116.744     Instruction set simulation: Disabled
-T4D10 002:116.752   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 002:117.443   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 002:117.917   InitTarget() end
-T4D10 002:119.335   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 002:270.839   ConfigTargetSettings() start
-T4D10 002:270.900    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 002:270.906   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 002:270.916   ConfigTargetSettings() end
-T4D10 002:270.923   InitTarget() start
-T4D10 002:270.929    J-Link Script File: Executing InitTarget()
-T4D10 002:270.933   Determining TrustZone configuration...
-T4D10 002:272.187     Secure Debug: Disabled (NSECSD)
-T4D10 002:272.201     Instruction set simulation: Disabled
-T4D10 002:272.209   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 002:272.957   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 002:273.460   InitTarget() end
-T4D10 002:275.107   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 002:275.588 - 159.951ms returns 1
-T4D10 002:275.662 JLINK_ReadMem(0x400E002C, 0x4 Bytes, ...)
-T4D10 002:275.831   ConfigTargetSettings() start
-T4D10 002:275.846    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 002:275.852   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 002:275.862   ConfigTargetSettings() end
-T4D10 002:275.869   InitTarget() start
-T4D10 002:275.875    J-Link Script File: Executing InitTarget()
-T4D10 002:275.879   Determining TrustZone configuration...
-T4D10 002:277.032     Secure Debug: Disabled (NSECSD)
-T4D10 002:277.049     Instruction set simulation: Disabled
-T4D10 002:277.058   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 002:277.931   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 002:278.497   InitTarget() end
-T4D10 002:279.939   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 002:431.981   ConfigTargetSettings() start
-T4D10 002:432.004    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 002:432.010   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 002:432.020   ConfigTargetSettings() end
-T4D10 002:432.027   InitTarget() start
-T4D10 002:432.033    J-Link Script File: Executing InitTarget()
-T4D10 002:432.037   Determining TrustZone configuration...
-T4D10 002:433.120     Secure Debug: Disabled (NSECSD)
-T4D10 002:433.131     Instruction set simulation: Disabled
-T4D10 002:433.139   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 002:433.949   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 002:434.441   InitTarget() end
-T4D10 002:435.813   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 002:436.185 - 160.526ms returns 1
-T4D10 002:436.209 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T4D10 002:436.301   ConfigTargetSettings() start
-T4D10 002:436.309    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 002:436.314   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 002:436.322   ConfigTargetSettings() end
-T4D10 002:436.328   InitTarget() start
-T4D10 002:436.334    J-Link Script File: Executing InitTarget()
-T4D10 002:436.338   Determining TrustZone configuration...
-T4D10 002:437.258     Secure Debug: Disabled (NSECSD)
-T4D10 002:437.267     Instruction set simulation: Disabled
-T4D10 002:437.275   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 002:437.928   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 002:438.471   InitTarget() end
-T4D10 002:439.931   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 002:592.261   ConfigTargetSettings() start
-T4D10 002:592.321    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 002:592.327   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 002:592.337   ConfigTargetSettings() end
-T4D10 002:592.344   InitTarget() start
-T4D10 002:592.350    J-Link Script File: Executing InitTarget()
-T4D10 002:592.354   Determining TrustZone configuration...
-T4D10 002:593.441     Secure Debug: Disabled (NSECSD)
-T4D10 002:593.449     Instruction set simulation: Disabled
-T4D10 002:593.457   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 002:594.218   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 002:594.693   InitTarget() end
-T4D10 002:596.127   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 002:596.485 - 160.279ms returns 1
-T4D10 002:596.500 JLINK_ReadMem(0x400E002C, 0x4 Bytes, ...)
-T4D10 002:596.593   ConfigTargetSettings() start
-T4D10 002:596.600    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 002:596.605   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 002:596.613   ConfigTargetSettings() end
-T4D10 002:596.619   InitTarget() start
-T4D10 002:596.625    J-Link Script File: Executing InitTarget()
-T4D10 002:596.629   Determining TrustZone configuration...
-T4D10 002:597.496     Secure Debug: Disabled (NSECSD)
-T4D10 002:597.504     Instruction set simulation: Disabled
-T4D10 002:597.511   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 002:598.173   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 002:598.727   InitTarget() end
-T4D10 002:600.153   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 002:752.523   ConfigTargetSettings() start
-T4D10 002:752.555    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 002:752.562   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 002:752.571   ConfigTargetSettings() end
-T4D10 002:752.578   InitTarget() start
-T4D10 002:752.584    J-Link Script File: Executing InitTarget()
-T4D10 002:752.588   Determining TrustZone configuration...
-T4D10 002:753.817     Secure Debug: Disabled (NSECSD)
-T4D10 002:753.830     Instruction set simulation: Disabled
-T4D10 002:753.838   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 002:754.755   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 002:755.315   InitTarget() end
-T4D10 002:756.929   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 002:757.518 - 161.077ms returns 1
-T4D10 002:758.061 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T4D10 002:758.222   ConfigTargetSettings() start
-T4D10 002:758.233    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 002:758.241   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 002:758.253   ConfigTargetSettings() end
-T4D10 002:758.261   InitTarget() start
-T4D10 002:758.267    J-Link Script File: Executing InitTarget()
-T4D10 002:758.271   Determining TrustZone configuration...
-T4D10 002:759.283     Secure Debug: Disabled (NSECSD)
-T4D10 002:759.346     Instruction set simulation: Disabled
-T4D10 002:759.382   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 002:760.110   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 002:760.692   InitTarget() end
-T4D10 002:762.156   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 002:914.057   ConfigTargetSettings() start
-T4D10 002:914.083    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 002:914.090   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 002:914.100   ConfigTargetSettings() end
-T4D10 002:914.107   InitTarget() start
-T4D10 002:914.113    J-Link Script File: Executing InitTarget()
-T4D10 002:914.117   Determining TrustZone configuration...
-T4D10 002:915.220     Secure Debug: Disabled (NSECSD)
-T4D10 002:915.235     Instruction set simulation: Disabled
-T4D10 002:915.243   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 002:915.968   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 002:916.496   InitTarget() end
-T4D10 002:917.916   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 002:918.309 - 160.252ms returns 1
-T4D10 002:918.381 JLINK_ReadMem(0x400E001C, 0x4 Bytes, ...)
-T4D10 002:918.523   ConfigTargetSettings() start
-T4D10 002:918.530    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 002:918.535   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 002:918.543   ConfigTargetSettings() end
-T4D10 002:918.550   InitTarget() start
-T4D10 002:918.556    J-Link Script File: Executing InitTarget()
-T4D10 002:918.560   Determining TrustZone configuration...
-T4D10 002:919.522     Secure Debug: Disabled (NSECSD)
-T4D10 002:919.530     Instruction set simulation: Disabled
-T4D10 002:919.538   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 002:920.319   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 002:920.780   InitTarget() end
-T4D10 002:922.180   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 003:073.672   ConfigTargetSettings() start
-T4D10 003:073.707    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 003:073.713   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 003:073.741   ConfigTargetSettings() end
-T4D10 003:073.749   InitTarget() start
-T4D10 003:073.754    J-Link Script File: Executing InitTarget()
-T4D10 003:073.759   Determining TrustZone configuration...
-T4D10 003:074.809     Secure Debug: Disabled (NSECSD)
-T4D10 003:074.825     Instruction set simulation: Disabled
-T4D10 003:074.834   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 003:075.551   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 003:076.058   InitTarget() end
-T4D10 003:077.580   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 003:077.982 - 159.606ms returns 1
-T4D10 003:078.263 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T4D10 003:078.443   ConfigTargetSettings() start
-T4D10 003:078.451    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 003:078.457   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 003:078.467   ConfigTargetSettings() end
-T4D10 003:078.474   InitTarget() start
-T4D10 003:078.480    J-Link Script File: Executing InitTarget()
-T4D10 003:078.484   Determining TrustZone configuration...
-T4D10 003:079.499     Secure Debug: Disabled (NSECSD)
-T4D10 003:079.507     Instruction set simulation: Disabled
-T4D10 003:079.515   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 003:080.224   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 003:080.801   InitTarget() end
-T4D10 003:082.180   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 003:233.856   ConfigTargetSettings() start
-T4D10 003:233.881    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 003:233.887   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 003:233.897   ConfigTargetSettings() end
-T4D10 003:233.905   InitTarget() start
-T4D10 003:233.910    J-Link Script File: Executing InitTarget()
-T4D10 003:233.915   Determining TrustZone configuration...
-T4D10 003:235.316     Secure Debug: Disabled (NSECSD)
-T4D10 003:235.328     Instruction set simulation: Disabled
-T4D10 003:235.337   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 003:236.174   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 003:236.769   InitTarget() end
-T4D10 003:238.229   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 003:238.586 - 160.327ms returns 1
-T4D10 003:238.632 JLINK_ReadMem(0x400E0018, 0x4 Bytes, ...)
-T4D10 003:238.734   ConfigTargetSettings() start
-T4D10 003:238.741    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 003:238.746   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 003:238.755   ConfigTargetSettings() end
-T4D10 003:238.761   InitTarget() start
-T4D10 003:238.767    J-Link Script File: Executing InitTarget()
-T4D10 003:238.772   Determining TrustZone configuration...
-T4D10 003:239.705     Secure Debug: Disabled (NSECSD)
-T4D10 003:239.731     Instruction set simulation: Disabled
-T4D10 003:239.745   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 003:240.524   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 003:241.007   InitTarget() end
-T4D10 003:242.474   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 003:394.652   ConfigTargetSettings() start
-T4D10 003:394.712    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 003:394.719   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 003:394.729   ConfigTargetSettings() end
-T4D10 003:394.737   InitTarget() start
-T4D10 003:394.743    J-Link Script File: Executing InitTarget()
-T4D10 003:394.754   Determining TrustZone configuration...
-T4D10 003:395.758     Secure Debug: Disabled (NSECSD)
-T4D10 003:395.771     Instruction set simulation: Disabled
-T4D10 003:395.780   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 003:396.522   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 003:396.983   InitTarget() end
-T4D10 003:398.392   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 003:398.744 - 160.115ms returns 1
-T4D10 003:398.766 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T4D10 003:398.858   ConfigTargetSettings() start
-T4D10 003:398.865    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 003:398.871   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 003:398.879   ConfigTargetSettings() end
-T4D10 003:398.885   InitTarget() start
-T4D10 003:398.891    J-Link Script File: Executing InitTarget()
-T4D10 003:398.896   Determining TrustZone configuration...
-T4D10 003:399.752     Secure Debug: Disabled (NSECSD)
-T4D10 003:399.759     Instruction set simulation: Disabled
-T4D10 003:399.767   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 003:400.439   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 003:400.897   InitTarget() end
-T4D10 003:402.331   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 003:553.633   ConfigTargetSettings() start
-T4D10 003:553.652    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 003:553.658   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 003:553.668   ConfigTargetSettings() end
-T4D10 003:553.675   InitTarget() start
-T4D10 003:553.681    J-Link Script File: Executing InitTarget()
-T4D10 003:553.685   Determining TrustZone configuration...
-T4D10 003:554.748     Secure Debug: Disabled (NSECSD)
-T4D10 003:554.759     Instruction set simulation: Disabled
-T4D10 003:554.768   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 003:555.524   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 003:556.011   InitTarget() end
-T4D10 003:557.560   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 003:557.998 - 159.239ms returns 1
-T4D10 003:558.079 JLINK_ReadMem(0x400E0020, 0x4 Bytes, ...)
-T4D10 003:558.209   ConfigTargetSettings() start
-T4D10 003:558.219    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 003:558.225   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 003:558.240   ConfigTargetSettings() end
-T4D10 003:558.247   InitTarget() start
-T4D10 003:558.253    J-Link Script File: Executing InitTarget()
-T4D10 003:558.258   Determining TrustZone configuration...
-T4D10 003:559.325     Secure Debug: Disabled (NSECSD)
-T4D10 003:559.335     Instruction set simulation: Disabled
-T4D10 003:559.343   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 003:560.095   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 003:560.653   InitTarget() end
-T4D10 003:562.095   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 003:713.791   ConfigTargetSettings() start
-T4D10 003:713.851    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 003:713.858   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 003:713.868   ConfigTargetSettings() end
-T4D10 003:713.875   InitTarget() start
-T4D10 003:713.881    J-Link Script File: Executing InitTarget()
-T4D10 003:713.885   Determining TrustZone configuration...
-T4D10 003:715.159     Secure Debug: Disabled (NSECSD)
-T4D10 003:715.171     Instruction set simulation: Disabled
-T4D10 003:715.181   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 003:716.043   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 003:716.603   InitTarget() end
-T4D10 003:718.030   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 003:718.455 - 160.383ms returns 1
-T4D10 003:718.529 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T4D10 003:718.665   ConfigTargetSettings() start
-T4D10 003:718.676    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 003:718.681   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 003:718.690   ConfigTargetSettings() end
-T4D10 003:718.696   InitTarget() start
-T4D10 003:718.702    J-Link Script File: Executing InitTarget()
-T4D10 003:718.706   Determining TrustZone configuration...
-T4D10 003:719.692     Secure Debug: Disabled (NSECSD)
-T4D10 003:719.703     Instruction set simulation: Disabled
-T4D10 003:719.711   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 003:720.439   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 003:720.900   InitTarget() end
-T4D10 003:722.334   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 003:873.937   ConfigTargetSettings() start
-T4D10 003:874.001    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 003:874.008   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 003:874.020   ConfigTargetSettings() end
-T4D10 003:874.029   InitTarget() start
-T4D10 003:874.035    J-Link Script File: Executing InitTarget()
-T4D10 003:874.039   Determining TrustZone configuration...
-T4D10 003:874.937     Secure Debug: Disabled (NSECSD)
-T4D10 003:874.950     Instruction set simulation: Disabled
-T4D10 003:874.958   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 003:875.691   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 003:876.152   InitTarget() end
-T4D10 003:877.608   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 003:877.979 - 159.454ms returns 1
-T4D10 003:878.020 JLINK_ReadMem(0x400E0028, 0x4 Bytes, ...)
-T4D10 003:878.113   ConfigTargetSettings() start
-T4D10 003:878.120    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 003:878.125   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 003:878.133   ConfigTargetSettings() end
-T4D10 003:878.139   InitTarget() start
-T4D10 003:878.145    J-Link Script File: Executing InitTarget()
-T4D10 003:878.150   Determining TrustZone configuration...
-T4D10 003:879.117     Secure Debug: Disabled (NSECSD)
-T4D10 003:879.129     Instruction set simulation: Disabled
-T4D10 003:879.138   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 003:879.940   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 003:880.471   InitTarget() end
-T4D10 003:881.844   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 004:034.230   ConfigTargetSettings() start
-T4D10 004:034.254    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 004:034.260   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 004:034.270   ConfigTargetSettings() end
-T4D10 004:034.277   InitTarget() start
-T4D10 004:034.283    J-Link Script File: Executing InitTarget()
-T4D10 004:034.287   Determining TrustZone configuration...
-T4D10 004:035.383     Secure Debug: Disabled (NSECSD)
-T4D10 004:035.395     Instruction set simulation: Disabled
-T4D10 004:035.404   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 004:036.179   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 004:036.747   InitTarget() end
-T4D10 004:038.263   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 004:038.720 - 160.707ms returns 1
-T4D10 004:038.755 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T4D10 004:038.885   ConfigTargetSettings() start
-T4D10 004:038.896    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 004:038.901   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 004:038.910   ConfigTargetSettings() end
-T4D10 004:038.917   InitTarget() start
-T4D10 004:038.923    J-Link Script File: Executing InitTarget()
-T4D10 004:038.927   Determining TrustZone configuration...
-T4D10 004:040.009     Secure Debug: Disabled (NSECSD)
-T4D10 004:040.037     Instruction set simulation: Disabled
-T4D10 004:040.057   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 004:041.024   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 004:041.544   InitTarget() end
-T4D10 004:043.064   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 004:194.879   ConfigTargetSettings() start
-T4D10 004:194.905    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 004:194.911   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 004:194.922   ConfigTargetSettings() end
-T4D10 004:194.929   InitTarget() start
-T4D10 004:194.935    J-Link Script File: Executing InitTarget()
-T4D10 004:194.939   Determining TrustZone configuration...
-T4D10 004:196.186     Secure Debug: Disabled (NSECSD)
-T4D10 004:196.198     Instruction set simulation: Disabled
-T4D10 004:196.207   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 004:197.114   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 004:197.687   InitTarget() end
-T4D10 004:199.151   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 004:199.536 - 160.787ms returns 1
-T4D10 004:199.884 JLINK_ReadMem(0x400E0024, 0x4 Bytes, ...)
-T4D10 004:200.063   ConfigTargetSettings() start
-T4D10 004:200.071    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 004:200.076   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 004:200.084   ConfigTargetSettings() end
-T4D10 004:200.091   InitTarget() start
-T4D10 004:200.097    J-Link Script File: Executing InitTarget()
-T4D10 004:200.101   Determining TrustZone configuration...
-T4D10 004:201.106     Secure Debug: Disabled (NSECSD)
-T4D10 004:201.116     Instruction set simulation: Disabled
-T4D10 004:201.125   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 004:201.858   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 004:202.322   InitTarget() end
-T4D10 004:203.862   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 004:355.130   ConfigTargetSettings() start
-T4D10 004:355.154    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 004:355.161   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 004:355.171   ConfigTargetSettings() end
-T4D10 004:355.178   InitTarget() start
-T4D10 004:355.184    J-Link Script File: Executing InitTarget()
-T4D10 004:355.189   Determining TrustZone configuration...
-T4D10 004:356.251     Secure Debug: Disabled (NSECSD)
-T4D10 004:356.264     Instruction set simulation: Disabled
-T4D10 004:356.273   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 004:357.110   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 004:357.768   InitTarget() end
-T4D10 004:359.358   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 004:359.769 - 159.892ms returns 1
-T4D10 004:359.887 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T4D10 004:360.043   ConfigTargetSettings() start
-T4D10 004:360.055    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 004:360.060   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 004:360.078   ConfigTargetSettings() end
-T4D10 004:360.085   InitTarget() start
-T4D10 004:360.091    J-Link Script File: Executing InitTarget()
-T4D10 004:360.095   Determining TrustZone configuration...
-T4D10 004:361.209     Secure Debug: Disabled (NSECSD)
-T4D10 004:361.220     Instruction set simulation: Disabled
-T4D10 004:361.228   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 004:362.003   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 004:362.523   InitTarget() end
-T4D10 004:363.973   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 004:515.935   ConfigTargetSettings() start
-T4D10 004:515.951    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 004:515.958   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 004:515.968   ConfigTargetSettings() end
-T4D10 004:515.975   InitTarget() start
-T4D10 004:515.980    J-Link Script File: Executing InitTarget()
-T4D10 004:515.985   Determining TrustZone configuration...
-T4D10 004:517.098     Secure Debug: Disabled (NSECSD)
-T4D10 004:517.110     Instruction set simulation: Disabled
-T4D10 004:517.118   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 004:517.968   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 004:518.523   InitTarget() end
-T4D10 004:519.975   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 004:520.402 - 160.522ms returns 1
-T4D10 004:520.422 JLINK_ReadMem(0x400E002C, 0x4 Bytes, ...)
-T4D10 004:520.550   ConfigTargetSettings() start
-T4D10 004:520.561    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 004:520.566   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 004:520.574   ConfigTargetSettings() end
-T4D10 004:520.581   InitTarget() start
-T4D10 004:520.587    J-Link Script File: Executing InitTarget()
-T4D10 004:520.591   Determining TrustZone configuration...
-T4D10 004:521.575     Secure Debug: Disabled (NSECSD)
-T4D10 004:521.586     Instruction set simulation: Disabled
-T4D10 004:521.594   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 004:522.466   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 004:523.004   InitTarget() end
-T4D10 004:524.511   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 004:676.004   ConfigTargetSettings() start
-T4D10 004:676.029    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 004:676.036   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 004:676.046   ConfigTargetSettings() end
-T4D10 004:676.053   InitTarget() start
-T4D10 004:676.059    J-Link Script File: Executing InitTarget()
-T4D10 004:676.063   Determining TrustZone configuration...
-T4D10 004:677.251     Secure Debug: Disabled (NSECSD)
-T4D10 004:677.263     Instruction set simulation: Disabled
-T4D10 004:677.271   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 004:678.093   Transfer type does not match DLM state. Changing transfer type accordingly.
-T4D10 004:678.679   InitTarget() end
-T4D10 004:680.108   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
-T4D10 004:680.548 - 160.130ms returns 1
-T4D10 004:680.771 JLINK_TIF_GetAvailable(...)
-T4D10 004:680.899 - 0.131ms
-T4D10 004:680.906 JLINK_TIF_Select(JLINKARM_TIF_SWD)
-T4D10 004:681.423 - 0.521ms returns 0x00
-T4D10 004:681.434 JLINK_SetSpeed(4000)
-T4D10 004:681.518 - 0.088ms
-T4D10 004:681.526 JLINK_SetEndian(ARM_ENDIAN_LITTLE)
-T4D10 004:681.530 - 0.006ms returns 0
-T4D10 004:681.537 JLINK_SetInitRegsOnReset(OFF)
-T4D10 004:681.541 - 0.006ms returns 1
-T4D10 004:681.546 JLINK_SetResetType(JLINKARM_RESET_TYPE_NO_RESET)
-T4D10 004:681.554 - 0.011ms returns JLINKARM_RESET_TYPE_NORMAL
-T4D10 004:681.562 JLINK_ExecCommand("EnableFlashBPs", ...). 
-T4D10 004:681.569 - 0.003ms returns 0x00
-T4D10 004:681.576 JLINK_ExecCommand("SetAllowFlashCache = 1", ...). 
-T4D10 004:681.583 - 0.004ms returns 0x01
-T4D10 004:681.589 JLINK_ExecCommand("SetRestartOnClose = 0", ...). 
-T4D10 004:681.595 - 0.003ms returns 0x01
-T4D10 004:681.601 JLINK_EnableSoftBPs(ON)
-T4D10 004:681.606 - 0.006ms
-T4D10 004:681.610 JLINK_Connect()
-T4D10 004:681.725   ConfigTargetSettings() start
-T4D10 004:681.733    J-Link Script File: Executing ConfigTargetSettings()
-T4D10 004:681.738   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
-T4D10 004:681.746   ConfigTargetSettings() end
-T4D10 004:681.753   InitTarget() start
-T4D10 004:681.758    J-Link Script File: Executing InitTarget()
-T4D10 004:681.763   Determining TrustZone configuration...
-T4D10 004:682.843     Secure Debug: Enabled (SSD)
-T4D10 004:682.851   Determining currently configured transfer type by reading the AHB-AP CSW register.
-T4D10 004:683.327     --> Correct transfer type configured. Done.
-T4D10 004:683.335   InitTarget() end
-T4D10 004:683.797   Found SW-DP with ID 0x6BA02477
-T4D10 004:685.197   DPIDR: 0x6BA02477
-T4D10 004:685.205   Scanning AP map to find all available APs
-T4D10 004:685.843   AP[2]: Stopped AP scan as end of AP map has been reached
-T4D10 004:685.852   AP[0]: AHB-AP (IDR: 0x84770001)
-T4D10 004:685.858   AP[1]: APB-AP (IDR: 0x54770002)
-T4D10 004:685.864   Iterating through AP map to find AHB-AP to use
-T4D10 004:686.491   AP[0]: Core found
-T4D10 004:686.498   AP[0]: AHB-AP ROM base: 0xE00FE000
-T4D10 004:686.827   CPUID register: 0x410FD214. Implementer code: 0x41 (ARM)
-T4D10 004:686.835   Found Cortex-M33 r0p4, Little endian.
-T4D10 004:787.615   -- Max. mem block: 0x00010778
-T4D10 004:788.000   CPU_ReadMem(4 bytes @ 0xE000EDF0)
-T4D10 004:788.309   CPU_WriteMem(4 bytes @ 0xE000EDF0)
-T4D10 004:788.683   CPU_ReadMem(4 bytes @ 0xE0002000)
-T4D10 004:788.943   FPUnit: 8 code (BP) slots and 0 literal slots
-T4D10 004:788.954   CPU_ReadMem(4 bytes @ 0xE000EDFC)
-T4D10 004:789.216   CPU_WriteMem(4 bytes @ 0xE000EDFC)
-T4D10 004:789.463   CPU_ReadMem(4 bytes @ 0xE0001000)
-T4D10 004:789.732   CPU_WriteMem(4 bytes @ 0xE0001000)
-T4D10 004:789.994   CPU_ReadMem(4 bytes @ 0xE000ED88)
-T4D10 004:790.260   CPU_WriteMem(4 bytes @ 0xE000ED88)
-T4D10 004:790.491   CPU_ReadMem(4 bytes @ 0xE000ED88)
-T4D10 004:790.696   CPU_WriteMem(4 bytes @ 0xE000ED88)
-T4D10 004:790.929   CPU_ReadMem(4 bytes @ 0xE000EFB8)
-T4D10 004:791.173   Security extension: implemented
-T4D10 004:791.182   Secure debug: enabled
-T4D10 004:791.188   CoreSight components:
-T4D10 004:791.199   ROMTbl[0] @ E00FE000
-T4D10 004:791.206   CPU_ReadMem(64 bytes @ 0xE00FE000)
-T4D10 004:791.757   CPU_ReadMem(32 bytes @ 0xE0044FE0)
-T4D10 004:792.163   CPU_ReadMem(4 bytes @ 0xE0044FBC)
-T4D10 004:792.437   CPU_ReadMem(4 bytes @ 0xE0044FCC)
-T4D10 004:792.663   ROMTbl[0][0]: E0044000, CID: B105900D, PID: 005BB906 CTI
-T4D10 004:792.671   CPU_ReadMem(32 bytes @ 0xE0047FE0)
-T4D10 004:793.045   CPU_ReadMem(4 bytes @ 0xE0047FBC)
-T4D10 004:793.295   CPU_ReadMem(4 bytes @ 0xE0047FCC)
-T4D10 004:793.494   ROMTbl[0][1]: E0047000, CID: B105900D, PID: 003BB908 CSTF
-T4D10 004:793.501   CPU_ReadMem(32 bytes @ 0xE0048FE0)
-T4D10 004:793.893   CPU_ReadMem(4 bytes @ 0xE0048FBC)
-T4D10 004:794.116   CPU_ReadMem(4 bytes @ 0xE0048FCC)
-T4D10 004:794.340   ROMTbl[0][2]: E0048000, CID: B105900D, PID: 001BB961 TMC
-T4D10 004:794.348   CPU_ReadMem(32 bytes @ 0xE0049FE0)
-T4D10 004:794.787   ROMTbl[0][3]: E0049000, CID: B105F00D, PID: 001BB101 TSG
-T4D10 004:794.794   CPU_ReadMem(32 bytes @ 0xE0040FE0)
-T4D10 004:795.140   CPU_ReadMem(4 bytes @ 0xE0040FBC)
-T4D10 004:795.340   CPU_ReadMem(4 bytes @ 0xE0040FCC)
-T4D10 004:795.597   ROMTbl[0][4]: E0040000, CID: B105900D, PID: 000BBD21 Cortex-M33
-T4D10 004:795.605   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
-T4D10 004:795.988   ROMTbl[0][5]: E00FF000, CID: B105100D, PID: 000BB4C9 ROM Table
-T4D10 004:795.995   ROMTbl[1] @ E00FF000
-T4D10 004:796.002   CPU_ReadMem(64 bytes @ 0xE00FF000)
-T4D10 004:796.532   CPU_ReadMem(32 bytes @ 0xE000EFE0)
-T4D10 004:796.975   CPU_ReadMem(4 bytes @ 0xE000EFBC)
-T4D10 004:797.198   CPU_ReadMem(4 bytes @ 0xE000EFCC)
-T4D10 004:797.437   ROMTbl[1][0]: E000E000, CID: B105900D, PID: 000BBD21 Cortex-M33
-T4D10 004:797.444   CPU_ReadMem(32 bytes @ 0xE0001FE0)
-T4D10 004:797.835   CPU_ReadMem(4 bytes @ 0xE0001FBC)
-T4D10 004:798.059   CPU_ReadMem(4 bytes @ 0xE0001FCC)
-T4D10 004:798.282   ROMTbl[1][1]: E0001000, CID: B105900D, PID: 000BBD21 DWT
-T4D10 004:798.290   CPU_ReadMem(32 bytes @ 0xE0002FE0)
-T4D10 004:798.694   CPU_ReadMem(4 bytes @ 0xE0002FBC)
-T4D10 004:798.920   CPU_ReadMem(4 bytes @ 0xE0002FCC)
-T4D10 004:799.122   ROMTbl[1][2]: E0002000, CID: B105900D, PID: 000BBD21 FPB
-T4D10 004:799.130   CPU_ReadMem(32 bytes @ 0xE0000FE0)
-T4D10 004:799.502   CPU_ReadMem(4 bytes @ 0xE0000FBC)
-T4D10 004:799.726   CPU_ReadMem(4 bytes @ 0xE0000FCC)
-T4D10 004:799.949   ROMTbl[1][3]: E0000000, CID: B105900D, PID: 000BBD21 ITM
-T4D10 004:799.957   CPU_ReadMem(32 bytes @ 0xE0041FE0)
-T4D10 004:800.355   CPU_ReadMem(4 bytes @ 0xE0041FBC)
-T4D10 004:800.597   CPU_ReadMem(4 bytes @ 0xE0041FCC)
-T4D10 004:800.821   ROMTbl[1][5]: E0041000, CID: B105900D, PID: 002BBD21 ETM
-T4D10 004:800.828   CPU_ReadMem(32 bytes @ 0xE0042FE0)
-T4D10 004:801.176   CPU_ReadMem(4 bytes @ 0xE0042FBC)
-T4D10 004:801.436   CPU_ReadMem(4 bytes @ 0xE0042FCC)
-T4D10 004:801.640   ROMTbl[1][6]: E0042000, CID: B105900D, PID: 000BBD21 CSS600-CTI
-T4D10 004:801.668 - 120.060ms returns 0x00
-T4D10 004:801.681 JLINK_ResetPullsRESET(ON)
-T4D10 004:801.686 - 0.006ms
-T4D10 004:801.692 JLINK_Halt()
-T4D10 004:805.240 - 3.555ms returns 0x00
-T4D10 004:805.253 JLINK_IsHalted()
-T4D10 004:805.497 - 0.250ms returns TRUE
-T4D10 004:805.510 JLINK_Reset()
-T4D10 004:805.861   CPU_WriteMem(4 bytes @ 0xE000EDF0)
-T4D10 004:806.100   CPU_ReadMem(4 bytes @ 0xE000ED44)
-T4D10 004:806.311   CPU_ReadMem(4 bytes @ 0xE000EE08)
-T4D10 004:806.520   CPU_WriteMem(4 bytes @ 0xE000EE08)
-T4D10 004:806.742   Reset: ARMv8M core with Security Extension enabled detected.
-T4D10 004:806.750   CPU_WriteMem(4 bytes @ 0xE000EDFC)
-T4D10 004:806.975   Reset: Halt core after reset via DEMCR.VC_CORERESET.
-T4D10 004:807.218   Reset: Reset device via AIRCR.SYSRESETREQ.
-T4D10 004:807.230   CPU_WriteMem(4 bytes @ 0xE000ED0C)
-T4D10 004:860.071   CPU_ReadMem(4 bytes @ 0xE000EDF0)
-T4D10 004:860.439   CPU_ReadMem(4 bytes @ 0xE000EDF0)
-T4D10 004:860.798   CPU_WriteMem(4 bytes @ 0xE000EDF0)
-T4D10 004:861.145   CPU_WriteMem(4 bytes @ 0xE000EDFC)
-T4D10 004:866.914   CPU_ReadMem(4 bytes @ 0xE000EDF0)
-T4D10 004:870.391   CPU_WriteMem(4 bytes @ 0xE0002000)
-T4D10 004:870.653   CPU_ReadMem(4 bytes @ 0xE000EDFC)
-T4D10 004:870.891   CPU_ReadMem(4 bytes @ 0xE0001000)
-T4D10 004:871.152   CPU_ReadMem(4 bytes @ 0xE000EE08)
-T4D10 004:871.397 - 65.894ms
-T4D10 004:871.412 JLINK_SetEndian(ARM_ENDIAN_LITTLE)
-T4D10 004:871.416 - 0.006ms returns 0
-T4D10 004:871.463 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T4D10 004:871.481   CPU_ReadMem(4 bytes @ 0xE000EDF0)
-T4D10 004:871.717   Data:  03 00 13 00
-T4D10 004:871.728   Debug reg: DHCSR
-T4D10 004:871.734 - 0.273ms returns 0
-T4D10 004:871.758 JLINK_ReadMem(0x010080F0, 0x10 Bytes, ...)
-T4D10 004:871.770   CPU_ReadMem(16 bytes @ 0x010080F0)
-T4D10 004:872.065   Data:  52 37 46 41 34 4D 32 41 42 33 43 46 4C 20 20 20
-T4D10 004:872.078 - 0.322ms returns 0
-T4D10 006:368.235 JLINK_IsHalted()
-T4D10 006:368.492 - 0.262ms returns TRUE
-T4D10 006:371.073 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T4D10 006:371.096   CPU_ReadMem(4 bytes @ 0xE000EDF0)
-T4D10 006:371.339   Data:  03 00 13 00
-T4D10 006:371.348   Debug reg: DHCSR
-T4D10 006:371.354 - 0.283ms returns 0
-T4D10 006:371.361 JLINK_ReadMem(0x400E002C, 0x4 Bytes, ...)
-T4D10 006:371.368   CPU_ReadMem(4 bytes @ 0x400E002C)
-T4D10 006:371.598   Data:  01 00 00 00
-T4D10 006:371.605 - 0.246ms returns 0
-T4D10 006:371.670 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T4D10 006:371.682   CPU_ReadMem(4 bytes @ 0xE000EDF0)
-T4D10 006:371.929   Data:  03 00 13 00
-T4D10 006:371.940   Debug reg: DHCSR
-T4D10 006:371.946 - 0.277ms returns 0
-T4D10 006:371.953 JLINK_ReadMem(0x400E002C, 0x4 Bytes, ...)
-T4D10 006:371.963   CPU_ReadMem(4 bytes @ 0x400E002C)
-T4D10 006:372.170   Data:  01 00 00 00
-T4D10 006:372.178 - 0.227ms returns 0
-T4D10 006:372.185 JLINK_MeasureCPUSpeed(RAMAddr = 0xFFFFFFFF)
-T4D10 006:372.450   CPU_ReadMem(16 bytes @ 0x2000D000)
-T4D10 006:372.818   CPU_ReadMem(64 bytes @ 0x2000D000)
-T4D10 006:373.930    -- Updating C cache (64 bytes @ 0x2000D000)
-T4D10 006:373.942    -- Read from C cache (6 bytes @ 0x2000D000)
-T4D10 006:373.953   CPU_ReadMem(4 bytes @ 0xE000ED90)
-T4D10 006:374.168   CPU_ReadMem(4 bytes @ 0xE000ED94)
-T4D10 006:374.450   CPU_WriteMem(16 bytes @ 0x2000D000)
-T4D10 006:374.976   CPU_WriteMem(6 bytes @ 0x2000D000)
-T4D10 006:375.290   CPU_ReadMem(64 bytes @ 0x2000D000)
-T4D10 006:375.871    -- Updating C cache (64 bytes @ 0x2000D000)
-T4D10 006:375.885    -- Read from C cache (6 bytes @ 0x2000D000)
-T4D10 006:375.905   CPU_ReadMem(4 bytes @ 0xE000EE08)
-T4D10 006:376.198   CPU_WriteMem(4 bytes @ 0xE0002008)
-T4D10 006:376.222   CPU_WriteMem(4 bytes @ 0xE000200C)
-T4D10 006:376.232   CPU_WriteMem(4 bytes @ 0xE0002010)
-T4D10 006:376.239   CPU_WriteMem(4 bytes @ 0xE0002014)
-T4D10 006:376.246   CPU_WriteMem(4 bytes @ 0xE0002018)
-T4D10 006:376.253   CPU_WriteMem(4 bytes @ 0xE000201C)
-T4D10 006:376.259   CPU_WriteMem(4 bytes @ 0xE0002020)
-T4D10 006:376.265   CPU_WriteMem(4 bytes @ 0xE0002024)
-T4D10 006:377.959   CPU_WriteMem(4 bytes @ 0xE0001004)
-T4D10 006:384.569   CPU_ReadMem(4 bytes @ 0xE0001004)
-T4D10 006:385.068   CPU_ReadMem(4 bytes @ 0xE000EE08)
-T4D10 006:385.334   CPU_WriteMem(4 bytes @ 0xE0002008)
-T4D10 006:385.701   CPU_WriteMem(4 bytes @ 0xE000200C)
-T4D10 006:386.090   CPU_WriteMem(4 bytes @ 0xE0002010)
-T4D10 006:386.439   CPU_WriteMem(4 bytes @ 0xE0002014)
-T4D10 006:386.696   CPU_WriteMem(4 bytes @ 0xE0002018)
-T4D10 006:386.976   CPU_WriteMem(4 bytes @ 0xE000201C)
-T4D10 006:387.219   CPU_WriteMem(4 bytes @ 0xE0002020)
-T4D10 006:387.471   CPU_WriteMem(4 bytes @ 0xE0002024)
-T4D10 006:387.733   CPU_ReadMem(4 bytes @ 0xE000EE08)
-T4D10 006:387.988   CPU_ReadMem(4 bytes @ 0xE000EE08)
-T4D10 006:388.283   CPU_WriteMem(4 bytes @ 0xE0001004)
-T4D10 006:414.684   CPU_ReadMem(4 bytes @ 0xE0001004)
-T4D10 006:415.198   CPU_WriteMem(6 bytes @ 0x2000D000)
-T4D10 006:415.638   ClockFreq: 2072400 Hz
-T4D10 006:415.695 - 43.515ms returns 2072400
-T4D10 006:416.477 JLINK_ReadReg(XPSR)
-T4D10 006:416.514   CPU_ReadMem(4 bytes @ 0xE000EE08)
-T4D10 006:416.746 - 0.273ms returns 0xF9000000
-T0274 006:457.751 JLINK_WriteMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 006:457.781   Data:  00 00 00 00
-T0274 006:459.538   CPU_WriteMem(4 bytes @ 0x20000CA4)
-T0274 006:460.207 - 2.482ms returns 0x4
-T0274 006:512.583 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 006:512.648   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 006:513.260   Data:  00 00 00 00
-T0274 006:513.321 - 0.742ms returns 0
-T0274 006:513.357 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 006:513.385   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 006:513.817   Data:  9C 0A 00 20
-T0274 006:513.862 - 0.510ms returns 0
-T0274 006:513.888 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 006:513.913   CPU_ReadMem(64 bytes @ 0x00000000)
-T0274 006:514.660    -- Updating C cache (64 bytes @ 0x00000000)
-T0274 006:514.686    -- Read from C cache (4 bytes @ 0x00000000)
-T0274 006:514.693   Data:  E0 45 00 20
-T0274 006:514.700 - 0.815ms returns 0
-T0274 006:514.932 JLINK_ReadReg(XPSR)
-T0274 006:514.949   CPU_ReadMem(4 bytes @ 0xE000EE08)
-T0274 006:515.273 - 0.361ms returns 0xF9000000
-T0274 006:515.344 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 006:515.370   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 006:515.729   Data:  00 00 00 00
-T0274 006:515.746 - 0.405ms returns 0
-T0274 006:515.758 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 006:515.798   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 006:516.151   Data:  9C 0A 00 20
-T0274 006:516.167 - 0.411ms returns 0
-T0274 006:516.183 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 006:516.197    -- Read from C cache (4 bytes @ 0x00000000)
-T0274 006:516.203   Data:  E0 45 00 20
-T0274 006:516.212 - 0.030ms returns 0
-T0274 006:588.490 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 006:588.592   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 006:588.916   Data:  00 00 00 00
-T0274 006:588.933 - 0.446ms returns 0
-T0274 006:588.945 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 006:588.955   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 006:589.204   Data:  9C 0A 00 20
-T0274 006:589.217 - 0.274ms returns 0
-T0274 006:589.225 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 006:589.233    -- Read from C cache (4 bytes @ 0x00000000)
-T0274 006:589.239   Data:  E0 45 00 20
-T0274 006:589.246 - 0.022ms returns 0
-T0274 006:589.313 JLINK_ReadReg(XPSR)
-T0274 006:589.324   CPU_ReadMem(4 bytes @ 0xE000EE08)
-T0274 006:589.617 - 0.311ms returns 0xF9000000
-T0274 006:589.642 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 006:589.656   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 006:589.919   Data:  00 00 00 00
-T0274 006:589.927 - 0.286ms returns 0
-T0274 006:589.934 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 006:589.941   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 006:590.182   Data:  9C 0A 00 20
-T0274 006:590.193 - 0.261ms returns 0
-T0274 006:590.201 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 006:590.207    -- Read from C cache (4 bytes @ 0x00000000)
-T0274 006:590.214   Data:  E0 45 00 20
-T0274 006:590.220 - 0.020ms returns 0
-T0274 006:790.600 JLINK_SetEndian(ARM_ENDIAN_LITTLE)
-T0274 006:790.693 - 0.097ms returns 0
-T0274 006:791.522 JLINK_BeginDownload(Flags = 0x00000000)
-T0274 006:791.546 - 0.025ms
-T0274 006:823.098 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
-T0274 006:823.163   CPU_ReadMem(4 bytes @ 0xE000EDF0)
-T0274 006:823.634   Data:  03 00 13 00
-T0274 006:823.664   Debug reg: DHCSR
-T0274 006:823.671 - 0.575ms returns 0
-T0274 006:825.341 JLINK_WriteMem(0x00000000, 0xBD0 Bytes, ...)
-T0274 006:825.388   Data:  E0 45 00 20 FD 37 00 00 11 35 00 00 0B 38 00 00 ...
-T0274 006:826.139   completely In flash
-T0274 006:826.163    -- Read from flash cache (3024 bytes @ 0x00000000)
-T0274 006:826.170 - 0.831ms returns 0xBD0
-T0274 006:826.517 JLINK_WriteMem(0x00000BD0, 0xBD0 Bytes, ...)
-T0274 006:826.537   Data:  00 F0 B0 F8 00 BF 80 BD 80 B5 82 B0 00 AF 0F 4B ...
-T0274 006:826.553   completely In flash
-T0274 006:826.568    -- Read from flash cache (3024 bytes @ 0x00000BD0)
-T0274 006:826.576 - 0.061ms returns 0xBD0
-T0274 006:826.781 JLINK_WriteMem(0x000017A0, 0xBD0 Bytes, ...)
-T0274 006:826.792   Data:  80 B4 83 B0 00 AF 03 46 FB 71 08 49 97 F9 07 30 ...
-T0274 006:826.802   completely In flash
-T0274 006:826.812    -- Read from flash cache (3024 bytes @ 0x000017A0)
-T0274 006:826.819 - 0.040ms returns 0xBD0
-T0274 006:826.997 JLINK_WriteMem(0x00002370, 0xBB0 Bytes, ...)
-T0274 006:827.006   Data:  1B 78 00 2B 03 D0 BB 68 1B 6A BE 22 1A 71 00 BF ...
-T0274 006:827.026   completely In flash
-T0274 006:827.037    -- Read from flash cache (2992 bytes @ 0x00002370)
-T0274 006:827.044 - 0.049ms returns 0xBB0
-T0274 006:827.166 JLINK_WriteMem(0x00002F20, 0xBB0 Bytes, ...)
-T0274 006:827.174   Data:  01 2B 06 D1 7B 88 DB B2 01 22 02 FA 03 F3 FB 81 ...
-T0274 006:827.193   completely In flash
-T0274 006:827.204    -- Read from flash cache (2992 bytes @ 0x00002F20)
-T0274 006:827.210 - 0.046ms returns 0xBB0
-T0274 006:827.450 JLINK_WriteMem(0x00003AD0, 0xBC0 Bytes, ...)
-T0274 006:827.460   Data:  1A 44 FB 68 DA 60 FB 68 FF 22 83 F8 44 20 FB 68 ...
-T0274 006:827.472   completely In flash
-T0274 006:827.482    -- Read from flash cache (3008 bytes @ 0x00003AD0)
-T0274 006:827.489 - 0.040ms returns 0xBC0
-T0274 006:827.656 JLINK_WriteMem(0x00004690, 0xBC0 Bytes, ...)
-T0274 006:827.666   Data:  EC B0 00 00 20 B1 00 00 3C B1 00 00 80 B5 86 B0 ...
-T0274 006:827.689   completely In flash
-T0274 006:827.700    -- Read from flash cache (3008 bytes @ 0x00004690)
-T0274 006:827.714 - 0.059ms returns 0xBC0
-T0274 006:827.896 JLINK_WriteMem(0x00005250, 0xBB0 Bytes, ...)
-T0274 006:827.906   Data:  EB FA 1A 4B 1B 68 00 2B 20 D0 00 23 BB 60 00 23 ...
-T0274 006:827.914   completely In flash
-T0274 006:827.924    -- Read from flash cache (2992 bytes @ 0x00005250)
-T0274 006:827.931 - 0.037ms returns 0xBB0
-T0274 006:828.091 JLINK_WriteMem(0x00005E00, 0xBC0 Bytes, ...)
-T0274 006:828.100   Data:  09 7D 02 AF 07 F1 0C 04 20 60 07 F1 08 00 01 60 ...
-T0274 006:828.112   completely In flash
-T0274 006:828.122    -- Read from flash cache (3008 bytes @ 0x00005E00)
-T0274 006:828.129 - 0.040ms returns 0xBC0
-T0274 006:828.251 JLINK_WriteMem(0x000069C0, 0xBE0 Bytes, ...)
-T0274 006:828.259   Data:  00 22 1A 61 7B 69 00 22 C3 F8 88 20 7B 69 30 33 ...
-T0274 006:828.267   completely In flash
-T0274 006:828.277    -- Read from flash cache (3040 bytes @ 0x000069C0)
-T0274 006:828.283 - 0.034ms returns 0xBE0
-T0274 006:828.419 JLINK_WriteMem(0x000075A0, 0xBA0 Bytes, ...)
-T0274 006:828.427   Data:  4F EA 43 0C 18 BF 7F EA 6C 5C 1B D0 01 B0 50 EA ...
-T0274 006:828.435   completely In flash
-T0274 006:828.445    -- Read from flash cache (2976 bytes @ 0x000075A0)
-T0274 006:828.452 - 0.034ms returns 0xBA0
-T0274 006:828.596 JLINK_WriteMem(0x00008140, 0xBC0 Bytes, ...)
-T0274 006:828.604   Data:  E3 73 18 93 09 9B 20 46 59 68 00 F0 B1 FE 07 90 ...
-T0274 006:828.611   completely In flash
-T0274 006:828.621    -- Read from flash cache (3008 bytes @ 0x00008140)
-T0274 006:828.628 - 0.033ms returns 0xBC0
-T0274 006:828.774 JLINK_WriteMem(0x00008D00, 0xBB0 Bytes, ...)
-T0274 006:828.781   Data:  D3 40 2C 43 04 60 40 F8 04 3F 88 42 F4 D3 70 BD ...
-T0274 006:828.789   completely In flash
-T0274 006:828.799    -- Read from flash cache (2992 bytes @ 0x00008D00)
-T0274 006:828.805 - 0.033ms returns 0xBB0
-T0274 006:828.936 JLINK_WriteMem(0x000098B0, 0xB80 Bytes, ...)
-T0274 006:828.944   Data:  09 92 9A F8 00 30 00 2B 00 F0 A2 80 00 23 4F F0 ...
-T0274 006:828.952   completely In flash
-T0274 006:828.962    -- Read from flash cache (2944 bytes @ 0x000098B0)
-T0274 006:828.969 - 0.034ms returns 0xB80
-T0274 006:829.092 JLINK_WriteMem(0x0000A430, 0xBD0 Bytes, ...)
-T0274 006:829.100   Data:  8C 46 86 46 38 4E 60 46 1C F8 01 4B A5 5D 15 F0 ...
-T0274 006:829.107   completely In flash
-T0274 006:829.117    -- Read from flash cache (3024 bytes @ 0x0000A430)
-T0274 006:829.124 - 0.033ms returns 0xBD0
-T0274 006:829.245 JLINK_WriteMem(0x0000B000, 0xBE0 Bytes, ...)
-T0274 006:829.253   Data:  70 78 51 75 65 75 65 2D 3E 75 78 49 74 65 6D 53 ...
-T0274 006:829.261   completely In flash
-T0274 006:829.271    -- Read from flash cache (3040 bytes @ 0x0000B000)
-T0274 006:829.278 - 0.035ms returns 0xBE0
-T0274 006:829.377 JLINK_WriteMem(0x0000BBE0, 0x2D4 Bytes, ...)
-T0274 006:829.385   Data:  10 10 10 10 42 42 42 42 42 42 02 02 02 02 02 02 ...
-T0274 006:829.393   completely In flash
-T0274 006:829.401    -- Read from flash cache (724 bytes @ 0x0000BBE0)
-T0274 006:829.407 - 0.031ms returns 0x2D4
-T0274 006:829.549 JLINK_WriteMem(0x0000BEB4, 0x444 Bytes, ...)
-T0274 006:829.557   Data:  AB 03 00 00 CB 03 00 00 E1 03 00 00 0D 04 00 00 ...
-T0274 006:829.564   completely In flash
-T0274 006:829.573    -- Read from flash cache (1092 bytes @ 0x0000BEB4)
-T0274 006:829.579 - 0.032ms returns 0x444
-T0274 006:829.915 JLINK_WriteMem(0x0100A100, 0x38 Bytes, ...)
-T0274 006:829.926   Data:  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF ...
-T0274 006:830.479   completely In flash
-T0274 006:830.488 - 0.575ms returns 0x38
-T0274 006:830.763 JLINK_WriteMem(0x0100A200, 0xCC Bytes, ...)
-T0274 006:830.772   Data:  FF FD FF FF FF FF FF FF FF FF FF FF FF FF FF FF ...
-T0274 006:830.780   completely In flash
-T0274 006:830.787    -- Read from flash cache (204 bytes @ 0x0100A200)
-T0274 006:830.794 - 0.033ms returns 0xCC
-T0274 006:831.397 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 006:831.569   CPU_ReadMem(4 bytes @ 0xE000ED90)
-T0274 006:831.777   CPU_ReadMem(4 bytes @ 0xE000ED94)
-T0274 006:832.524    -- --------------------------------------
-T0274 006:832.545    -- Start of determining dirty areas in flash cache
-T0274 006:832.850    -- End of determining dirty areas
-T0274 006:832.864    -- Start of preparing flash programming
-T0274 006:832.870    -- Preserving CPU registers
-T0274 006:839.681    -- Determining CPU clock frequency
-T0274 006:878.256    -- CPU frequency = 2073 kHz
-T0274 006:878.281    -- Preparing RAMCode
-T0274 006:884.954    -- End of preparing flash programming
-T0274 006:885.384   Looking for J-Link GUI Server exe at: C:\Users\My PC\.eclipse\com.renesas.platform_1435879475\DebugComp\RA\ARM\Segger_v7.60.5\JLinkGUIServer.exe
-T0274 006:885.505   Looking for J-Link GUI Server exe at: C:\Program Files\SEGGER\JLink\JLinkGUIServer.exe
-T0274 006:885.606   Forking J-Link GUI Server: C:\Program Files\SEGGER\JLink\JLinkGUIServer.exe
-T0274 006:930.437   J-Link GUI Server info: "J-Link GUI server V7.50 "
-T0274 006:939.202    -- CPU is running at 100000 kHz.
-T0274 006:939.244    -- Start of comparing flash
-T0274 006:939.255    -- CRC check was estimated as fastest method
-T0274 006:939.261    -- CRC check is not supported by this flash bank. Switched to read back method.
-T0274 006:968.504    -- Comparing range 0x100A100 - 0x100A2FF (1 Sector, 512 Bytes), using single-block CRC calculation
-T0274 006:968.531    -- CRC check is not supported by this flash bank. Switched to read back method.
-T0274 006:970.988   CPU_ReadMem(512 bytes @ 0x0100A100)
-T0274 006:978.657    -- CRC matches
-T0274 006:978.911    -- Comparing range 0x100A100 - 0x100A2FF (1 Sector, 512 Bytes), using alternative single-block CRC calculation
-T0274 006:978.926    -- CRC check is not supported by this flash bank. Switched to read back method.
-T0274 006:979.385   CPU_ReadMem(512 bytes @ 0x0100A100)
-T0274 006:982.563    -- CRC matches
-T0274 006:982.575    -- End of comparing flash
-T0274 006:982.583    -- Start of erasing sectors
-T0274 006:982.589    -- End of erasing sectors
-T0274 006:982.596    -- Start of flash programming
-T0274 006:982.602    -- End of flash programming
-T0274 006:982.608    -- Start of verifying flash
-T0274 006:982.614    -- End of verifying flash
-T0274 006:982.620    -- Start of restoring
-T0274 006:982.627    -- Restoring RAMCode
-T0274 006:983.572    -- Restoring target memory
-T0274 006:984.120    -- Restoring CPU registers
-T0274 006:990.625    -- End of restoring
-T0274 006:990.726    -- Bank 0 @ 0x0100A100: Skipped. Contents already match
-T0274 006:990.747    -- Bank 0 @ 0x0100A100: Skipped. Contents already match
-T0274 006:997.382    -- --------------------------------------
-T0274 006:997.412    -- Start of determining dirty areas in flash cache
-T0274 006:997.471    -- End of determining dirty areas
-T0274 006:997.478    -- Start of preparing flash programming
-T0274 006:997.485    -- Preserving CPU registers
-T0274 007:004.126    -- Determining CPU clock frequency
-T0274 007:041.026    -- CPU frequency = 100283 kHz
-T0274 007:041.052    -- Preparing RAMCode
-T0274 007:045.318    -- End of preparing flash programming
-T0274 007:053.411    -- CPU is running at 100283 kHz.
-T0274 007:053.454    -- Start of comparing flash
-T0274 007:053.462    -- CRC check was estimated as fastest method
-T0274 007:053.469    -- CRC check is not supported by this flash bank. Switched to read back method.
-T0274 007:088.050    -- Comparing range 0x0000 - 0xDFFF (7 Sectors, 56 KiB), using single-block CRC calculation
-T0274 007:088.100    -- CRC check is not supported by this flash bank. Switched to read back method.
-T0274 007:090.374   CPU_ReadMem(57344 bytes @ 0x00000000)
-T0274 007:361.947    -- CRC does not match, checking individual sectors
-T0274 007:361.971    -- CRC check is not supported by this flash bank. Switched to read back method.
-T0274 007:362.653   CPU_ReadMem(32768 bytes @ 0x00000000)
-T0274 007:517.599    -- CRC matches for sectors 0-3
-T0274 007:517.633    -- CRC check is not supported by this flash bank. Switched to read back method.
-T0274 007:518.177   CPU_ReadMem(24576 bytes @ 0x00008000)
-T0274 007:634.752    -- CRC does not match for sectors 4-6
-T0274 007:634.962    -- Comparing range 0x0000 - 0x7FFF (4 Sectors, 32 KiB), using alternative single-block CRC calculation
-T0274 007:634.975    -- CRC check is not supported by this flash bank. Switched to read back method.
-T0274 007:635.430   CPU_ReadMem(32768 bytes @ 0x00000000)
-T0274 007:790.742    -- CRC matches
-T0274 007:790.774    -- End of comparing flash
-T0274 007:790.783    -- Start of erasing sectors
-T0274 007:790.791    -- Erasing range 0x00008000 - 0x0000DFFF (  3 Sectors, 24 KB)
-T0274 007:915.441    -- End of erasing sectors
-T0274 007:915.464    -- Start of flash programming
-T0274 007:915.473    -- Programming range 0x00008000 - 0x0000DFFF (  3 Sectors, 24 KB)
-T0274 009:134.183    -- End of flash programming
-T0274 009:134.208    -- 0x8000 - 0xDFFF (  3 Sectors, 24 KoB)
-T0274 009:134.226    -- Start of verifying flash
-T0274 009:134.234    -- Checksum calculation was estimated as fastest method
-T0274 009:134.241    -- CRC check is not supported by this flash bank. Switched to read back method.
-T0274 009:134.247    -- Checksum is not supported by this flash bank. Switched to read back method.
-T0274 009:134.255    -- CRC check is not supported by this flash bank. Switched to read back method.
-T0274 009:135.090   CPU_ReadMem(24576 bytes @ 0x00008000)
-T0274 009:251.597    -- End of verifying flash
-T0274 009:251.619    -- Start of restoring
-T0274 009:251.628    -- Restoring RAMCode
-T0274 009:252.774    -- Restoring target memory
-T0274 009:253.381    -- Restoring CPU registers
-T0274 009:260.387    -- End of restoring
-T0274 009:260.416    -- Bank 1 @ 0x00000000: 1 range affected (24576 bytes)
-T0274 009:260.428    -- Total: 2.262s (Prepare: 0.055s, Compare: 0.737s, Erase: 0.124s, Program: 1.218s, Verify: 0.117s, Restore: 0.008s)
-T0274 009:260.435    -- Program speed: 20 KiB/s
-T0274 009:272.663   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 009:272.909   Data:  00 00 00 00
-T0274 009:272.920 - 2441.529ms returns 0
-T0274 009:273.494 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 009:273.511   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 009:273.738   Data:  9C 0A 00 20
-T0274 009:273.746 - 0.253ms returns 0
-T0274 009:273.755 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 009:273.761    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 009:273.767   Data:  E0 45 00 20
-T0274 009:273.773 - 0.020ms returns 0
-T0274 009:292.019 JLINK_EndDownload()
-T0274 009:292.174 - 0.161ms returns 0 (0x0)
-T0274 009:292.840 JLINK_WriteReg(R15 (PC), 0x000037FC)
-T0274 009:292.960   CPU_ReadMem(4 bytes @ 0xE000EE08)
-T0274 009:293.717 - 0.903ms returns 0
-T0274 009:293.769 JLINK_WriteReg(XPSR, 0x01000000)
-T0274 009:293.800   CPU_ReadMem(4 bytes @ 0xE000EE08)
-T0274 009:294.178 - 0.416ms returns 0
-T0274 009:294.204 JLINK_ResetPullsRESET(ON)
-T0274 009:294.212 - 0.009ms
-T0274 009:294.219 JLINK_Halt()
-T0274 009:294.495 - 0.294ms returns 0x00
-T0274 009:294.526 JLINK_IsHalted()
-T0274 009:294.539 - 0.016ms returns TRUE
-T0274 009:294.547 JLINK_Reset()
-T0274 009:294.607   CPU_WriteMem(4 bytes @ 0xE000EDF0)
-T0274 009:295.009   CPU_ReadMem(4 bytes @ 0xE000ED44)
-T0274 009:295.321   CPU_ReadMem(4 bytes @ 0xE000EE08)
-T0274 009:295.620   CPU_WriteMem(4 bytes @ 0xE000EE08)
-T0274 009:295.887   Reset: ARMv8M core with Security Extension enabled detected.
-T0274 009:295.903   CPU_WriteMem(4 bytes @ 0xE000EDFC)
-T0274 009:296.149   Reset: Halt core after reset via DEMCR.VC_CORERESET.
-T0274 009:296.458   Reset: Reset device via AIRCR.SYSRESETREQ.
-T0274 009:296.473   CPU_WriteMem(4 bytes @ 0xE000ED0C)
-T0274 009:349.593   CPU_ReadMem(4 bytes @ 0xE000EDF0)
-T0274 009:349.973   CPU_ReadMem(4 bytes @ 0xE000EDF0)
-T0274 009:350.355   CPU_WriteMem(4 bytes @ 0xE000EDF0)
-T0274 009:350.672   CPU_WriteMem(4 bytes @ 0xE000EDFC)
-T0274 009:356.718   CPU_ReadMem(4 bytes @ 0xE000EDF0)
-T0274 009:360.291   CPU_WriteMem(4 bytes @ 0xE0002000)
-T0274 009:360.912   CPU_ReadMem(4 bytes @ 0xE000EDFC)
-T0274 009:361.270   CPU_ReadMem(4 bytes @ 0xE0001000)
-T0274 009:361.619   CPU_ReadMem(4 bytes @ 0xE000EE08)
-T0274 009:361.885 - 67.346ms
-T0274 009:361.934 JLINK_SetEndian(ARM_ENDIAN_LITTLE)
-T0274 009:361.946 - 0.015ms returns 0
-T0274 009:362.134 JLINK_WriteMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 009:362.155   Data:  00 00 00 00
-T0274 009:362.218   CPU_WriteMem(4 bytes @ 0x20000CA4)
-T0274 009:362.634 - 0.510ms returns 0x4
-T0274 009:364.367 JLINK_ResetPullsRESET(ON)
-T0274 009:364.427 - 0.064ms
-T0274 009:364.437 JLINK_Halt()
-T0274 009:364.448 - 0.014ms returns 0x00
-T0274 009:364.457 JLINK_IsHalted()
-T0274 009:364.468 - 0.014ms returns TRUE
-T0274 009:364.476 JLINK_Reset()
-T0274 009:364.554   CPU_WriteMem(4 bytes @ 0xE000EDF0)
-T0274 009:365.030   CPU_ReadMem(4 bytes @ 0xE000ED44)
-T0274 009:365.332   CPU_ReadMem(4 bytes @ 0xE000EE08)
-T0274 009:365.628   CPU_WriteMem(4 bytes @ 0xE000EE08)
-T0274 009:365.940   Reset: ARMv8M core with Security Extension enabled detected.
-T0274 009:365.977   CPU_WriteMem(4 bytes @ 0xE000EDFC)
-T0274 009:366.350   Reset: Halt core after reset via DEMCR.VC_CORERESET.
-T0274 009:366.860   Reset: Reset device via AIRCR.SYSRESETREQ.
-T0274 009:366.880   CPU_WriteMem(4 bytes @ 0xE000ED0C)
-T0274 009:420.160   CPU_ReadMem(4 bytes @ 0xE000EDF0)
-T0274 009:420.459   CPU_ReadMem(4 bytes @ 0xE000EDF0)
-T0274 009:420.695   CPU_WriteMem(4 bytes @ 0xE000EDF0)
-T0274 009:420.955   CPU_WriteMem(4 bytes @ 0xE000EDFC)
-T0274 009:426.869   CPU_ReadMem(4 bytes @ 0xE000EDF0)
-T0274 009:430.629   CPU_WriteMem(4 bytes @ 0xE0002000)
-T0274 009:431.080   CPU_ReadMem(4 bytes @ 0xE000EDFC)
-T0274 009:431.500   CPU_ReadMem(4 bytes @ 0xE0001000)
-T0274 009:431.852   CPU_ReadMem(4 bytes @ 0xE000EE08)
-T0274 009:432.186 - 67.725ms
-T0274 009:432.227 JLINK_SetEndian(ARM_ENDIAN_LITTLE)
-T0274 009:432.232 - 0.007ms returns 0
-T0274 009:432.402 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 009:432.436   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 009:432.730   Data:  00 00 00 00
-T0274 009:432.740 - 0.341ms returns 0
-T0274 009:432.749 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 009:432.758   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 009:433.067   Data:  9C 0A 00 20
-T0274 009:433.078 - 0.331ms returns 0
-T0274 009:433.086 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 009:433.093    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 009:433.099   Data:  E0 45 00 20
-T0274 009:433.105 - 0.020ms returns 0
-T0274 009:451.136 JLINK_ReadMem(0x000037FC, 0x4 Bytes, ...)
-T0274 009:451.159    -- Read from flash cache (4 bytes @ 0x000037FC)
-T0274 009:451.166   Data:  80 B5 00 AF
-T0274 009:451.173 - 0.039ms returns 0
-T0274 009:479.350 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 009:479.617   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 009:480.205   Data:  00 00 00 00
-T0274 009:480.233 - 0.887ms returns 0
-T0274 009:480.256 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 009:480.275   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 009:480.644   Data:  9C 0A 00 20
-T0274 009:480.665 - 0.411ms returns 0
-T0274 009:480.678 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 009:480.690    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 009:480.697   Data:  E0 45 00 20
-T0274 009:480.704 - 0.029ms returns 0
-T0274 009:480.933 JLINK_ReadReg(XPSR)
-T0274 009:480.953   CPU_ReadMem(4 bytes @ 0xE000EE08)
-T0274 009:481.288 - 0.369ms returns 0xF9000000
-T0274 009:481.335 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 009:481.349   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 009:481.700   Data:  00 00 00 00
-T0274 009:481.737 - 0.405ms returns 0
-T0274 009:481.756 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 009:481.775   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 009:482.146   Data:  9C 0A 00 20
-T0274 009:482.171 - 0.419ms returns 0
-T0274 009:482.198 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 009:482.207    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 009:482.215   Data:  E0 45 00 20
-T0274 009:482.222 - 0.026ms returns 0
-T0274 009:854.777 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
-T0274 009:854.825 - 0.050ms returns 0x08
-T0274 009:854.832 JLINK_GetNumWPUnits()
-T0274 009:854.845 - 0.015ms returns 4
-T0274 009:854.851 JLINK_GetNumWPUnits()
-T0274 009:854.855 - 0.006ms returns 4
-T0274 009:854.871 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
-T0274 009:854.879 - 0.010ms returns 0x08
-T0274 009:854.885 JLINK_GetNumWPUnits()
-T0274 009:854.891 - 0.009ms returns 4
-T0274 009:854.898 JLINK_GetNumWPUnits()
-T0274 009:854.904 - 0.008ms returns 4
-T0274 009:854.918 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
-T0274 009:854.925 - 0.009ms returns 0x08
-T0274 009:854.931 JLINK_GetNumWPUnits()
-T0274 009:854.936 - 0.008ms returns 4
-T0274 009:854.943 JLINK_GetNumWPUnits()
-T0274 009:854.949 - 0.008ms returns 4
-T0274 009:855.036 JLINK_SetBPEx(Addr = 0x00000FE0, Type = 0xFFFFFF00)
-T0274 009:855.050 - 0.016ms returns 0x00000001
-T0274 009:855.060 JLINK_ClrBPEx(BPHandle = 0x00000001)
-T0274 009:855.065 - 0.007ms returns 0x00
-T0274 009:870.591 JLINK_SetBPEx(Addr = 0x00000FE4, Type = 0xFFFFFF00)
-T0274 009:870.622 - 0.034ms returns 0x00000002
-T0274 009:976.626 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 009:976.863   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 009:977.161   Data:  00 00 00 00
-T0274 009:977.174 - 0.551ms returns 0
-T0274 009:977.184 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 009:977.198   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 009:977.432   Data:  9C 0A 00 20
-T0274 009:977.441 - 0.258ms returns 0
-T0274 009:977.449 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 009:977.456    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 009:977.462   Data:  E0 45 00 20
-T0274 009:977.468 - 0.020ms returns 0
-T0274 009:977.939 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 009:977.956   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 009:978.170   Data:  00 00 00 00
-T0274 009:978.179 - 0.242ms returns 0
-T0274 009:978.187 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 009:978.195   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 009:978.433   Data:  9C 0A 00 20
-T0274 009:978.443 - 0.258ms returns 0
-T0274 009:978.451 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 009:978.457    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 009:978.463   Data:  E0 45 00 20
-T0274 009:978.469 - 0.020ms returns 0
-T0274 009:978.517 JLINK_ReadRegs(NumRegs = 22, Indexes: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 86, 87, 20)
-T0274 009:978.542    -- R0=0x00, R1=0x00, R2=0x00, R3=0x00, R4=0x00, R5=0x00, R6=0x00, R7=0x00, R8=0x7C7, R9=0x20003790, R10=0x20000EA4, R11=0x20003798, R12=0x0A, R13 (SP)=0x200045E0, R14=0xFFFFFFFF, R15 (PC)=0x37FC, XPSR=0xF9000000, MSP=0x200045E0, PSP=0x00, MSPLIM=0x00, PSPLIM=0x00, CFBP=0x00
-T0274 009:978.548 - 0.033ms returns 0x00
-T0274 009:978.771 JLINK_ReadMem(0x000037FC, 0x4 Bytes, ...)
-T0274 009:978.783    -- Read from flash cache (4 bytes @ 0x000037FC)
-T0274 009:978.789   Data:  80 B5 00 AF
-T0274 009:978.796 - 0.026ms returns 0
-T0274 009:994.266 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 009:994.299   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 009:994.601   Data:  00 00 00 00
-T0274 009:994.614 - 0.350ms returns 0
-T0274 009:994.624 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 009:994.635   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 009:994.845   Data:  9C 0A 00 20
-T0274 009:994.853 - 0.231ms returns 0
-T0274 009:994.860 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 009:994.869    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 009:994.875   Data:  E0 45 00 20
-T0274 009:994.881 - 0.023ms returns 0
-T0274 009:994.932 JLINK_ReadReg(XPSR)
-T0274 009:995.164 - 0.239ms returns 0xF9000000
-T0274 009:995.188 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 009:995.197   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 009:995.430   Data:  00 00 00 00
-T0274 009:995.437 - 0.251ms returns 0
-T0274 009:995.444 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 009:995.451   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 009:995.650   Data:  9C 0A 00 20
-T0274 009:995.659 - 0.217ms returns 0
-T0274 009:995.666 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 009:995.672    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 009:995.678   Data:  E0 45 00 20
-T0274 009:995.690 - 0.026ms returns 0
-T3880 010:052.462 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
-T3880 010:052.485 - 0.024ms returns 0x08
-T3880 010:052.492 JLINK_GetNumWPUnits()
-T3880 010:052.496 - 0.006ms returns 4
-T3880 010:052.501 JLINK_GetNumWPUnits()
-T3880 010:052.505 - 0.006ms returns 4
-T3880 010:052.799 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
-T3880 010:052.809 - 0.012ms returns 0x08
-T3880 010:052.815 JLINK_GetNumWPUnits()
-T3880 010:052.819 - 0.006ms returns 4
-T3880 010:052.824 JLINK_GetNumWPUnits()
-T3880 010:052.828 - 0.006ms returns 4
-T3880 010:053.002 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
-T3880 010:053.012 - 0.012ms returns 0x08
-T3880 010:053.018 JLINK_GetNumWPUnits()
-T3880 010:053.022 - 0.006ms returns 4
-T3880 010:053.027 JLINK_GetNumWPUnits()
-T3880 010:053.031 - 0.006ms returns 4
-T3880 010:053.276 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
-T3880 010:053.287 - 0.013ms returns 0x08
-T3880 010:053.292 JLINK_GetNumWPUnits()
-T3880 010:053.297 - 0.006ms returns 4
-T3880 010:053.302 JLINK_GetNumWPUnits()
-T3880 010:053.306 - 0.006ms returns 4
-T3880 010:053.491 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
-T3880 010:053.505 - 0.016ms returns 0x08
-T3880 010:053.510 JLINK_GetNumWPUnits()
-T3880 010:053.515 - 0.006ms returns 4
-T3880 010:053.520 JLINK_GetNumWPUnits()
-T3880 010:053.524 - 0.006ms returns 4
-T3880 010:053.695 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
-T3880 010:053.704 - 0.011ms returns 0x08
-T3880 010:053.710 JLINK_GetNumWPUnits()
-T3880 010:053.714 - 0.006ms returns 4
-T3880 010:053.719 JLINK_GetNumWPUnits()
-T3880 010:053.723 - 0.006ms returns 4
-T3880 010:053.883 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
-T3880 010:053.891 - 0.010ms returns 0x08
-T3880 010:053.896 JLINK_GetNumWPUnits()
-T3880 010:053.901 - 0.006ms returns 4
-T3880 010:053.905 JLINK_GetNumWPUnits()
-T3880 010:053.909 - 0.006ms returns 4
-T3880 010:054.025 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
-T3880 010:054.033 - 0.010ms returns 0x08
-T3880 010:054.038 JLINK_GetNumWPUnits()
-T3880 010:054.042 - 0.006ms returns 4
-T3880 010:054.047 JLINK_GetNumWPUnits()
-T3880 010:054.051 - 0.006ms returns 4
-T0274 010:919.351 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 010:919.387   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 010:919.655   Data:  00 00 00 00
-T0274 010:919.664 - 0.315ms returns 0
-T0274 010:919.672 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 010:919.680   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 010:919.918   Data:  9C 0A 00 20
-T0274 010:919.926 - 0.255ms returns 0
-T0274 010:919.933 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 010:919.939    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 010:919.945   Data:  E0 45 00 20
-T0274 010:919.951 - 0.020ms returns 0
-T0274 010:920.002 JLINK_ReadReg(XPSR)
-T0274 010:920.233 - 0.235ms returns 0xF9000000
-T0274 010:920.251 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 010:920.258   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 010:920.488   Data:  00 00 00 00
-T0274 010:920.496 - 0.247ms returns 0
-T0274 010:920.502 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 010:920.508   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 010:920.736   Data:  9C 0A 00 20
-T0274 010:920.743 - 0.242ms returns 0
-T0274 010:920.749 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 010:920.754    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 010:920.760   Data:  E0 45 00 20
-T0274 010:920.766 - 0.019ms returns 0
-T0274 010:921.269 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 010:921.284   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 010:921.530   Data:  00 00 00 00
-T0274 010:921.543 - 0.276ms returns 0
-T0274 010:921.551 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 010:921.561   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 010:921.804   Data:  9C 0A 00 20
-T0274 010:921.814 - 0.265ms returns 0
-T0274 010:921.821 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 010:921.827    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 010:921.833   Data:  E0 45 00 20
-T0274 010:921.839 - 0.019ms returns 0
-T0274 010:921.882 JLINK_ReadReg(XPSR)
-T0274 010:921.892 - 0.018ms returns 0xF9000000
-T0274 010:921.917 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 010:921.925   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 010:922.183   Data:  00 00 00 00
-T0274 010:922.196 - 0.281ms returns 0
-T0274 010:922.204 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 010:922.214   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 010:922.432   Data:  9C 0A 00 20
-T0274 010:922.442 - 0.240ms returns 0
-T0274 010:922.450 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 010:922.456    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 010:922.462   Data:  E0 45 00 20
-T0274 010:922.468 - 0.020ms returns 0
-T0274 011:963.337 JLINK_ReadMem(0x200025CC, 0x1 Bytes, ...)
-T0274 011:963.373   CPU_ReadMem(1 bytes @ 0x200025CC)
-T0274 011:963.642   Data:  03
-T0274 011:963.654 - 0.319ms returns 0
-T0274 013:500.855 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 013:500.923   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 013:501.230   Data:  00 00 00 00
-T0274 013:501.240 - 0.387ms returns 0
-T0274 013:501.250 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 013:501.258   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 013:501.509   Data:  9C 0A 00 20
-T0274 013:501.518 - 0.270ms returns 0
-T0274 013:501.526 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 013:501.533    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 013:501.539   Data:  E0 45 00 20
-T0274 013:501.545 - 0.020ms returns 0
-T0274 013:501.575 JLINK_STRACE_Read(..., NumItems = 0x10000)
-T0274 013:502.461 - 0.894ms NumItemsRead = 0x00
-T0274 013:502.481 JLINK_IsHalted()
-T0274 013:502.714 - 0.240ms returns TRUE
-T0274 013:502.729 JLINK_GoEx(MaxEmulInsts = 0, Flags = 0x01)
-T0274 013:502.745   CPU_WriteMem(4 bytes @ 0xE0002000)
-T0274 013:503.013   CPU_ReadMem(4 bytes @ 0xE0001000)
-T0274 013:503.246   CPU_WriteMem(4 bytes @ 0xE0002008)
-T0274 013:503.259   CPU_WriteMem(4 bytes @ 0xE000200C)
-T0274 013:503.265   CPU_WriteMem(4 bytes @ 0xE0002010)
-T0274 013:503.272   CPU_WriteMem(4 bytes @ 0xE0002014)
-T0274 013:503.278   CPU_WriteMem(4 bytes @ 0xE0002018)
-T0274 013:503.285   CPU_WriteMem(4 bytes @ 0xE000201C)
-T0274 013:503.293   CPU_WriteMem(4 bytes @ 0xE0002020)
-T0274 013:503.300   CPU_WriteMem(4 bytes @ 0xE0002024)
-T0274 013:504.873   CPU_WriteMem(4 bytes @ 0xE0001004)
-T0274 013:505.541 - 2.827ms
-T0274 013:580.965 JLINK_ReadMem(0x200025CC, 0x1 Bytes, ...)
-T0274 013:580.997   CPU_ReadMem(1 bytes @ 0x200025CC)
-T0274 013:581.276   Data:  00
-T0274 013:581.285 - 0.322ms returns 0
-T0274 013:611.080 JLINK_IsHalted()
-T0274 013:613.920 - 2.850ms returns TRUE
-T0274 013:613.936 JLINK_ReadReg(XPSR)
-T0274 013:613.950   CPU_ReadMem(4 bytes @ 0xE000EE08)
-T0274 013:614.238 - 0.308ms returns 0x09000000
-T0274 013:614.249 JLINK_ReadReg(R15 (PC))
-T0274 013:614.257 - 0.010ms returns 0x00000FE4
-T0274 013:614.267 JLINK_ReadReg(XPSR)
-T0274 013:614.272 - 0.007ms returns 0x09000000
-T0274 013:614.278 JLINK_ReadReg(XPSR)
-T0274 013:614.283 - 0.007ms returns 0x09000000
-T0274 013:614.288 JLINK_ReadReg(R15 (PC))
-T0274 013:614.293 - 0.007ms returns 0x00000FE4
-T0274 013:614.299 JLINK_ReadReg(XPSR)
-T0274 013:614.304 - 0.007ms returns 0x09000000
-T0274 013:614.309 JLINK_ReadReg(XPSR)
-T0274 013:614.314 - 0.007ms returns 0x09000000
-T0274 013:614.319 JLINK_ReadMem(0x00000FE4, 0x1 Bytes, ...)
-T0274 013:614.326    -- Read from flash cache (1 bytes @ 0x00000FE4)
-T0274 013:614.332   Data:  11
-T0274 013:614.339 - 0.021ms returns 0
-T0274 013:614.344 JLINK_IsHalted()
-T0274 013:614.348 - 0.006ms returns TRUE
-T0274 013:614.353 JLINK_ReadReg(XPSR)
-T0274 013:614.358 - 0.007ms returns 0x09000000
-T0274 013:614.364 JLINK_ReadReg(XPSR)
-T0274 013:614.369 - 0.007ms returns 0x09000000
-T0274 013:614.374 JLINK_ReadReg(R15 (PC))
-T0274 013:614.379 - 0.007ms returns 0x00000FE4
-T0274 013:614.384 JLINK_ReadReg(XPSR)
-T0274 013:614.389 - 0.007ms returns 0x09000000
-T0274 013:614.394 JLINK_ReadReg(XPSR)
-T0274 013:614.399 - 0.007ms returns 0x09000000
-T0274 013:614.404 JLINK_ReadMem(0x00000FE4, 0x1 Bytes, ...)
-T0274 013:614.409    -- Read from flash cache (1 bytes @ 0x00000FE4)
-T0274 013:614.421   Data:  11
-T0274 013:614.427 - 0.024ms returns 0
-T0274 013:614.498 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 013:614.509   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 013:614.795   Data:  00 00 00 00
-T0274 013:614.805 - 0.309ms returns 0
-T0274 013:614.813 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 013:614.822   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 013:615.085   Data:  00 00 00 00
-T0274 013:615.096 - 0.285ms returns 0
-T0274 013:615.104 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 013:615.110    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 013:615.117   Data:  E0 45 00 20
-T0274 013:615.122 - 0.020ms returns 0
-T0274 013:615.508 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 013:615.524   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 013:615.816   Data:  00 00 00 00
-T0274 013:615.827 - 0.320ms returns 0
-T0274 013:615.834 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 013:615.844   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 013:616.132   Data:  00 00 00 00
-T0274 013:616.143 - 0.311ms returns 0
-T0274 013:616.151 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 013:616.157    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 013:616.163   Data:  E0 45 00 20
-T0274 013:616.169 - 0.020ms returns 0
-T0274 013:616.210 JLINK_ReadRegs(NumRegs = 22, Indexes: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 86, 87, 20)
-T0274 013:616.233    -- R0=0x00, R1=0x00, R2=0x40006000, R3=0x60, R4=0x00, R5=0x00, R6=0x00, R7=0x200045D0, R8=0x7C7, R9=0x20003790, R10=0x20000EA4, R11=0x20003798, R12=0x0A, R13 (SP)=0x200045D0, R14=0x3809, R15 (PC)=0xFE4, XPSR=0x9000000, MSP=0x200045D0, PSP=0x00, MSPLIM=0x200035E0, PSPLIM=0x00, CFBP=0x00
-T0274 013:616.240 - 0.032ms returns 0x00
-T0274 013:616.447 JLINK_ReadMem(0x00000FE4, 0x4 Bytes, ...)
-T0274 013:616.458    -- Read from flash cache (4 bytes @ 0x00000FE4)
-T0274 013:616.464   Data:  11 4B 00 22
-T0274 013:616.471 - 0.025ms returns 0
-T0274 013:642.804 JLINK_ClrBPEx(BPHandle = 0x00000002)
-T0274 013:642.832 - 0.031ms returns 0x00
-T0274 013:644.539 JLINK_ReadMem(0x200025CC, 0x1 Bytes, ...)
-T0274 013:644.565   CPU_ReadMem(1 bytes @ 0x200025CC)
-T0274 013:644.829   Data:  00
-T0274 013:644.844 - 0.308ms returns 0
-T0274 013:750.342 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 013:750.385   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 013:750.662   Data:  00 00 00 00
-T0274 013:750.674 - 0.334ms returns 0
-T0274 013:750.684 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 013:750.696   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 013:750.936   Data:  00 00 00 00
-T0274 013:750.949 - 0.268ms returns 0
-T0274 013:750.957 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 013:750.964    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 013:750.970   Data:  E0 45 00 20
-T0274 013:750.976 - 0.020ms returns 0
-T0274 013:751.038 JLINK_ReadReg(XPSR)
-T0274 013:751.049 - 0.013ms returns 0x09000000
-T0274 013:751.064 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 013:751.072   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 013:751.304   Data:  00 00 00 00
-T0274 013:751.314 - 0.252ms returns 0
-T0274 013:751.321 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 013:751.329   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 013:751.587   Data:  00 00 00 00
-T0274 013:751.595 - 0.276ms returns 0
-T0274 013:751.601 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 013:751.607    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 013:751.613   Data:  E0 45 00 20
-T0274 013:751.619 - 0.019ms returns 0
-T0274 013:752.155 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 013:752.171   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 013:752.429   Data:  00 00 00 00
-T0274 013:752.439 - 0.286ms returns 0
-T0274 013:752.447 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 013:752.455   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 013:752.663   Data:  00 00 00 00
-T0274 013:752.671 - 0.226ms returns 0
-T0274 013:752.677 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 013:752.683    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 013:752.689   Data:  E0 45 00 20
-T0274 013:752.701 - 0.026ms returns 0
-T0274 013:752.740 JLINK_ReadReg(XPSR)
-T0274 013:752.749 - 0.011ms returns 0x09000000
-T0274 013:752.764 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 013:752.772   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 013:752.975   Data:  00 00 00 00
-T0274 013:752.983 - 0.220ms returns 0
-T0274 013:752.989 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 013:752.996   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 013:753.225   Data:  00 00 00 00
-T0274 013:753.232 - 0.245ms returns 0
-T0274 013:753.239 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 013:753.244    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 013:753.250   Data:  E0 45 00 20
-T0274 013:753.256 - 0.019ms returns 0
-T0274 013:984.317 JLINK_ReadMem(0x200025CC, 0x1 Bytes, ...)
-T0274 013:984.362   CPU_ReadMem(1 bytes @ 0x200025CC)
-T0274 013:984.657   Data:  00
-T0274 013:984.669 - 0.355ms returns 0
-T3880 014:646.994 JLINK_IsHalted()
-T3880 014:647.290 - 0.303ms returns TRUE
-T3880 014:647.306 JLINK_ReadReg(XPSR)
-T3880 014:647.322 - 0.018ms returns 0x09000000
-T3880 014:647.328 JLINK_ReadReg(R15 (PC))
-T3880 014:647.333 - 0.007ms returns 0x00000FE4
-T3880 014:647.342 JLINK_ReadReg(XPSR)
-T3880 014:647.347 - 0.007ms returns 0x09000000
-T3880 014:647.352 JLINK_ReadReg(XPSR)
-T3880 014:647.357 - 0.007ms returns 0x09000000
-T3880 014:647.362 JLINK_ReadReg(R15 (PC))
-T3880 014:647.367 - 0.007ms returns 0x00000FE4
-T3880 014:647.373 JLINK_ReadReg(XPSR)
-T3880 014:647.378 - 0.007ms returns 0x09000000
-T3880 014:647.383 JLINK_ReadReg(XPSR)
-T3880 014:647.388 - 0.007ms returns 0x09000000
-T3880 014:647.393 JLINK_ReadMem(0x00000FE4, 0x1 Bytes, ...)
-T3880 014:647.400    -- Read from flash cache (1 bytes @ 0x00000FE4)
-T3880 014:647.407   Data:  11
-T3880 014:647.413 - 0.021ms returns 0
-T3880 014:647.418 JLINK_IsHalted()
-T3880 014:647.422 - 0.006ms returns TRUE
-T3880 014:647.427 JLINK_ReadReg(XPSR)
-T3880 014:647.432 - 0.007ms returns 0x09000000
-T3880 014:647.437 JLINK_ReadReg(XPSR)
-T3880 014:647.442 - 0.007ms returns 0x09000000
-T3880 014:647.447 JLINK_ReadReg(R15 (PC))
-T3880 014:647.452 - 0.007ms returns 0x00000FE4
-T3880 014:647.458 JLINK_ReadReg(XPSR)
-T3880 014:647.463 - 0.007ms returns 0x09000000
-T3880 014:647.468 JLINK_ReadReg(XPSR)
-T3880 014:647.473 - 0.007ms returns 0x09000000
-T3880 014:647.478 JLINK_ReadMem(0x00000FE4, 0x1 Bytes, ...)
-T3880 014:647.483    -- Read from flash cache (1 bytes @ 0x00000FE4)
-T3880 014:647.489   Data:  11
-T3880 014:647.495 - 0.018ms returns 0
-T3880 014:647.574 JLINK_WriteMem(0xE0001FB0, 0x4 Bytes, ...)
-T3880 014:647.580   Data:  55 CE AC C5
-T3880 014:648.102   CPU_WriteMem(4 bytes @ 0xE0001FB0)
-T3880 014:648.449 - 0.882ms returns 0x4
-T3880 014:648.462 JLINK_WriteMem(0xE0001000, 0x4 Bytes, ...)
-T3880 014:648.467   Data:  01 00 00 48
-T3880 014:648.474   Debug reg: DWT_CTRL
-T3880 014:648.485 - 0.025ms returns 0x4
-T3880 014:648.492 JLINK_ReadMem(0xE0001000, 0x4 Bytes, ...)
-T3880 014:648.499   CPU_WriteMem(4 bytes @ 0xE0001000)
-T3880 014:648.737   CPU_ReadMem(4 bytes @ 0xE0001000)
-T3880 014:648.984   Data:  01 00 00 40
-T3880 014:648.995   Debug reg: DWT_CTRL
-T3880 014:649.003 - 0.514ms returns 0
-T3880 014:649.012 JLINK_WriteMem(0xE0001004, 0x4 Bytes, ...)
-T3880 014:649.019   Data:  00 00 00 00
-T3880 014:649.028   Debug reg: DWT_CYCCNT
-T3880 014:649.044 - 0.034ms returns 0x4
-T3880 014:649.054 JLINK_ReadMem(0xE0001004, 0x4 Bytes, ...)
-T3880 014:649.064   Data:  00 00 00 00
-T3880 014:649.073   Debug reg: DWT_CYCCNT
-T3880 014:649.080 - 0.029ms returns 0
-T0274 024:094.460 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 024:094.514   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 024:094.840   Data:  00 00 00 00
-T0274 024:094.853 - 0.395ms returns 0
-T0274 024:094.861 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 024:094.872   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 024:095.135   Data:  00 00 00 00
-T0274 024:095.143 - 0.283ms returns 0
-T0274 024:095.150 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 024:095.156    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 024:095.162   Data:  E0 45 00 20
-T0274 024:095.175 - 0.026ms returns 0
-T0274 024:110.359 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 024:110.391   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 024:110.656   Data:  00 00 00 00
-T0274 024:110.666 - 0.308ms returns 0
-T0274 024:110.674 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 024:110.682   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 024:110.912   Data:  00 00 00 00
-T0274 024:110.925 - 0.253ms returns 0
-T0274 024:110.933 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 024:110.939    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 024:110.946   Data:  E0 45 00 20
-T0274 024:110.952 - 0.020ms returns 0
-T0274 024:110.999 JLINK_ReadReg(XPSR)
-T0274 024:111.236 - 0.242ms returns 0x09000000
-T0274 024:111.253 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 024:111.262   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 024:111.493   Data:  00 00 00 00
-T0274 024:111.505 - 0.253ms returns 0
-T0274 024:111.512 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 024:111.521   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 024:111.734   Data:  00 00 00 00
-T0274 024:111.744 - 0.233ms returns 0
-T0274 024:111.751 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 024:111.757    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 024:111.763   Data:  E0 45 00 20
-T0274 024:111.769 - 0.020ms returns 0
-T0274 024:112.067 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 024:112.081   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 024:112.293   Data:  00 00 00 00
-T0274 024:112.304 - 0.239ms returns 0
-T0274 024:112.312 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 024:112.321   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 024:112.585   Data:  00 00 00 00
-T0274 024:112.595 - 0.285ms returns 0
-T0274 024:112.603 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 024:112.609    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 024:112.615   Data:  E0 45 00 20
-T0274 024:112.621 - 0.020ms returns 0
-T0274 024:112.654 JLINK_ReadReg(XPSR)
-T0274 024:112.663 - 0.011ms returns 0x09000000
-T0274 024:112.673 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 024:112.680   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 024:112.913   Data:  00 00 00 00
-T0274 024:112.924 - 0.253ms returns 0
-T0274 024:112.931 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 024:112.940   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 024:113.174   Data:  00 00 00 00
-T0274 024:113.183 - 0.253ms returns 0
-T0274 024:113.190 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 024:113.195    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 024:113.201   Data:  E0 45 00 20
-T0274 024:113.207 - 0.019ms returns 0
-T0274 024:125.455 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 024:125.526   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 024:125.838   Data:  00 00 00 00
-T0274 024:125.853 - 0.400ms returns 0
-T0274 024:125.862 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 024:125.873   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 024:126.114   Data:  00 00 00 00
-T0274 024:126.126 - 0.267ms returns 0
-T0274 024:126.134 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 024:126.141    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 024:126.147   Data:  E0 45 00 20
-T0274 024:126.153 - 0.020ms returns 0
-T0274 024:126.209 JLINK_ReadReg(XPSR)
-T0274 024:126.220 - 0.013ms returns 0x09000000
-T0274 024:126.232 JLINK_ReadMem(0x20000CA4, 0x4 Bytes, ...)
-T0274 024:126.239   CPU_ReadMem(4 bytes @ 0x20000CA4)
-T0274 024:126.491   Data:  00 00 00 00
-T0274 024:126.500 - 0.270ms returns 0
-T0274 024:126.506 JLINK_ReadMem(0x20000BCC, 0x4 Bytes, ...)
-T0274 024:126.513   CPU_ReadMem(4 bytes @ 0x20000BCC)
-T0274 024:126.757   Data:  00 00 00 00
-T0274 024:126.766 - 0.262ms returns 0
-T0274 024:126.774 JLINK_ReadMem(0x00000000, 0x4 Bytes, ...)
-T0274 024:126.779    -- Read from flash cache (4 bytes @ 0x00000000)
-T0274 024:126.785   Data:  E0 45 00 20
-T0274 024:126.791 - 0.019ms returns 0
-T4D10 024:610.459 JLINK_Halt()
-T4D10 024:610.491 - 0.034ms returns 0x00
-T4D10 024:610.501 JLINK_ReadReg(XPSR)
-T4D10 024:610.522 - 0.023ms returns 0x09000000
-T4D10 024:621.029 JLINK_Close()
-T4D10 024:621.296   CPU_WriteMem(4 bytes @ 0xE0002008)
-T4D10 024:651.633 - 30.636ms
-T4D10 024:651.670   
-T4D10 024:651.676   Closed
+T3B9C 000:000.381   SEGGER J-Link V7.50 Log File
+T3B9C 000:000.482   DLL Compiled: Jul  1 2021 17:37:28
+T3B9C 000:000.487   Logging started @ 2023-12-25 10:30
+T3B9C 000:000.490 - 0.493ms
+T3B9C 000:000.499 JLINK_GetDLLVersion()
+T3B9C 000:000.504 - 0.007ms returns 75000
+T3B9C 000:001.180 JLINK_OpenEx(...)
+T3B9C 000:006.964   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T3B9C 000:007.189   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T3B9C 000:007.353   Decompressing FW timestamp took 145 us
+T3B9C 000:012.811   Hardware: V9.60
+T3B9C 000:012.825   S/N: 69665566
+T3B9C 000:012.831   OEM: SEGGER
+T3B9C 000:012.837   Feature(s): RDI, GDB, FlashDL, FlashBP, JFlash
+T3B9C 000:013.606   TELNET listener socket opened on port 19021
+T3B9C 000:013.713   WEBSRV Starting webserver
+T3B9C 000:013.815   WEBSRV Webserver running on local port 19080
+T3B9C 000:013.824 - 12.646ms returns "O.K."
+T3B9C 000:013.874 JLINK_ExecCommand("ProjectFile=D:\Soucre\Airsensor/Air_Sensor.elf.jlink", ...). 
+T3B9C 000:023.529 - 9.666ms returns 0x00
+T3B9C 000:024.000 JLINK_ExecCommand("device=R7FA4M2AC", ...). 
+T3B9C 000:028.423   Device "R7FA4M2AC" selected.
+T3B9C 000:028.642 - 4.637ms returns 0x00
+T3B9C 000:028.661 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3B9C 000:028.770   ConfigTargetSettings() start
+T3B9C 000:028.778    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 000:028.787   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 000:028.798   ConfigTargetSettings() end
+T3B9C 000:029.346   InitTarget() start
+T3B9C 000:029.355    J-Link Script File: Executing InitTarget()
+T3B9C 000:029.360   Determining TrustZone configuration...
+T3B9C 000:030.733     Secure Debug: Disabled (NSECSD)
+T3B9C 000:030.744     Instruction set simulation: Disabled
+T3B9C 000:030.755   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 000:031.492   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 000:031.962   InitTarget() end
+T3B9C 000:033.318   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 000:184.585   ConfigTargetSettings() start
+T3B9C 000:184.607    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 000:184.614   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 000:184.627   ConfigTargetSettings() end
+T3B9C 000:184.636   InitTarget() start
+T3B9C 000:184.644    J-Link Script File: Executing InitTarget()
+T3B9C 000:184.649   Determining TrustZone configuration...
+T3B9C 000:185.905     Secure Debug: Disabled (NSECSD)
+T3B9C 000:185.917     Instruction set simulation: Disabled
+T3B9C 000:185.926   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 000:186.772   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 000:187.289   InitTarget() end
+T3B9C 000:188.713   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 000:189.122 - 160.464ms returns 1
+T3B9C 000:189.138 JLINK_ReadMem(0x400E002C, 0x4 Bytes, ...)
+T3B9C 000:189.292   ConfigTargetSettings() start
+T3B9C 000:189.299    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 000:189.304   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 000:189.313   ConfigTargetSettings() end
+T3B9C 000:189.319   InitTarget() start
+T3B9C 000:189.325    J-Link Script File: Executing InitTarget()
+T3B9C 000:189.329   Determining TrustZone configuration...
+T3B9C 000:190.235     Secure Debug: Disabled (NSECSD)
+T3B9C 000:190.243     Instruction set simulation: Disabled
+T3B9C 000:190.251   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 000:190.898   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 000:191.369   InitTarget() end
+T3B9C 000:192.760   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 000:344.692   ConfigTargetSettings() start
+T3B9C 000:344.759    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 000:344.765   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 000:344.775   ConfigTargetSettings() end
+T3B9C 000:344.782   InitTarget() start
+T3B9C 000:344.788    J-Link Script File: Executing InitTarget()
+T3B9C 000:344.793   Determining TrustZone configuration...
+T3B9C 000:346.166     Secure Debug: Disabled (NSECSD)
+T3B9C 000:346.178     Instruction set simulation: Disabled
+T3B9C 000:346.186   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 000:347.088   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 000:347.735   InitTarget() end
+T3B9C 000:349.280   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 000:349.657 - 160.526ms returns 1
+T3B9C 000:349.729 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3B9C 000:349.834   ConfigTargetSettings() start
+T3B9C 000:349.842    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 000:349.847   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 000:349.855   ConfigTargetSettings() end
+T3B9C 000:349.862   InitTarget() start
+T3B9C 000:349.870    J-Link Script File: Executing InitTarget()
+T3B9C 000:349.875   Determining TrustZone configuration...
+T3B9C 000:350.971     Secure Debug: Disabled (NSECSD)
+T3B9C 000:350.984     Instruction set simulation: Disabled
+T3B9C 000:350.992   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 000:351.775   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 000:352.496   InitTarget() end
+T3B9C 000:354.268   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 000:506.009   ConfigTargetSettings() start
+T3B9C 000:506.032    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 000:506.039   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 000:506.051   ConfigTargetSettings() end
+T3B9C 000:506.059   InitTarget() start
+T3B9C 000:506.066    J-Link Script File: Executing InitTarget()
+T3B9C 000:506.071   Determining TrustZone configuration...
+T3B9C 000:507.557     Secure Debug: Disabled (NSECSD)
+T3B9C 000:507.571     Instruction set simulation: Disabled
+T3B9C 000:507.581   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 000:508.539   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 000:509.199   InitTarget() end
+T3B9C 000:510.779   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 000:511.182 - 161.460ms returns 1
+T3B9C 000:511.294 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3B9C 000:511.465   ConfigTargetSettings() start
+T3B9C 000:511.476    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 000:511.481   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 000:511.489   ConfigTargetSettings() end
+T3B9C 000:511.495   InitTarget() start
+T3B9C 000:511.501    J-Link Script File: Executing InitTarget()
+T3B9C 000:511.505   Determining TrustZone configuration...
+T3B9C 000:512.536     Secure Debug: Disabled (NSECSD)
+T3B9C 000:512.547     Instruction set simulation: Disabled
+T3B9C 000:512.555   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 000:513.283   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 000:513.781   InitTarget() end
+T3B9C 000:515.190   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 000:667.288   ConfigTargetSettings() start
+T3B9C 000:667.312    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 000:667.319   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 000:667.340   ConfigTargetSettings() end
+T3B9C 000:667.349   InitTarget() start
+T3B9C 000:667.357    J-Link Script File: Executing InitTarget()
+T3B9C 000:667.362   Determining TrustZone configuration...
+T3B9C 000:668.693     Secure Debug: Disabled (NSECSD)
+T3B9C 000:668.704     Instruction set simulation: Disabled
+T3B9C 000:668.712   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 000:669.624   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 000:670.238   InitTarget() end
+T3B9C 000:671.778   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 000:672.189 - 160.902ms returns 1
+T3B9C 000:672.207 JLINK_ReadMem(0x400E001C, 0x4 Bytes, ...)
+T3B9C 000:672.310   ConfigTargetSettings() start
+T3B9C 000:672.318    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 000:672.323   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 000:672.331   ConfigTargetSettings() end
+T3B9C 000:672.341   InitTarget() start
+T3B9C 000:672.347    J-Link Script File: Executing InitTarget()
+T3B9C 000:672.351   Determining TrustZone configuration...
+T3B9C 000:673.235     Secure Debug: Disabled (NSECSD)
+T3B9C 000:673.246     Instruction set simulation: Disabled
+T3B9C 000:673.255   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 000:673.915   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 000:674.366   InitTarget() end
+T3B9C 000:675.738   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 000:827.725   ConfigTargetSettings() start
+T3B9C 000:827.750    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 000:827.758   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 000:827.771   ConfigTargetSettings() end
+T3B9C 000:827.781   InitTarget() start
+T3B9C 000:827.790    J-Link Script File: Executing InitTarget()
+T3B9C 000:827.796   Determining TrustZone configuration...
+T3B9C 000:829.305     Secure Debug: Disabled (NSECSD)
+T3B9C 000:829.322     Instruction set simulation: Disabled
+T3B9C 000:829.334   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 000:830.267   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 000:830.852   InitTarget() end
+T3B9C 000:832.393   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 000:832.791 - 160.587ms returns 1
+T3B9C 000:832.815 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3B9C 000:832.972   ConfigTargetSettings() start
+T3B9C 000:832.984    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 000:832.989   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 000:832.998   ConfigTargetSettings() end
+T3B9C 000:833.004   InitTarget() start
+T3B9C 000:833.010    J-Link Script File: Executing InitTarget()
+T3B9C 000:833.014   Determining TrustZone configuration...
+T3B9C 000:833.984     Secure Debug: Disabled (NSECSD)
+T3B9C 000:833.993     Instruction set simulation: Disabled
+T3B9C 000:834.000   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 000:834.739   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 000:835.235   InitTarget() end
+T3B9C 000:836.606   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 000:988.695   ConfigTargetSettings() start
+T3B9C 000:988.720    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 000:988.728   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 000:988.742   ConfigTargetSettings() end
+T3B9C 000:988.752   InitTarget() start
+T3B9C 000:988.760    J-Link Script File: Executing InitTarget()
+T3B9C 000:988.767   Determining TrustZone configuration...
+T3B9C 000:990.219     Secure Debug: Disabled (NSECSD)
+T3B9C 000:990.237     Instruction set simulation: Disabled
+T3B9C 000:990.246   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 000:991.202   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 000:991.844   InitTarget() end
+T3B9C 000:993.409   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 000:993.827 - 161.018ms returns 1
+T3B9C 000:993.903 JLINK_ReadMem(0x400E0018, 0x4 Bytes, ...)
+T3B9C 000:994.033   ConfigTargetSettings() start
+T3B9C 000:994.041    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 000:994.046   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 000:994.055   ConfigTargetSettings() end
+T3B9C 000:994.061   InitTarget() start
+T3B9C 000:994.067    J-Link Script File: Executing InitTarget()
+T3B9C 000:994.072   Determining TrustZone configuration...
+T3B9C 000:995.087     Secure Debug: Disabled (NSECSD)
+T3B9C 000:995.095     Instruction set simulation: Disabled
+T3B9C 000:995.103   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 000:995.758   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 000:996.235   InitTarget() end
+T3B9C 000:997.678   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 001:148.570   ConfigTargetSettings() start
+T3B9C 001:148.591    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 001:148.597   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 001:148.607   ConfigTargetSettings() end
+T3B9C 001:148.614   InitTarget() start
+T3B9C 001:148.620    J-Link Script File: Executing InitTarget()
+T3B9C 001:148.624   Determining TrustZone configuration...
+T3B9C 001:149.874     Secure Debug: Disabled (NSECSD)
+T3B9C 001:149.887     Instruction set simulation: Disabled
+T3B9C 001:149.896   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 001:150.747   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 001:151.258   InitTarget() end
+T3B9C 001:152.635   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 001:153.052 - 159.153ms returns 1
+T3B9C 001:153.429 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3B9C 001:153.557   ConfigTargetSettings() start
+T3B9C 001:153.565    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 001:153.570   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 001:153.578   ConfigTargetSettings() end
+T3B9C 001:153.585   InitTarget() start
+T3B9C 001:153.591    J-Link Script File: Executing InitTarget()
+T3B9C 001:153.595   Determining TrustZone configuration...
+T3B9C 001:154.522     Secure Debug: Disabled (NSECSD)
+T3B9C 001:154.530     Instruction set simulation: Disabled
+T3B9C 001:154.538   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 001:155.235   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 001:155.696   InitTarget() end
+T3B9C 001:157.116   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 001:308.608   ConfigTargetSettings() start
+T3B9C 001:308.627    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 001:308.633   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 001:308.643   ConfigTargetSettings() end
+T3B9C 001:308.650   InitTarget() start
+T3B9C 001:308.656    J-Link Script File: Executing InitTarget()
+T3B9C 001:308.660   Determining TrustZone configuration...
+T3B9C 001:309.919     Secure Debug: Disabled (NSECSD)
+T3B9C 001:309.931     Instruction set simulation: Disabled
+T3B9C 001:309.940   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 001:310.721   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 001:311.329   InitTarget() end
+T3B9C 001:312.739   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 001:313.109 - 159.683ms returns 1
+T3B9C 001:313.153 JLINK_ReadMem(0x400E0020, 0x4 Bytes, ...)
+T3B9C 001:313.292   ConfigTargetSettings() start
+T3B9C 001:313.300    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 001:313.305   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 001:313.313   ConfigTargetSettings() end
+T3B9C 001:313.320   InitTarget() start
+T3B9C 001:313.326    J-Link Script File: Executing InitTarget()
+T3B9C 001:313.330   Determining TrustZone configuration...
+T3B9C 001:314.276     Secure Debug: Disabled (NSECSD)
+T3B9C 001:314.284     Instruction set simulation: Disabled
+T3B9C 001:314.292   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 001:314.954   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 001:315.486   InitTarget() end
+T3B9C 001:316.879   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 001:468.567   ConfigTargetSettings() start
+T3B9C 001:468.634    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 001:468.641   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 001:468.666   ConfigTargetSettings() end
+T3B9C 001:468.680   InitTarget() start
+T3B9C 001:468.686    J-Link Script File: Executing InitTarget()
+T3B9C 001:468.690   Determining TrustZone configuration...
+T3B9C 001:469.858     Secure Debug: Disabled (NSECSD)
+T3B9C 001:469.874     Instruction set simulation: Disabled
+T3B9C 001:469.882   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 001:470.572   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 001:471.015   InitTarget() end
+T3B9C 001:472.529   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 001:472.936 - 159.786ms returns 1
+T3B9C 001:472.983 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3B9C 001:473.078   ConfigTargetSettings() start
+T3B9C 001:473.085    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 001:473.090   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 001:473.098   ConfigTargetSettings() end
+T3B9C 001:473.104   InitTarget() start
+T3B9C 001:473.110    J-Link Script File: Executing InitTarget()
+T3B9C 001:473.115   Determining TrustZone configuration...
+T3B9C 001:473.981     Secure Debug: Disabled (NSECSD)
+T3B9C 001:473.989     Instruction set simulation: Disabled
+T3B9C 001:473.997   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 001:474.690   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 001:475.275   InitTarget() end
+T3B9C 001:476.628   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 001:628.693   ConfigTargetSettings() start
+T3B9C 001:628.711    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 001:628.717   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 001:628.727   ConfigTargetSettings() end
+T3B9C 001:628.734   InitTarget() start
+T3B9C 001:628.740    J-Link Script File: Executing InitTarget()
+T3B9C 001:628.745   Determining TrustZone configuration...
+T3B9C 001:629.871     Secure Debug: Disabled (NSECSD)
+T3B9C 001:629.882     Instruction set simulation: Disabled
+T3B9C 001:629.891   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 001:630.764   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 001:631.293   InitTarget() end
+T3B9C 001:632.740   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 001:633.139 - 160.163ms returns 1
+T3B9C 001:633.211 JLINK_ReadMem(0x400E0028, 0x4 Bytes, ...)
+T3B9C 001:633.344   ConfigTargetSettings() start
+T3B9C 001:633.362    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 001:633.367   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 001:633.376   ConfigTargetSettings() end
+T3B9C 001:633.382   InitTarget() start
+T3B9C 001:633.388    J-Link Script File: Executing InitTarget()
+T3B9C 001:633.392   Determining TrustZone configuration...
+T3B9C 001:634.373     Secure Debug: Disabled (NSECSD)
+T3B9C 001:634.385     Instruction set simulation: Disabled
+T3B9C 001:634.393   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 001:635.141   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 001:635.708   InitTarget() end
+T3B9C 001:637.285   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 001:789.400   ConfigTargetSettings() start
+T3B9C 001:789.422    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 001:789.428   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 001:789.438   ConfigTargetSettings() end
+T3B9C 001:789.445   InitTarget() start
+T3B9C 001:789.451    J-Link Script File: Executing InitTarget()
+T3B9C 001:789.455   Determining TrustZone configuration...
+T3B9C 001:790.343     Secure Debug: Disabled (NSECSD)
+T3B9C 001:790.353     Instruction set simulation: Disabled
+T3B9C 001:790.360   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 001:791.027   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 001:791.508   InitTarget() end
+T3B9C 001:792.992   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 001:793.403 - 160.196ms returns 1
+T3B9C 001:793.450 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3B9C 001:793.560   ConfigTargetSettings() start
+T3B9C 001:793.567    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 001:793.573   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 001:793.581   ConfigTargetSettings() end
+T3B9C 001:793.588   InitTarget() start
+T3B9C 001:793.594    J-Link Script File: Executing InitTarget()
+T3B9C 001:793.598   Determining TrustZone configuration...
+T3B9C 001:794.487     Secure Debug: Disabled (NSECSD)
+T3B9C 001:794.495     Instruction set simulation: Disabled
+T3B9C 001:794.503   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 001:795.138   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 001:795.648   InitTarget() end
+T3B9C 001:797.051   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 001:949.332   ConfigTargetSettings() start
+T3B9C 001:949.404    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 001:949.410   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 001:949.420   ConfigTargetSettings() end
+T3B9C 001:949.427   InitTarget() start
+T3B9C 001:949.432    J-Link Script File: Executing InitTarget()
+T3B9C 001:949.437   Determining TrustZone configuration...
+T3B9C 001:950.371     Secure Debug: Disabled (NSECSD)
+T3B9C 001:950.381     Instruction set simulation: Disabled
+T3B9C 001:950.390   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 001:951.050   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 001:951.521   InitTarget() end
+T3B9C 001:952.893   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 001:953.262 - 159.815ms returns 1
+T3B9C 001:953.310 JLINK_ReadMem(0x400E0024, 0x4 Bytes, ...)
+T3B9C 001:953.415   ConfigTargetSettings() start
+T3B9C 001:953.422    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 001:953.427   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 001:953.436   ConfigTargetSettings() end
+T3B9C 001:953.449   InitTarget() start
+T3B9C 001:953.455    J-Link Script File: Executing InitTarget()
+T3B9C 001:953.459   Determining TrustZone configuration...
+T3B9C 001:954.318     Secure Debug: Disabled (NSECSD)
+T3B9C 001:954.326     Instruction set simulation: Disabled
+T3B9C 001:954.333   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 001:954.993   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 001:955.499   InitTarget() end
+T3B9C 001:956.870   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 002:109.060   ConfigTargetSettings() start
+T3B9C 002:109.085    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 002:109.092   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 002:109.102   ConfigTargetSettings() end
+T3B9C 002:109.109   InitTarget() start
+T3B9C 002:109.115    J-Link Script File: Executing InitTarget()
+T3B9C 002:109.120   Determining TrustZone configuration...
+T3B9C 002:110.063     Secure Debug: Disabled (NSECSD)
+T3B9C 002:110.076     Instruction set simulation: Disabled
+T3B9C 002:110.084   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 002:110.746   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 002:111.235   InitTarget() end
+T3B9C 002:112.691   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 002:113.099 - 159.792ms returns 1
+T3B9C 002:113.142 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3B9C 002:113.293   ConfigTargetSettings() start
+T3B9C 002:113.301    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 002:113.306   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 002:113.314   ConfigTargetSettings() end
+T3B9C 002:113.321   InitTarget() start
+T3B9C 002:113.327    J-Link Script File: Executing InitTarget()
+T3B9C 002:113.331   Determining TrustZone configuration...
+T3B9C 002:114.235     Secure Debug: Disabled (NSECSD)
+T3B9C 002:114.244     Instruction set simulation: Disabled
+T3B9C 002:114.251   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 002:114.884   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 002:115.339   InitTarget() end
+T3B9C 002:116.715   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 002:268.811   ConfigTargetSettings() start
+T3B9C 002:268.831    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 002:268.837   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 002:268.847   ConfigTargetSettings() end
+T3B9C 002:268.854   InitTarget() start
+T3B9C 002:268.860    J-Link Script File: Executing InitTarget()
+T3B9C 002:268.864   Determining TrustZone configuration...
+T3B9C 002:269.934     Secure Debug: Disabled (NSECSD)
+T3B9C 002:269.946     Instruction set simulation: Disabled
+T3B9C 002:269.954   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 002:270.706   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 002:271.263   InitTarget() end
+T3B9C 002:272.685   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 002:273.085 - 159.950ms returns 1
+T3B9C 002:273.105 JLINK_ReadMem(0x400E002C, 0x4 Bytes, ...)
+T3B9C 002:273.266   ConfigTargetSettings() start
+T3B9C 002:273.277    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 002:273.282   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 002:273.291   ConfigTargetSettings() end
+T3B9C 002:273.297   InitTarget() start
+T3B9C 002:273.303    J-Link Script File: Executing InitTarget()
+T3B9C 002:273.308   Determining TrustZone configuration...
+T3B9C 002:274.353     Secure Debug: Disabled (NSECSD)
+T3B9C 002:274.370     Instruction set simulation: Disabled
+T3B9C 002:274.379   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 002:275.096   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 002:275.593   InitTarget() end
+T3B9C 002:276.971   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 002:428.683   ConfigTargetSettings() start
+T3B9C 002:428.705    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 002:428.711   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 002:428.722   ConfigTargetSettings() end
+T3B9C 002:428.729   InitTarget() start
+T3B9C 002:428.735    J-Link Script File: Executing InitTarget()
+T3B9C 002:428.739   Determining TrustZone configuration...
+T3B9C 002:430.117     Secure Debug: Disabled (NSECSD)
+T3B9C 002:430.129     Instruction set simulation: Disabled
+T3B9C 002:430.137   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 002:430.958   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 002:431.517   InitTarget() end
+T3B9C 002:432.893   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 002:433.250 - 160.151ms returns 1
+T3B9C 002:433.546 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3B9C 002:433.649   ConfigTargetSettings() start
+T3B9C 002:433.657    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 002:433.662   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 002:433.671   ConfigTargetSettings() end
+T3B9C 002:433.677   InitTarget() start
+T3B9C 002:433.683    J-Link Script File: Executing InitTarget()
+T3B9C 002:433.687   Determining TrustZone configuration...
+T3B9C 002:434.538     Secure Debug: Disabled (NSECSD)
+T3B9C 002:434.545     Instruction set simulation: Disabled
+T3B9C 002:434.553   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 002:435.235   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 002:435.697   InitTarget() end
+T3B9C 002:437.129   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 002:589.691   ConfigTargetSettings() start
+T3B9C 002:589.715    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 002:589.721   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 002:589.735   ConfigTargetSettings() end
+T3B9C 002:589.743   InitTarget() start
+T3B9C 002:589.749    J-Link Script File: Executing InitTarget()
+T3B9C 002:589.753   Determining TrustZone configuration...
+T3B9C 002:590.719     Secure Debug: Disabled (NSECSD)
+T3B9C 002:590.732     Instruction set simulation: Disabled
+T3B9C 002:590.740   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 002:591.449   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 002:591.913   InitTarget() end
+T3B9C 002:593.346   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 002:593.714 - 160.171ms returns 1
+T3B9C 002:593.753 JLINK_ReadMem(0x400E002C, 0x4 Bytes, ...)
+T3B9C 002:593.854   ConfigTargetSettings() start
+T3B9C 002:593.862    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 002:593.867   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 002:593.875   ConfigTargetSettings() end
+T3B9C 002:593.881   InitTarget() start
+T3B9C 002:593.887    J-Link Script File: Executing InitTarget()
+T3B9C 002:593.891   Determining TrustZone configuration...
+T3B9C 002:594.736     Secure Debug: Disabled (NSECSD)
+T3B9C 002:594.744     Instruction set simulation: Disabled
+T3B9C 002:594.752   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 002:595.488   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 002:595.998   InitTarget() end
+T3B9C 002:597.396   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 002:748.997   ConfigTargetSettings() start
+T3B9C 002:749.024    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 002:749.031   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 002:749.043   ConfigTargetSettings() end
+T3B9C 002:749.051   InitTarget() start
+T3B9C 002:749.058    J-Link Script File: Executing InitTarget()
+T3B9C 002:749.063   Determining TrustZone configuration...
+T3B9C 002:750.382     Secure Debug: Disabled (NSECSD)
+T3B9C 002:750.394     Instruction set simulation: Disabled
+T3B9C 002:750.403   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 002:751.278   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 002:751.894   InitTarget() end
+T3B9C 002:753.376   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 002:753.800 - 160.054ms returns 1
+T3B9C 002:753.828 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3B9C 002:753.997   ConfigTargetSettings() start
+T3B9C 002:754.008    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 002:754.013   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 002:754.021   ConfigTargetSettings() end
+T3B9C 002:754.028   InitTarget() start
+T3B9C 002:754.033    J-Link Script File: Executing InitTarget()
+T3B9C 002:754.038   Determining TrustZone configuration...
+T3B9C 002:755.129     Secure Debug: Disabled (NSECSD)
+T3B9C 002:755.140     Instruction set simulation: Disabled
+T3B9C 002:755.148   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 002:755.931   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 002:756.448   InitTarget() end
+T3B9C 002:757.882   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 002:909.413   ConfigTargetSettings() start
+T3B9C 002:909.432    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 002:909.438   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 002:909.448   ConfigTargetSettings() end
+T3B9C 002:909.455   InitTarget() start
+T3B9C 002:909.461    J-Link Script File: Executing InitTarget()
+T3B9C 002:909.465   Determining TrustZone configuration...
+T3B9C 002:910.689     Secure Debug: Disabled (NSECSD)
+T3B9C 002:910.701     Instruction set simulation: Disabled
+T3B9C 002:910.709   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 002:911.566   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 002:912.155   InitTarget() end
+T3B9C 002:913.662   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 002:914.106 - 160.284ms returns 1
+T3B9C 002:914.125 JLINK_ReadMem(0x400E001C, 0x4 Bytes, ...)
+T3B9C 002:914.330   ConfigTargetSettings() start
+T3B9C 002:914.341    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 002:914.346   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 002:914.354   ConfigTargetSettings() end
+T3B9C 002:914.360   InitTarget() start
+T3B9C 002:914.366    J-Link Script File: Executing InitTarget()
+T3B9C 002:914.371   Determining TrustZone configuration...
+T3B9C 002:915.345     Secure Debug: Disabled (NSECSD)
+T3B9C 002:915.356     Instruction set simulation: Disabled
+T3B9C 002:915.364   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 002:916.102   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 002:916.555   InitTarget() end
+T3B9C 002:918.070   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 003:070.106   ConfigTargetSettings() start
+T3B9C 003:070.126    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 003:070.132   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 003:070.149   ConfigTargetSettings() end
+T3B9C 003:070.156   InitTarget() start
+T3B9C 003:070.162    J-Link Script File: Executing InitTarget()
+T3B9C 003:070.167   Determining TrustZone configuration...
+T3B9C 003:071.324     Secure Debug: Disabled (NSECSD)
+T3B9C 003:071.337     Instruction set simulation: Disabled
+T3B9C 003:071.345   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 003:072.155   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 003:072.668   InitTarget() end
+T3B9C 003:074.067   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 003:074.472 - 160.350ms returns 1
+T3B9C 003:074.733 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3B9C 003:074.861   ConfigTargetSettings() start
+T3B9C 003:074.868    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 003:074.873   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 003:074.881   ConfigTargetSettings() end
+T3B9C 003:074.887   InitTarget() start
+T3B9C 003:074.893    J-Link Script File: Executing InitTarget()
+T3B9C 003:074.897   Determining TrustZone configuration...
+T3B9C 003:075.911     Secure Debug: Disabled (NSECSD)
+T3B9C 003:075.918     Instruction set simulation: Disabled
+T3B9C 003:075.926   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 003:076.641   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 003:077.102   InitTarget() end
+T3B9C 003:078.577   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 003:231.093   ConfigTargetSettings() start
+T3B9C 003:231.113    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 003:231.121   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 003:231.132   ConfigTargetSettings() end
+T3B9C 003:231.139   InitTarget() start
+T3B9C 003:231.145    J-Link Script File: Executing InitTarget()
+T3B9C 003:231.150   Determining TrustZone configuration...
+T3B9C 003:232.506     Secure Debug: Disabled (NSECSD)
+T3B9C 003:232.518     Instruction set simulation: Disabled
+T3B9C 003:232.526   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 003:233.379   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 003:233.953   InitTarget() end
+T3B9C 003:235.610   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 003:236.315 - 161.590ms returns 1
+T3B9C 003:236.338 JLINK_ReadMem(0x400E0018, 0x4 Bytes, ...)
+T3B9C 003:236.453   ConfigTargetSettings() start
+T3B9C 003:236.465    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 003:236.472   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 003:236.484   ConfigTargetSettings() end
+T3B9C 003:236.515   InitTarget() start
+T3B9C 003:236.524    J-Link Script File: Executing InitTarget()
+T3B9C 003:236.530   Determining TrustZone configuration...
+T3B9C 003:237.687     Secure Debug: Disabled (NSECSD)
+T3B9C 003:237.699     Instruction set simulation: Disabled
+T3B9C 003:237.708   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 003:238.618   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 003:239.135   InitTarget() end
+T3B9C 003:240.681   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 003:392.315   ConfigTargetSettings() start
+T3B9C 003:392.339    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 003:392.347   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 003:392.359   ConfigTargetSettings() end
+T3B9C 003:392.368   InitTarget() start
+T3B9C 003:392.375    J-Link Script File: Executing InitTarget()
+T3B9C 003:392.386   Determining TrustZone configuration...
+T3B9C 003:393.855     Secure Debug: Disabled (NSECSD)
+T3B9C 003:393.870     Instruction set simulation: Disabled
+T3B9C 003:393.880   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 003:394.817   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 003:395.490   InitTarget() end
+T3B9C 003:397.065   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 003:397.488 - 161.157ms returns 1
+T3B9C 003:397.517 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3B9C 003:397.677   ConfigTargetSettings() start
+T3B9C 003:397.688    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 003:397.693   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 003:397.701   ConfigTargetSettings() end
+T3B9C 003:397.707   InitTarget() start
+T3B9C 003:397.713    J-Link Script File: Executing InitTarget()
+T3B9C 003:397.717   Determining TrustZone configuration...
+T3B9C 003:398.837     Secure Debug: Disabled (NSECSD)
+T3B9C 003:398.848     Instruction set simulation: Disabled
+T3B9C 003:398.856   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 003:399.631   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 003:400.176   InitTarget() end
+T3B9C 003:401.690   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 003:553.608   ConfigTargetSettings() start
+T3B9C 003:553.629    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 003:553.635   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 003:553.644   ConfigTargetSettings() end
+T3B9C 003:553.652   InitTarget() start
+T3B9C 003:553.657    J-Link Script File: Executing InitTarget()
+T3B9C 003:553.662   Determining TrustZone configuration...
+T3B9C 003:555.084     Secure Debug: Disabled (NSECSD)
+T3B9C 003:555.097     Instruction set simulation: Disabled
+T3B9C 003:555.106   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 003:555.923   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 003:556.472   InitTarget() end
+T3B9C 003:557.961   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 003:558.355 - 160.841ms returns 1
+T3B9C 003:558.370 JLINK_ReadMem(0x400E0020, 0x4 Bytes, ...)
+T3B9C 003:558.497   ConfigTargetSettings() start
+T3B9C 003:558.504    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 003:558.509   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 003:558.518   ConfigTargetSettings() end
+T3B9C 003:558.524   InitTarget() start
+T3B9C 003:558.530    J-Link Script File: Executing InitTarget()
+T3B9C 003:558.534   Determining TrustZone configuration...
+T3B9C 003:559.509     Secure Debug: Disabled (NSECSD)
+T3B9C 003:559.517     Instruction set simulation: Disabled
+T3B9C 003:559.524   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 003:560.234   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 003:560.702   InitTarget() end
+T3B9C 003:562.207   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 003:714.244   ConfigTargetSettings() start
+T3B9C 003:714.311    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 003:714.317   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 003:714.327   ConfigTargetSettings() end
+T3B9C 003:714.334   InitTarget() start
+T3B9C 003:714.340    J-Link Script File: Executing InitTarget()
+T3B9C 003:714.345   Determining TrustZone configuration...
+T3B9C 003:715.348     Secure Debug: Disabled (NSECSD)
+T3B9C 003:715.361     Instruction set simulation: Disabled
+T3B9C 003:715.369   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 003:716.101   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 003:716.584   InitTarget() end
+T3B9C 003:718.026   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 003:718.382 - 160.017ms returns 1
+T3B9C 003:718.657 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3B9C 003:718.756   ConfigTargetSettings() start
+T3B9C 003:718.763    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 003:718.769   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 003:718.777   ConfigTargetSettings() end
+T3B9C 003:718.784   InitTarget() start
+T3B9C 003:718.790    J-Link Script File: Executing InitTarget()
+T3B9C 003:718.795   Determining TrustZone configuration...
+T3B9C 003:719.710     Secure Debug: Disabled (NSECSD)
+T3B9C 003:719.718     Instruction set simulation: Disabled
+T3B9C 003:719.726   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 003:720.448   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 003:720.908   InitTarget() end
+T3B9C 003:722.328   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 003:874.278   ConfigTargetSettings() start
+T3B9C 003:874.349    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 003:874.357   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 003:874.369   ConfigTargetSettings() end
+T3B9C 003:874.379   InitTarget() start
+T3B9C 003:874.387    J-Link Script File: Executing InitTarget()
+T3B9C 003:874.393   Determining TrustZone configuration...
+T3B9C 003:875.369     Secure Debug: Disabled (NSECSD)
+T3B9C 003:875.378     Instruction set simulation: Disabled
+T3B9C 003:875.386   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 003:876.080   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 003:876.522   InitTarget() end
+T3B9C 003:877.974   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 003:878.329 - 159.675ms returns 1
+T3B9C 003:878.369 JLINK_ReadMem(0x400E0028, 0x4 Bytes, ...)
+T3B9C 003:878.479   ConfigTargetSettings() start
+T3B9C 003:878.487    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 003:878.492   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 003:878.500   ConfigTargetSettings() end
+T3B9C 003:878.506   InitTarget() start
+T3B9C 003:878.512    J-Link Script File: Executing InitTarget()
+T3B9C 003:878.516   Determining TrustZone configuration...
+T3B9C 003:879.447     Secure Debug: Disabled (NSECSD)
+T3B9C 003:879.455     Instruction set simulation: Disabled
+T3B9C 003:879.462   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 003:880.122   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 003:880.647   InitTarget() end
+T3B9C 003:882.091   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 004:033.026   ConfigTargetSettings() start
+T3B9C 004:033.046    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 004:033.052   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 004:033.062   ConfigTargetSettings() end
+T3B9C 004:033.069   InitTarget() start
+T3B9C 004:033.075    J-Link Script File: Executing InitTarget()
+T3B9C 004:033.080   Determining TrustZone configuration...
+T3B9C 004:034.067     Secure Debug: Disabled (NSECSD)
+T3B9C 004:034.090     Instruction set simulation: Disabled
+T3B9C 004:034.101   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 004:034.814   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 004:035.265   InitTarget() end
+T3B9C 004:036.708   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 004:037.083 - 158.717ms returns 1
+T3B9C 004:037.107 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3B9C 004:037.235   ConfigTargetSettings() start
+T3B9C 004:037.242    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 004:037.247   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 004:037.255   ConfigTargetSettings() end
+T3B9C 004:037.261   InitTarget() start
+T3B9C 004:037.267    J-Link Script File: Executing InitTarget()
+T3B9C 004:037.271   Determining TrustZone configuration...
+T3B9C 004:038.132     Secure Debug: Disabled (NSECSD)
+T3B9C 004:038.139     Instruction set simulation: Disabled
+T3B9C 004:038.147   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 004:038.851   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 004:039.317   InitTarget() end
+T3B9C 004:040.762   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 004:192.859   ConfigTargetSettings() start
+T3B9C 004:192.879    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 004:192.886   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 004:192.896   ConfigTargetSettings() end
+T3B9C 004:192.903   InitTarget() start
+T3B9C 004:192.909    J-Link Script File: Executing InitTarget()
+T3B9C 004:192.914   Determining TrustZone configuration...
+T3B9C 004:193.979     Secure Debug: Disabled (NSECSD)
+T3B9C 004:193.992     Instruction set simulation: Disabled
+T3B9C 004:194.003   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 004:194.767   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 004:195.293   InitTarget() end
+T3B9C 004:196.714   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 004:197.123 - 160.023ms returns 1
+T3B9C 004:197.144 JLINK_ReadMem(0x400E0024, 0x4 Bytes, ...)
+T3B9C 004:197.318   ConfigTargetSettings() start
+T3B9C 004:197.329    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 004:197.334   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 004:197.343   ConfigTargetSettings() end
+T3B9C 004:197.349   InitTarget() start
+T3B9C 004:197.355    J-Link Script File: Executing InitTarget()
+T3B9C 004:197.359   Determining TrustZone configuration...
+T3B9C 004:198.264     Secure Debug: Disabled (NSECSD)
+T3B9C 004:198.276     Instruction set simulation: Disabled
+T3B9C 004:198.285   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 004:198.941   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 004:199.447   InitTarget() end
+T3B9C 004:200.872   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 004:352.174   ConfigTargetSettings() start
+T3B9C 004:352.208    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 004:352.214   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 004:352.230   ConfigTargetSettings() end
+T3B9C 004:352.237   InitTarget() start
+T3B9C 004:352.243    J-Link Script File: Executing InitTarget()
+T3B9C 004:352.247   Determining TrustZone configuration...
+T3B9C 004:353.371     Secure Debug: Disabled (NSECSD)
+T3B9C 004:353.388     Instruction set simulation: Disabled
+T3B9C 004:353.396   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 004:354.133   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 004:354.701   InitTarget() end
+T3B9C 004:356.225   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 004:356.626 - 159.486ms returns 1
+T3B9C 004:356.747 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3B9C 004:356.854   ConfigTargetSettings() start
+T3B9C 004:356.864    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 004:356.870   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 004:356.886   ConfigTargetSettings() end
+T3B9C 004:356.893   InitTarget() start
+T3B9C 004:356.899    J-Link Script File: Executing InitTarget()
+T3B9C 004:356.903   Determining TrustZone configuration...
+T3B9C 004:357.775     Secure Debug: Disabled (NSECSD)
+T3B9C 004:357.787     Instruction set simulation: Disabled
+T3B9C 004:357.795   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 004:358.490   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 004:358.952   InitTarget() end
+T3B9C 004:360.352   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 004:512.460   ConfigTargetSettings() start
+T3B9C 004:512.481    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 004:512.487   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 004:512.497   ConfigTargetSettings() end
+T3B9C 004:512.505   InitTarget() start
+T3B9C 004:512.511    J-Link Script File: Executing InitTarget()
+T3B9C 004:512.515   Determining TrustZone configuration...
+T3B9C 004:513.768     Secure Debug: Disabled (NSECSD)
+T3B9C 004:513.780     Instruction set simulation: Disabled
+T3B9C 004:513.788   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 004:514.535   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 004:515.015   InitTarget() end
+T3B9C 004:516.451   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 004:516.920 - 160.180ms returns 1
+T3B9C 004:517.016 JLINK_ReadMem(0x400E002C, 0x4 Bytes, ...)
+T3B9C 004:517.185   ConfigTargetSettings() start
+T3B9C 004:517.196    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 004:517.201   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 004:517.210   ConfigTargetSettings() end
+T3B9C 004:517.216   InitTarget() start
+T3B9C 004:517.222    J-Link Script File: Executing InitTarget()
+T3B9C 004:517.227   Determining TrustZone configuration...
+T3B9C 004:518.152     Secure Debug: Disabled (NSECSD)
+T3B9C 004:518.164     Instruction set simulation: Disabled
+T3B9C 004:518.172   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 004:518.856   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 004:519.318   InitTarget() end
+T3B9C 004:520.677   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 004:671.801   ConfigTargetSettings() start
+T3B9C 004:671.817    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 004:671.823   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 004:671.833   ConfigTargetSettings() end
+T3B9C 004:671.840   InitTarget() start
+T3B9C 004:671.846    J-Link Script File: Executing InitTarget()
+T3B9C 004:671.851   Determining TrustZone configuration...
+T3B9C 004:672.825     Secure Debug: Disabled (NSECSD)
+T3B9C 004:672.837     Instruction set simulation: Disabled
+T3B9C 004:672.845   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 004:673.577   Transfer type does not match DLM state. Changing transfer type accordingly.
+T3B9C 004:674.107   InitTarget() end
+T3B9C 004:675.606   TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+T3B9C 004:676.013 - 159.004ms returns 1
+T3B9C 004:676.233 JLINK_TIF_GetAvailable(...)
+T3B9C 004:676.374 - 0.147ms
+T3B9C 004:676.385 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T3B9C 004:676.883 - 0.505ms returns 0x00
+T3B9C 004:676.899 JLINK_SetSpeed(4000)
+T3B9C 004:676.993 - 0.099ms
+T3B9C 004:677.002 JLINK_SetEndian(ARM_ENDIAN_LITTLE)
+T3B9C 004:677.006 - 0.006ms returns 0
+T3B9C 004:677.013 JLINK_SetInitRegsOnReset(OFF)
+T3B9C 004:677.017 - 0.006ms returns 1
+T3B9C 004:677.022 JLINK_SetResetType(JLINKARM_RESET_TYPE_NO_RESET)
+T3B9C 004:677.029 - 0.010ms returns JLINKARM_RESET_TYPE_NORMAL
+T3B9C 004:677.038 JLINK_ExecCommand("EnableFlashBPs", ...). 
+T3B9C 004:677.044 - 0.003ms returns 0x00
+T3B9C 004:677.051 JLINK_ExecCommand("SetAllowFlashCache = 1", ...). 
+T3B9C 004:677.058 - 0.003ms returns 0x01
+T3B9C 004:677.063 JLINK_ExecCommand("SetRestartOnClose = 0", ...). 
+T3B9C 004:677.070 - 0.002ms returns 0x01
+T3B9C 004:677.076 JLINK_EnableSoftBPs(ON)
+T3B9C 004:677.080 - 0.006ms
+T3B9C 004:677.085 JLINK_Connect()
+T3B9C 004:677.266   ConfigTargetSettings() start
+T3B9C 004:677.275    J-Link Script File: Executing ConfigTargetSettings()
+T3B9C 004:677.280   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T3B9C 004:677.287   ConfigTargetSettings() end
+T3B9C 004:677.294   InitTarget() start
+T3B9C 004:677.300    J-Link Script File: Executing InitTarget()
+T3B9C 004:677.304   Determining TrustZone configuration...
+T3B9C 004:678.384     Secure Debug: Enabled (SSD)
+T3B9C 004:678.393   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T3B9C 004:678.849     --> Correct transfer type configured. Done.
+T3B9C 004:678.857   InitTarget() end
+T3B9C 004:679.252   Found SW-DP with ID 0x6BA02477
+T3B9C 004:680.687   DPIDR: 0x6BA02477
+T3B9C 004:680.696   Scanning AP map to find all available APs
+T3B9C 004:681.295   AP[2]: Stopped AP scan as end of AP map has been reached
+T3B9C 004:681.305   AP[0]: AHB-AP (IDR: 0x84770001)
+T3B9C 004:681.311   AP[1]: APB-AP (IDR: 0x54770002)
+T3B9C 004:681.317   Iterating through AP map to find AHB-AP to use
+T3B9C 004:681.928   AP[0]: Core found
+T3B9C 004:681.936   AP[0]: AHB-AP ROM base: 0xE00FE000
+T3B9C 004:682.252   CPUID register: 0x410FD214. Implementer code: 0x41 (ARM)
+T3B9C 004:682.260   Found Cortex-M33 r0p4, Little endian.
+T3B9C 004:783.128   -- Max. mem block: 0x00010C40
+T3B9C 004:783.469   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3B9C 004:783.707   CPU_ReadMem(4 bytes @ 0xE0002000)
+T3B9C 004:783.944   FPUnit: 8 code (BP) slots and 0 literal slots
+T3B9C 004:783.956   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T3B9C 004:784.187   CPU_ReadMem(4 bytes @ 0xE0001000)
+T3B9C 004:784.423   CPU_WriteMem(4 bytes @ 0xE0001000)
+T3B9C 004:784.681   CPU_ReadMem(4 bytes @ 0xE000ED88)
+T3B9C 004:784.923   CPU_WriteMem(4 bytes @ 0xE000ED88)
+T3B9C 004:785.180   CPU_ReadMem(4 bytes @ 0xE000ED88)
+T3B9C 004:785.422   CPU_WriteMem(4 bytes @ 0xE000ED88)
+T3B9C 004:785.679   CPU_ReadMem(4 bytes @ 0xE000EFB8)
+T3B9C 004:785.917   Security extension: implemented
+T3B9C 004:785.929   Secure debug: enabled
+T3B9C 004:785.935   CoreSight components:
+T3B9C 004:785.945   ROMTbl[0] @ E00FE000
+T3B9C 004:785.952   CPU_ReadMem(64 bytes @ 0xE00FE000)
+T3B9C 004:786.468   CPU_ReadMem(32 bytes @ 0xE0044FE0)
+T3B9C 004:786.840   CPU_ReadMem(4 bytes @ 0xE0044FBC)
+T3B9C 004:787.096   CPU_ReadMem(4 bytes @ 0xE0044FCC)
+T3B9C 004:787.347   ROMTbl[0][0]: E0044000, CID: B105900D, PID: 005BB906 CTI
+T3B9C 004:787.354   CPU_ReadMem(32 bytes @ 0xE0047FE0)
+T3B9C 004:787.995   CPU_ReadMem(4 bytes @ 0xE0047FBC)
+T3B9C 004:788.510   CPU_ReadMem(4 bytes @ 0xE0047FCC)
+T3B9C 004:788.726   ROMTbl[0][1]: E0047000, CID: B105900D, PID: 003BB908 CSTF
+T3B9C 004:788.741   CPU_ReadMem(32 bytes @ 0xE0048FE0)
+T3B9C 004:789.102   CPU_ReadMem(4 bytes @ 0xE0048FBC)
+T3B9C 004:789.317   CPU_ReadMem(4 bytes @ 0xE0048FCC)
+T3B9C 004:789.517   ROMTbl[0][2]: E0048000, CID: B105900D, PID: 001BB961 TMC
+T3B9C 004:789.525   CPU_ReadMem(32 bytes @ 0xE0049FE0)
+T3B9C 004:789.846   ROMTbl[0][3]: E0049000, CID: B105F00D, PID: 001BB101 TSG
+T3B9C 004:789.854   CPU_ReadMem(32 bytes @ 0xE0040FE0)
+T3B9C 004:790.294   CPU_ReadMem(4 bytes @ 0xE0040FBC)
+T3B9C 004:790.541   CPU_ReadMem(4 bytes @ 0xE0040FCC)
+T3B9C 004:790.736   ROMTbl[0][4]: E0040000, CID: B105900D, PID: 000BBD21 Cortex-M33
+T3B9C 004:790.744   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T3B9C 004:791.128   ROMTbl[0][5]: E00FF000, CID: B105100D, PID: 000BB4C9 ROM Table
+T3B9C 004:791.135   ROMTbl[1] @ E00FF000
+T3B9C 004:791.148   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T3B9C 004:791.728   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T3B9C 004:792.162   CPU_ReadMem(4 bytes @ 0xE000EFBC)
+T3B9C 004:792.394   CPU_ReadMem(4 bytes @ 0xE000EFCC)
+T3B9C 004:792.593   ROMTbl[1][0]: E000E000, CID: B105900D, PID: 000BBD21 Cortex-M33
+T3B9C 004:792.601   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T3B9C 004:792.920   CPU_ReadMem(4 bytes @ 0xE0001FBC)
+T3B9C 004:793.118   CPU_ReadMem(4 bytes @ 0xE0001FCC)
+T3B9C 004:793.395   ROMTbl[1][1]: E0001000, CID: B105900D, PID: 000BBD21 DWT
+T3B9C 004:793.402   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T3B9C 004:793.723   CPU_ReadMem(4 bytes @ 0xE0002FBC)
+T3B9C 004:793.920   CPU_ReadMem(4 bytes @ 0xE0002FCC)
+T3B9C 004:794.113   ROMTbl[1][2]: E0002000, CID: B105900D, PID: 000BBD21 FPB
+T3B9C 004:794.121   CPU_ReadMem(32 bytes @ 0xE0000FE0)
+T3B9C 004:794.568   CPU_ReadMem(4 bytes @ 0xE0000FBC)
+T3B9C 004:794.764   CPU_ReadMem(4 bytes @ 0xE0000FCC)
+T3B9C 004:794.962   ROMTbl[1][3]: E0000000, CID: B105900D, PID: 000BBD21 ITM
+T3B9C 004:794.969   CPU_ReadMem(32 bytes @ 0xE0041FE0)
+T3B9C 004:795.354   CPU_ReadMem(4 bytes @ 0xE0041FBC)
+T3B9C 004:795.550   CPU_ReadMem(4 bytes @ 0xE0041FCC)
+T3B9C 004:795.749   ROMTbl[1][5]: E0041000, CID: B105900D, PID: 002BBD21 ETM
+T3B9C 004:795.757   CPU_ReadMem(32 bytes @ 0xE0042FE0)
+T3B9C 004:796.150   CPU_ReadMem(4 bytes @ 0xE0042FBC)
+T3B9C 004:796.395   CPU_ReadMem(4 bytes @ 0xE0042FCC)
+T3B9C 004:796.597   ROMTbl[1][6]: E0042000, CID: B105900D, PID: 000BBD21 CSS600-CTI
+T3B9C 004:796.625 - 119.542ms returns 0x00
+T3B9C 004:796.638 JLINK_ResetPullsRESET(ON)
+T3B9C 004:796.643 - 0.006ms
+T3B9C 004:796.649 JLINK_Halt()
+T3B9C 004:799.265 - 2.621ms returns 0x00
+T3B9C 004:799.274 JLINK_IsHalted()
+T3B9C 004:799.469 - 0.198ms returns TRUE
+T3B9C 004:799.478 JLINK_Reset()
+T3B9C 004:799.493   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T3B9C 004:799.722   CPU_ReadMem(4 bytes @ 0xE000ED44)
+T3B9C 004:799.934   CPU_ReadMem(4 bytes @ 0xE000EE08)
+T3B9C 004:800.159   CPU_WriteMem(4 bytes @ 0xE000EE08)
+T3B9C 004:800.392   Reset: ARMv8M core with Security Extension enabled detected.
+T3B9C 004:800.400   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3B9C 004:800.598   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T3B9C 004:800.831   Reset: Reset device via AIRCR.SYSRESETREQ.
+T3B9C 004:800.840   CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T3B9C 004:854.180   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3B9C 004:854.455   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3B9C 004:854.747   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T3B9C 004:855.094   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3B9C 004:861.305   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3B9C 004:864.878   CPU_WriteMem(4 bytes @ 0xE0002000)
+T3B9C 004:865.197   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T3B9C 004:865.485   CPU_ReadMem(4 bytes @ 0xE0001000)
+T3B9C 004:865.778   CPU_ReadMem(4 bytes @ 0xE000EE08)
+T3B9C 004:866.092 - 66.621ms
+T3B9C 004:866.107 JLINK_SetEndian(ARM_ENDIAN_LITTLE)
+T3B9C 004:866.112 - 0.006ms returns 0
+T3B9C 004:866.193 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T3B9C 004:866.210   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3B9C 004:866.476   Data:  03 00 13 00
+T3B9C 004:866.488   Debug reg: DHCSR
+T3B9C 004:866.494 - 0.302ms returns 0
+T3B9C 004:866.517 JLINK_ReadMem(0x010080F0, 0x10 Bytes, ...)
+T3B9C 004:866.528   CPU_ReadMem(16 bytes @ 0x010080F0)
+T3B9C 004:866.821   Data:  52 37 46 41 34 4D 32 41 42 33 43 46 4C 20 20 20
+T3B9C 004:866.831 - 0.316ms returns 0
+T3B9C 009:639.073 JLINK_Close()
+T3B9C 009:673.624 - 34.665ms
+T3B9C 009:673.743   
+T3B9C 009:673.748   Closed

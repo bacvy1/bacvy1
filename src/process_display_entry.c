@@ -1,8 +1,7 @@
 #include "process_display.h"
 #include "display_app.h"
 #include "air_sensor_app.h"
-#include "hal_data.h"
-#include "board.h"
+
 #include "time.h"
 #define SCAN_INTERVAL_mS    10
 /* LCD entry function */
@@ -12,7 +11,7 @@ void process_display_entry(void *pvParameters)
     FSP_PARAMETER_NOT_USED (pvParameters);
 
     /* TODO: add your own code here */
-    board_init();
+
     display_app_init();
     int32_t update_time = 1000;
     struct tm* time_network;

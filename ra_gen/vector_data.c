@@ -13,6 +13,7 @@
             [6] = sci_uart_tei_isr, /* SCI4 TEI (Transmit end) */
             [7] = sci_uart_eri_isr, /* SCI4 ERI (Receive error) */
             [8] = rtc_carry_isr, /* RTC CARRY (Carry interrupt) */
+            [9] = adc_scan_end_isr, /* ADC0 SCAN END (A/D scan end interrupt) */
         };
         const bsp_interrupt_event_t g_interrupt_event_link_select[BSP_ICU_VECTOR_MAX_ENTRIES] =
         {
@@ -25,5 +26,6 @@
             [6] = BSP_PRV_IELS_ENUM(EVENT_SCI4_TEI), /* SCI4 TEI (Transmit end) */
             [7] = BSP_PRV_IELS_ENUM(EVENT_SCI4_ERI), /* SCI4 ERI (Receive error) */
             [8] = BSP_PRV_IELS_ENUM(EVENT_RTC_CARRY), /* RTC CARRY (Carry interrupt) */
+            [9] = BSP_PRV_IELS_ENUM(EVENT_ADC0_SCAN_END), /* ADC0 SCAN END (A/D scan end interrupt) */
         };
         #endif

@@ -50,17 +50,17 @@
   </raClockConfiguration>
   <raPinConfiguration>
     <pincfg active="true" name="" symbol="">
+      <configSetting altId="adc0.an11.p013" configurationId="adc0.an11" isUsedByDriver="true"/>
       <configSetting altId="debug0.swclk.p300" configurationId="debug0.swclk" isUsedByDriver="true"/>
       <configSetting altId="debug0.swdio.p108" configurationId="debug0.swdio" isUsedByDriver="true"/>
       <configSetting altId="p002.output.low" configurationId="p002"/>
+      <configSetting altId="p015.output.high" configurationId="p015"/>
+      <configSetting altId="p100.output.high" configurationId="p100"/>
       <configSetting altId="p103.output.high" configurationId="p103"/>
       <configSetting altId="p104.output.low" configurationId="p104"/>
       <configSetting altId="p111.output.low" configurationId="p111"/>
       <configSetting altId="p302.output.low" configurationId="p302"/>
       <configSetting altId="p402.output.low" configurationId="p402"/>
-      <configSetting altId="sci1.rxd.p212" configurationId="sci1.rxd"/>
-      <configSetting altId="sci1.sck.p100" configurationId="sci1.sck"/>
-      <configSetting altId="sci1.txd.p213" configurationId="sci1.txd"/>
       <configSetting altId="sci3.rxd.p408" configurationId="sci3.rxd" isUsedByDriver="true"/>
       <configSetting altId="sci3.txd.p409" configurationId="sci3.txd" isUsedByDriver="true"/>
       <configSetting altId="sci4.rxd.p206" configurationId="sci4.rxd" isUsedByDriver="true"/>

@@ -8,7 +8,7 @@
 #include "air_sensor_app.h"
 #include "hal_data.h"
 #include "sm_porting.h"
-#include "stdint.h"
+#include "math.h"
 static void task_bar_display();
 static void Temp_display();
 static void Humidity_display();
@@ -56,26 +56,30 @@ static void task_bar_display(){
 
 static void Temp_display(){
     LCD* p_lcd = &air_sensor_app.lcd;
+    char temp_buff[14];
+    sprintf(temp_buff, "%2.1foC", air_sensor_app.dht22.temperature);
     LCD5110_set_XY(p_lcd, 1, 0);
-    LCD5110_write_string(p_lcd, "Temp:", 0);
+    LCD5110_write_string(p_lcd, temp_buff, 0);
 }
 
 static void Humidity_display(){
     LCD* p_lcd = &air_sensor_app.lcd;
+    char humi_buff[14];
+    sprintf(humi_buff, "%2.1f%%", air_sensor_app.dht22.humidity);
     LCD5110_set_XY(p_lcd, 1, 7);
-    LCD5110_write_string(p_lcd, "Humi:", 0);
+    LCD5110_write_string(p_lcd, humi_buff, 0);
 }
 
 static void CO_ppm_display(){
     LCD* p_lcd = &air_sensor_app.lcd;
     LCD5110_set_XY(p_lcd, 2, 0);
-    LCD5110_write_string(p_lcd, "CO_ppm: ", 0);
+    LCD5110_write_string(p_lcd, "co: ", 0);
 }
 
 static void DUST_display(){
     LCD* p_lcd = &air_sensor_app.lcd;
     LCD5110_set_XY(p_lcd, 3, 0);
-    LCD5110_write_string(p_lcd, "PM2.5: ", 0);
+    LCD5110_write_string(p_lcd, "dust: ", 0);
 }
 
 static void gps_display(){

@@ -113,7 +113,7 @@ extern "C" {
             (((RA_NOT_DEFINED > 0) ? 0U : 1U) << 12) /* POEG2 */ | \
             (((RA_NOT_DEFINED > 0) ? 0U : 1U) << 13) /* POEG1 */ | \
             (((RA_NOT_DEFINED > 0) ? 0U : 1U) << 14) /* POEG0 */ | \
-            (((RA_NOT_DEFINED > 0) ? 0U : 1U) << 16) /* ADC0 */ | \
+            (((1 > 0) ? 0U : 1U) << 16) /* ADC0 */ | \
             (((RA_NOT_DEFINED > 0) ? 0U : 1U) << 20) /* DAC */ | \
             (((RA_NOT_DEFINED > 0) ? 0U : 1U) << 22) /* TSN */ | \
             0xffae07f0) /* Unused */

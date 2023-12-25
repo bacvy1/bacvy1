@@ -6,6 +6,8 @@
 /* Common macro for FSP header files. There is also a corresponding FSP_FOOTER macro at the end of this file. */
 FSP_HEADER
 
+#define DHT_PIN (BSP_IO_PORT_00_PIN_15)
+#define DUST_EN (BSP_IO_PORT_01_PIN_00)
 #define LCD_RST (BSP_IO_PORT_01_PIN_03)
 #define LCD_DC (BSP_IO_PORT_01_PIN_04)
 #define LCD_SCK (BSP_IO_PORT_01_PIN_11)

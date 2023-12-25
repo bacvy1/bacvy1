@@ -16,7 +16,7 @@
 #include "task.h"
 void sm_bsp_delay_ms(uint32_t timems){
     /*User code*/
-    vTaskDelay(timems);
+    vTaskDelay(pdMS_TO_TICKS(timems));
 }
 void sm_bsp_delay_us(uint32_t timeus){
     /*User code*/

@@ -59,6 +59,7 @@ Long_fdk/utils/src \
 ra/aws/amazon-freertos/freertos_kernel \
 ra/fsp/src/bsp/cmsis/Device/RENESAS/Source \
 ra/fsp/src/bsp/mcu/all \
+ra/fsp/src/r_adc \
 ra/fsp/src/r_ioport \
 ra/fsp/src/r_rtc \
 ra/fsp/src/r_sci_uart \
@@ -67,12 +68,15 @@ ra_gen \
 src/app \
 src/app/display_app \
 src/app/gps_app \
+src/app/measure_app \
 src/app/mqtt_app \
 src/app/thingspeak_app \
 src/board \
+src/board/dust_sensor_hw \
 src/board/l76lb_hw \
 src/board/porting/src \
 src/component/at_modem \
+src/component/dust_sensor \
 src/component/l76_lb \
 src \
 src/service/clock \
