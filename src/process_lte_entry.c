@@ -30,7 +30,7 @@ void process_lte_entry(void *pvParameters)
     while (1)
     {
         mqtt_client_process();
-//        thingspeak_process();
+        thingspeak_process();
         update_time();
         vTaskDelay (1);
     }

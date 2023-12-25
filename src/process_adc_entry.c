@@ -1,19 +1,18 @@
-#include "process_measure.h"
+#include "process_adc.h"
 #include "air_sensor_app.h"
-#include "measure_app.h"
 #include "hal_data.h"
 #include "board.h"
-/* MEA entry function */
+/* ADC entry function */
 /* pvParameters contains TaskHandle_t */
-void process_measure_entry(void *pvParameters)
+void process_adc_entry(void *pvParameters)
 {
     FSP_PARAMETER_NOT_USED (pvParameters);
     board_init();
-    measure_app_init();
+    adc_app_init();
     /* TODO: add your own code here */
     while (1)
     {
-        measure_app_process();
-        vTaskDelay (1);
+        adc_app_process();
+        vTaskDelay(pdMS_TO_TICKS(2000));
     }
 }

@@ -9,7 +9,7 @@
 #include "mqtt_app.h"
 #include "app_thingspeak_config.h"
 sm_mqtt_client_error_t thingspeak_update(AIR_SENSOR_APP *p_app, void* stream);
-#define dataFormat      "field1=%d&field2=%d"
+#define dataFormat      "field1=%2.1f&field2=%2.1f&field3=%2.1f&field4=%2.1f&field5=%f&field6=%f"
 char update_data[100];
 uint16_t counter = 0;
 void thingspeak_app_init(){
@@ -22,9 +22,8 @@ void thingspeak_process(){
     if(sm_mqtt_client_get_state(p_app->mqtt_client) == MQTT_ST_CONNECTED){
         if(counter > 1000){
             counter = 0;
-            uint8_t temp = 17;
-            uint8_t humidity = 50;
-            sprintf(update_data, dataFormat, temp, humidity);
+            sprintf (update_data, dataFormat, p_app->dht22.temperature, p_app->dht22.humidity,
+                     p_app->adc_sensor.co_value, p_app->adc_sensor.dust_value, p_app->gps.lat, p_app->gps.lon);
             sm_mqtt_client_error_t update_result = thingspeak_update(&air_sensor_app, update_data);
             if(update_result == MQTT_ERROR_FAIL){
                 update_result = MQTT_ERROR_NO;

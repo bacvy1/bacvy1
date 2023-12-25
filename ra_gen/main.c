@@ -9,8 +9,10 @@ extern void process_gps_create(void);
 extern TaskHandle_t process_gps;
 extern void process_display_create(void);
 extern TaskHandle_t process_display;
-extern void process_measure_create(void);
-extern TaskHandle_t process_measure;
+extern void process_dht_create(void);
+extern TaskHandle_t process_dht;
+extern void process_adc_create(void);
+extern TaskHandle_t process_adc;
 uint32_t g_fsp_common_thread_count;
 bool g_fsp_common_initialized;
 SemaphoreHandle_t g_fsp_common_initialized_semaphore;
@@ -111,7 +113,8 @@ int main(void)
     process_lte_create ();
     process_gps_create ();
     process_display_create ();
-    process_measure_create ();
+    process_dht_create ();
+    process_adc_create ();
 
     /* Start the scheduler. */
     vTaskStartScheduler ();

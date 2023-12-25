@@ -5,6 +5,7 @@
         <peripheral name="PORT0" group="PORT">
             <slot name="P002" secure="false"/>
             <slot name="P013" secure="false"/>
+            <slot name="P014" secure="false"/>
             <slot name="P015" secure="false"/>
         </peripheral>
         <peripheral name="PORT1" group="PORT">

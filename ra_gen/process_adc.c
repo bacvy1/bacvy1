@@ -1,25 +1,25 @@
 /* generated thread source file - do not edit */
-#include "process_measure.h"
+#include "process_adc.h"
 
 #if 1
-static StaticTask_t process_measure_memory;
+static StaticTask_t process_adc_memory;
 #if defined(__ARMCC_VERSION)           /* AC6 compiler */
-                static uint8_t process_measure_stack[1024] BSP_PLACE_IN_SECTION(BSP_UNINIT_SECTION_PREFIX ".stack.thread") BSP_ALIGN_VARIABLE(BSP_STACK_ALIGNMENT);
+                static uint8_t process_adc_stack[1024] BSP_PLACE_IN_SECTION(BSP_UNINIT_SECTION_PREFIX ".stack.thread") BSP_ALIGN_VARIABLE(BSP_STACK_ALIGNMENT);
                 #else
-static uint8_t process_measure_stack[1024] BSP_PLACE_IN_SECTION(BSP_UNINIT_SECTION_PREFIX ".stack.process_measure") BSP_ALIGN_VARIABLE(BSP_STACK_ALIGNMENT);
+static uint8_t process_adc_stack[1024] BSP_PLACE_IN_SECTION(BSP_UNINIT_SECTION_PREFIX ".stack.process_adc") BSP_ALIGN_VARIABLE(BSP_STACK_ALIGNMENT);
 #endif
 #endif
-TaskHandle_t process_measure;
-void process_measure_create(void);
-static void process_measure_func(void *pvParameters);
+TaskHandle_t process_adc;
+void process_adc_create(void);
+static void process_adc_func(void *pvParameters);
 void rtos_startup_err_callback(void *p_instance, void *p_data);
 void rtos_startup_common_init(void);
 extern uint32_t g_fsp_common_thread_count;
 
-const rm_freertos_port_parameters_t process_measure_parameters =
+const rm_freertos_port_parameters_t process_adc_parameters =
 { .p_context = (void*) NULL, };
 
-void process_measure_create(void)
+void process_adc_create(void)
 {
     /* Increment count so we will know the number of threads created in the RA Configuration editor. */
     g_fsp_common_thread_count++;
@@ -27,35 +27,35 @@ void process_measure_create(void)
     /* Initialize each kernel object. */
 
 #if 1
-    process_measure = xTaskCreateStatic (
+    process_adc = xTaskCreateStatic (
 #else
-                    BaseType_t process_measure_create_err = xTaskCreate(
+                    BaseType_t process_adc_create_err = xTaskCreate(
                     #endif
-                                         process_measure_func,
-                                         (const char*) "MEA", 1024 / 4, // In words, not bytes
-                                         (void*) &process_measure_parameters, //pvParameters
-                                         8,
+                                     process_adc_func,
+                                     (const char*) "ADC", 1024 / 4, // In words, not bytes
+                                     (void*) &process_adc_parameters, //pvParameters
+                                     8,
 #if 1
-                                         (StackType_t*) &process_measure_stack,
-                                         (StaticTask_t*) &process_measure_memory
+                                     (StackType_t*) &process_adc_stack,
+                                     (StaticTask_t*) &process_adc_memory
 #else
-                        & process_measure
+                        & process_adc
                         #endif
-                                         );
+                                     );
 
 #if 1
-    if (NULL == process_measure)
+    if (NULL == process_adc)
     {
-        rtos_startup_err_callback (process_measure, 0);
+        rtos_startup_err_callback (process_adc, 0);
     }
 #else
-                    if (pdPASS != process_measure_create_err)
+                    if (pdPASS != process_adc_create_err)
                     {
-                        rtos_startup_err_callback(process_measure, 0);
+                        rtos_startup_err_callback(process_adc, 0);
                     }
                     #endif
 }
-static void process_measure_func(void *pvParameters)
+static void process_adc_func(void *pvParameters)
 {
     /* Initialize common components */
     rtos_startup_common_init ();
@@ -75,5 +75,5 @@ static void process_measure_func(void *pvParameters)
                     #endif
 
     /* Enter user code for this thread. Pass task handle. */
-    process_measure_entry (pvParameters);
+    process_adc_entry (pvParameters);
 }

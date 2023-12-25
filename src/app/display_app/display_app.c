@@ -72,14 +72,18 @@ static void Humidity_display(){
 
 static void CO_ppm_display(){
     LCD* p_lcd = &air_sensor_app.lcd;
+    char co_buff[14];
+    sprintf(co_buff, "co:%2.1f ppm", air_sensor_app.adc_sensor.co_value);
     LCD5110_set_XY(p_lcd, 2, 0);
-    LCD5110_write_string(p_lcd, "co: ", 0);
+    LCD5110_write_string(p_lcd, co_buff, 0);
 }
 
 static void DUST_display(){
     LCD* p_lcd = &air_sensor_app.lcd;
+    char dust_buff[14];
+    sprintf(dust_buff, "dust:%2.1f mg", air_sensor_app.adc_sensor.dust_value);
     LCD5110_set_XY(p_lcd, 3, 0);
-    LCD5110_write_string(p_lcd, "dust: ", 0);
+    LCD5110_write_string(p_lcd, dust_buff, 0);
 }
 
 static void gps_display(){

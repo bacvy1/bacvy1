@@ -1,25 +1,25 @@
 /* generated thread source file - do not edit */
-#include "process_lte.h"
+#include "process_dht.h"
 
 #if 1
-static StaticTask_t process_lte_memory;
+static StaticTask_t process_dht_memory;
 #if defined(__ARMCC_VERSION)           /* AC6 compiler */
-                static uint8_t process_lte_stack[4096] BSP_PLACE_IN_SECTION(BSP_UNINIT_SECTION_PREFIX ".stack.thread") BSP_ALIGN_VARIABLE(BSP_STACK_ALIGNMENT);
+                static uint8_t process_dht_stack[1024] BSP_PLACE_IN_SECTION(BSP_UNINIT_SECTION_PREFIX ".stack.thread") BSP_ALIGN_VARIABLE(BSP_STACK_ALIGNMENT);
                 #else
-static uint8_t process_lte_stack[4096] BSP_PLACE_IN_SECTION(BSP_UNINIT_SECTION_PREFIX ".stack.process_lte") BSP_ALIGN_VARIABLE(BSP_STACK_ALIGNMENT);
+static uint8_t process_dht_stack[1024] BSP_PLACE_IN_SECTION(BSP_UNINIT_SECTION_PREFIX ".stack.process_dht") BSP_ALIGN_VARIABLE(BSP_STACK_ALIGNMENT);
 #endif
 #endif
-TaskHandle_t process_lte;
-void process_lte_create(void);
-static void process_lte_func(void *pvParameters);
+TaskHandle_t process_dht;
+void process_dht_create(void);
+static void process_dht_func(void *pvParameters);
 void rtos_startup_err_callback(void *p_instance, void *p_data);
 void rtos_startup_common_init(void);
 extern uint32_t g_fsp_common_thread_count;
 
-const rm_freertos_port_parameters_t process_lte_parameters =
+const rm_freertos_port_parameters_t process_dht_parameters =
 { .p_context = (void*) NULL, };
 
-void process_lte_create(void)
+void process_dht_create(void)
 {
     /* Increment count so we will know the number of threads created in the RA Configuration editor. */
     g_fsp_common_thread_count++;
@@ -27,35 +27,35 @@ void process_lte_create(void)
     /* Initialize each kernel object. */
 
 #if 1
-    process_lte = xTaskCreateStatic (
+    process_dht = xTaskCreateStatic (
 #else
-                    BaseType_t process_lte_create_err = xTaskCreate(
+                    BaseType_t process_dht_create_err = xTaskCreate(
                     #endif
-                                     process_lte_func,
-                                     (const char*) "LTE", 4096 / 4, // In words, not bytes
-                                     (void*) &process_lte_parameters, //pvParameters
-                                     7,
+                                     process_dht_func,
+                                     (const char*) "DHT", 1024 / 4, // In words, not bytes
+                                     (void*) &process_dht_parameters, //pvParameters
+                                     8,
 #if 1
-                                     (StackType_t*) &process_lte_stack,
-                                     (StaticTask_t*) &process_lte_memory
+                                     (StackType_t*) &process_dht_stack,
+                                     (StaticTask_t*) &process_dht_memory
 #else
-                        & process_lte
+                        & process_dht
                         #endif
                                      );
 
 #if 1
-    if (NULL == process_lte)
+    if (NULL == process_dht)
     {
-        rtos_startup_err_callback (process_lte, 0);
+        rtos_startup_err_callback (process_dht, 0);
     }
 #else
-                    if (pdPASS != process_lte_create_err)
+                    if (pdPASS != process_dht_create_err)
                     {
-                        rtos_startup_err_callback(process_lte, 0);
+                        rtos_startup_err_callback(process_dht, 0);
                     }
                     #endif
 }
-static void process_lte_func(void *pvParameters)
+static void process_dht_func(void *pvParameters)
 {
     /* Initialize common components */
     rtos_startup_common_init ();
@@ -75,5 +75,5 @@ static void process_lte_func(void *pvParameters)
                     #endif
 
     /* Enter user code for this thread. Pass task handle. */
-    process_lte_entry (pvParameters);
+    process_dht_entry (pvParameters);
 }

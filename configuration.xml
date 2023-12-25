@@ -262,7 +262,7 @@
       <property id="module.driver.adc.clearing" value="module.driver.adc.clearing.clear_after_read_on"/>
       <property id="module.driver.adc.mode" value="module.driver.adc.mode.mode_single_scan"/>
       <property id="module.driver.adc.mode.dt" value="module.driver.adc.mode.dt.disabled"/>
-      <property id="module.driver.adc.scan_mask" value=""/>
+      <property id="module.driver.adc.scan_mask" value="module.driver.adc.scan_mask.channel_11,module.driver.adc.scan_mask.channel_12"/>
       <property id="module.driver.adc.scan_mask_group_b" value=""/>
       <property id="module.driver.adc.trigger" value="enum.driver.adc.trigger.trigger_software"/>
       <property id="module.driver.adc.trigger_group_b" value="_disabled"/>
@@ -303,7 +303,7 @@
       <property id="_symbol" value="process_lte"/>
       <property id="rtos.awsfreertos.thread.name" value="LTE"/>
       <property id="rtos.awsfreertos.thread.stack" value="4096"/>
-      <property id="rtos.awsfreertos.thread.priority" value="8"/>
+      <property id="rtos.awsfreertos.thread.priority" value="7"/>
       <property id="rtos.awsfreertos.thread.context" value="NULL"/>
       <property id="rtos.awsfreertos.thread.allocation" value="rtos.awsfreertos.thread.allocation.static"/>
       <property id="rtos.awsfreertos.thread.secure_context" value="rtos.awsfreertos.thread.secure_context.enable"/>
@@ -327,8 +327,17 @@
       <property id="rtos.awsfreertos.thread.secure_context" value="rtos.awsfreertos.thread.secure_context.enable"/>
     </context>
     <context id="rtos.awsfreertos.thread.1825376402">
-      <property id="_symbol" value="process_measure"/>
-      <property id="rtos.awsfreertos.thread.name" value="MEA"/>
+      <property id="_symbol" value="process_dht"/>
+      <property id="rtos.awsfreertos.thread.name" value="DHT"/>
+      <property id="rtos.awsfreertos.thread.stack" value="1024"/>
+      <property id="rtos.awsfreertos.thread.priority" value="8"/>
+      <property id="rtos.awsfreertos.thread.context" value="NULL"/>
+      <property id="rtos.awsfreertos.thread.allocation" value="rtos.awsfreertos.thread.allocation.static"/>
+      <property id="rtos.awsfreertos.thread.secure_context" value="rtos.awsfreertos.thread.secure_context.enable"/>
+    </context>
+    <context id="rtos.awsfreertos.thread.657908246">
+      <property id="_symbol" value="process_adc"/>
+      <property id="rtos.awsfreertos.thread.name" value="ADC"/>
       <property id="rtos.awsfreertos.thread.stack" value="1024"/>
       <property id="rtos.awsfreertos.thread.priority" value="8"/>
       <property id="rtos.awsfreertos.thread.context" value="NULL"/>
@@ -427,6 +436,7 @@
     <symbolicName propertyId="p402.symbolic_name" value="LCD_CS"/>
     <pincfg active="true" name="R7FA4M2AB3CFL.pincfg" selected="true" symbol="g_bsp_pin_cfg">
       <configSetting altId="adc0.an11.p013" configurationId="adc0.an11"/>
+      <configSetting altId="adc0.an12.p014" configurationId="adc0.an12"/>
       <configSetting altId="adc0.mode.custom" configurationId="adc0.mode"/>
       <configSetting altId="debug0.mode.swd" configurationId="debug0.mode"/>
       <configSetting altId="debug0.swclk.p300" configurationId="debug0.swclk"/>
@@ -435,10 +445,12 @@
       <configSetting altId="p002.gpio_mode.gpio_mode_out.low" configurationId="p002.gpio_mode"/>
       <configSetting altId="p013.adc0.an11" configurationId="p013"/>
       <configSetting altId="p013.gpio_mode.gpio_mode_an" configurationId="p013.gpio_mode"/>
+      <configSetting altId="p014.adc0.an12" configurationId="p014"/>
+      <configSetting altId="p014.gpio_mode.gpio_mode_an" configurationId="p014.gpio_mode"/>
       <configSetting altId="p015.output.high" configurationId="p015"/>
       <configSetting altId="p015.gpio_mode.gpio_mode_out.high" configurationId="p015.gpio_mode"/>
-      <configSetting altId="p100.output.high" configurationId="p100"/>
-      <configSetting altId="p100.gpio_mode.gpio_mode_out.high" configurationId="p100.gpio_mode"/>
+      <configSetting altId="p100.output.low" configurationId="p100"/>
+      <configSetting altId="p100.gpio_mode.gpio_mode_out.low" configurationId="p100.gpio_mode"/>
       <configSetting altId="p103.output.high" configurationId="p103"/>
       <configSetting altId="p103.gpio_mode.gpio_mode_out.high" configurationId="p103.gpio_mode"/>
       <configSetting altId="p104.output.low" configurationId="p104"/>
@@ -467,6 +479,8 @@
       <configSetting altId="sci4.mode.asynchronous.free" configurationId="sci4.mode"/>
       <configSetting altId="sci4.rxd.p206" configurationId="sci4.rxd"/>
       <configSetting altId="sci4.txd.p207" configurationId="sci4.txd"/>
+      <lockSetting id="adc0.an11" lock="true"/>
+      <lockSetting id="adc0.an12" lock="true"/>
     </pincfg>
     <pincfg active="false" name="R7FA4M2AC3CFL.pincfg" selected="false" symbol="">
       <configSetting altId="debug0.mode.jtag" configurationId="debug0.mode"/>
