@@ -88,14 +88,14 @@ static void DUST_display(){
 
 static void gps_display(){
     LCD* p_lcd = &air_sensor_app.lcd;
-//    char lat_str[14];
-//    char lon_str[14];
+    char lat_str[14];
+    char lon_str[14];
     LCD5110_set_XY(p_lcd, 4, 0);
-//    sprintf(lat_str, "lat: 21.0371895", air_sensor_app.gps.lat);
-//    sprintf(lon_str, "lon: 105.788353", air_sensor_app.gps.lon);
-    LCD5110_write_string(p_lcd, "lat:21.0371895", 0);
+    sprintf(lat_str, "lat:%2.6f", air_sensor_app.gps.lat);
+    sprintf(lon_str, "lon:%3.5f", air_sensor_app.gps.lon);
+    LCD5110_write_string(p_lcd, lat_str, 0);
     LCD5110_set_XY(p_lcd, 5, 0);
-    LCD5110_write_string(p_lcd, "lon:105.788353", 0);
+    LCD5110_write_string(p_lcd, lon_str, 0);
 }
 
 static void clock_display(){

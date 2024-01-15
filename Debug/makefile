@@ -118,7 +118,7 @@ all: Air_Sensor.elf secondary-outputs
 
 # Tool invocations
 Air_Sensor.elf: $(OBJS) $(USER_OBJS) $(LINKER_SCRIPT)
-	$(file > Air_Sensor.elf.in,-mcpu=cortex-m33 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal  -g -gdwarf-4 -T "fsp.ld" -Xlinker --gc-sections -L "F:\\Long\\Airsensor/script" -Xlinker -u_printf_float -Wl,-Map,"Air_Sensor.map" --specs=nano.specs --specs=rdimon.specs -o "Air_Sensor.elf" -Wl,--start-group $(OBJS) $(USER_OBJS) $(LIBS) -Wl,--end-group)
+	$(file > Air_Sensor.elf.in,-mcpu=cortex-m33 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal  -g -gdwarf-4 -T "fsp.ld" -Xlinker --gc-sections -L "D:\\Soucre\\Airsensor/script" -Xlinker -u_printf_float -Wl,-Map,"Air_Sensor.map" --specs=nano.specs --specs=rdimon.specs -o "Air_Sensor.elf" -Wl,--start-group $(OBJS) $(USER_OBJS) $(LIBS) -Wl,--end-group)
 	@echo Building target: $@ && arm-none-eabi-gcc @"Air_Sensor.elf.in"
 
 Air_Sensor.hex: Air_Sensor.elf
