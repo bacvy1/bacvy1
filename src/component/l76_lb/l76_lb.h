@@ -44,7 +44,10 @@ union Sys_time_t{
 
 typedef struct Realtime_t Realtime;
 
-
+///This is the brief description for this class
+///
+///
+/// This is the detail description. More stuff here
 typedef struct L76_LB_t L76_LB;
 struct L76_LB_t{
     AT_Modem    base;

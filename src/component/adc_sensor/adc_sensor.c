@@ -36,8 +36,11 @@ static void adc_sensor_measure(){
 static void adc_sensor_get_value(ADC_SENSOR* p_adc){
     float c11_mvol = 0, c12_mvol = 0;
     c11_mvol = (float)(p_adc->hw->channel11_value*ADC_REFERENCE_VOLTAGE_mV)/ADC_12BIT_RESOLUTION;
+    if(c11_mvol > 583){
+        p_adc->dust_value = (float)((c11_mvol/1000)*6/35-0.1)*1000;
+    }
     c12_mvol = (float)(p_adc->hw->channel12_value*ADC_REFERENCE_VOLTAGE_mV)/ADC_12BIT_RESOLUTION;
-    p_adc->dust_value = (float)((c11_mvol/1000)/0.5);
+//    p_adc->dust_value = (float)((c11_mvol/1000)/0.5);
 //    p_adc->co_value = (float)(c12_mvol * 0.3);
     for(int i = 0; i < 330; i++){
         if((int)c12_mvol < mq7_voltage[i]){

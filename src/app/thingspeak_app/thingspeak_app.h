@@ -10,10 +10,16 @@
 #define TOPIC_MAX_LENGTH 100
 
 #define UPDATE_TOPIC    "channels/%s/publish"
+#define SUBCRIBE_TOPIC  "channels/%s/subscribe"
 
 typedef struct THING_SPEAK_APP_t THING_SPEAK_APP;
 struct THING_SPEAK_APP_t{
     char update_topic[TOPIC_MAX_LENGTH];
+    char subcribe_topic[TOPIC_MAX_LENGTH];
+    char receive_data[1024];
+    float max_temp;
+    float max_co;
+    float max_dust;
 };
 
 void thingspeak_process();

@@ -16,6 +16,12 @@ static void CO_ppm_display();
 static void DUST_display();
 static void gps_display();
 static void clock_display();
+static void led_display();
+
+extern sm_bsp_io_t *led_co_pin;
+extern sm_bsp_io_t *led_dust_pin;
+extern sm_bsp_io_t *led_temp_pin;
+
 extern sm_bsp_io_t *lcd_rs_pin;
 extern sm_bsp_io_t *lcd_dc_pin;
 extern sm_bsp_io_t *lcd_cs_pin;
@@ -41,6 +47,7 @@ void display_process(){
     DUST_display();
     gps_display();
     clock_display();
+    led_display();
 }
 
 static void task_bar_display(){
@@ -81,7 +88,7 @@ static void CO_ppm_display(){
 static void DUST_display(){
     LCD* p_lcd = &air_sensor_app.lcd;
     char dust_buff[14];
-    sprintf(dust_buff, "dust:%2.1f mg", air_sensor_app.adc_sensor.dust_value);
+    sprintf(dust_buff, "dust:%4.1f ug", air_sensor_app.adc_sensor.dust_value);
     LCD5110_set_XY(p_lcd, 3, 0);
     LCD5110_write_string(p_lcd, dust_buff, 0);
 }
@@ -106,3 +113,26 @@ static void clock_display(){
     LCD5110_write_string(p_lcd, clock_buff, 0);
 }
 
+static void led_display(){
+    AIR_SENSOR_APP* p_app = &air_sensor_app;
+    if(p_app->adc_sensor.co_value > p_app->thingspeak.max_co){
+        led_co_pin->proc->set_value(led_co_pin, 1);
+    }
+    else{
+        led_co_pin->proc->set_value(led_co_pin, 0);
+    }
+
+    if(p_app->adc_sensor.dust_value > p_app->thingspeak.max_dust){
+        led_dust_pin->proc->set_value(led_dust_pin, 1);
+    }
+    else{
+        led_dust_pin->proc->set_value(led_dust_pin, 0);
+    }
+
+    if(p_app->dht22.temperature > p_app->thingspeak.max_temp){
+        led_temp_pin->proc->set_value(led_temp_pin, 1);
+    }
+    else{
+        led_temp_pin->proc->set_value(led_temp_pin, 0);
+    }
+}

@@ -38,7 +38,7 @@ sm_mqtt_client_error_t mqtt_data_iscomming(sm_mqtt_client_t *client,
 		char *topic, char *data);
 sm_mqtt_client_error_t mqtt_reconnect(sm_mqtt_client_t *client);
 /*end define mqtt client funtion*/
-static void mqtt_event(sm_mqtt_client_t *client, sm_mqtt_client_event_t event);
+
 /*define variable*/
 //sm_mqtt_client_t *mqtt_client;
 
@@ -73,7 +73,6 @@ void mqtt_client_init() {
 	sm_ec200s_get_ip (&air_sensor_app.ec200s);
 	CONFIG_MQTT:
 	if(sm_ec200s_config_mqtt(&air_sensor_app.ec200s) != 0) goto CONFIG_MQTT;
-
 	client_proc.open = mqtt_open;
 	client_proc.close = mqtt_close;
 	client_proc.connect = mqtt_connect;
@@ -83,7 +82,6 @@ void mqtt_client_init() {
 	client_proc.unsubscribes = mqtt_unsubscribes;
 	client_proc.data_iscomming = mqtt_data_iscomming;
 //	client_proc.reconnect = mqtt_reconnect;
-	sm_mqtt_client_register_handle(air_sensor_app.mqtt_client, mqtt_event);
     air_sensor_app.mqtt_client = sm_mqtt_client_init_static (&client_proc, (void*) &air_sensor_app.ec200s,
                                                              "mqtt3.thingspeak.com", 1883, USERNAME, PASSWORD);
 	air_sensor_app.mqtt_client->topic = topic_mqtt;
@@ -155,37 +153,6 @@ sm_mqtt_client_error_t mqtt_reconnect(sm_mqtt_client_t *client)
 }
 
 
-static void mqtt_event(sm_mqtt_client_t *client, sm_mqtt_client_event_t event) {
-    switch (event) {
-    case MQTT_EVENT_NONE:
-        /* User code */
-        break;
-    case MQTT_EVENT_CLOSE:
-        /* User code */
-
-        break;
-    case MQTT_EVENT_CONNECTED:
-        /* User code */
-
-        break;
-    case MQTT_EVENT_DATA:
-        /* User code */
-//            printf("Topic: %s\r\n",client->topic);
-//            printf("Data: %s\r\n",client->data);
-        break;
-    case MQTT_EVENT_DISCONNECTED:
-        /* User code */
-        break;
-    case MQTT_EVENT_ERROR:
-        /* User code */
-        break;
-    case MQTT_EVENT_OPEN:
-        /* User code */
-        break;
-    default:
-        break;
-    }
-}
 
 
 #endif

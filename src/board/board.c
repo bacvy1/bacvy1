@@ -20,6 +20,9 @@ sm_bsp_io_t *lcd_din_pin = NULL;
 
 sm_bsp_io_t *dht_22_pin = NULL;
 
+sm_bsp_io_t *led_co_pin = NULL;
+sm_bsp_io_t *led_dust_pin = NULL;
+sm_bsp_io_t *led_temp_pin = NULL;
 
 void board_init(void){
     R_IOPORT_Open(&g_ioport_ctrl, &g_bsp_pin_cfg);
@@ -34,7 +37,9 @@ void board_init(void){
     lcd_din_pin = sm_bsp_io_init(&io_func, (void*)&g_ioport, LCD_DIN);
 
     dht_22_pin = sm_bsp_io_init(&io_func, (void*)&g_ioport, DHT_PIN);
-
+    led_co_pin = sm_bsp_io_init(&io_func, (void*)& g_ioport, LED1);
+    led_dust_pin = sm_bsp_io_init(&io_func, (void*)& g_ioport, LED2);
+    led_temp_pin = sm_bsp_io_init(&io_func, (void*)& g_ioport, LED3);
 }
 
 

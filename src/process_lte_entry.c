@@ -1,3 +1,15 @@
+/**
+ * @file process_lte_entry.c
+ * @author LongDH
+ * @date 2024
+ * @brief LTE main process of Air-sensor project
+ *
+ * */
+
+/**@defgroup Main process_lte_entry.c
+ * Main file of process LTE in project Air-sensor
+ * @{
+ * */
 #include "process_lte.h"
 #include "mqtt_app.h"
 #include "hal_data.h"
