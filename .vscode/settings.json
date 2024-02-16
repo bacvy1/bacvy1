@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "display_app.h": "c",
+        "thingspeak_app.h": "c"
+    }
+}
